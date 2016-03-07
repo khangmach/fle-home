@@ -44,8 +44,8 @@ input {
 .fle_title {
   font-size: 40px;
   padding: 90px 5%;
-/*  background-color: #F5F5F5;*/
-  background-color: white;
+  /*  background-color: #F5F5F5;*/
+  /* background-color: white; */
   position: relative;
   z-index: 2;
 }
@@ -73,7 +73,6 @@ input {
   overflow: auto;
   position: relative;
   z-index: 2;
-  background: white;
 }
 #fle_timeline .fle_title h1 {
   font-size: 47px;
@@ -81,7 +80,6 @@ input {
   margin: 50px 0;
 }
 .fle_title_img {
-  color: white;
   font-size: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -121,10 +119,6 @@ a:hover {
   font-family: "Montserrat";
   font-size: 30px;
   max-width: 1000px;
-}
-#fle_timeline {
-  position: relative;
-  z-index: 2;
 }
 .countdown {
   -moz-transform: scale(0.8);
@@ -432,6 +426,7 @@ header {
 .intro-btn{
   max-width:580px;
   margin:auto;
+  margin-top:5%;
 }
 
 #header-mailchimp {
@@ -456,6 +451,7 @@ header {
   top: -20px;
   z-index: 5;
 }*/
+
 section#contact .section-heading {
   color: white;
   margin-bottom: 10px;
