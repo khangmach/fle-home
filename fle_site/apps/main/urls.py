@@ -1,3 +1,4 @@
+
 from django.conf import settings
 from django.conf.urls import patterns, include, url
 from django.core.urlresolvers import reverse, reverse_lazy
@@ -17,6 +18,8 @@ urlpatterns = patterns(__package__ + '.views',
     url(r'^donate/$', TemplateView.as_view(template_name='main/donate.html'), {"STRIPE_PUBLISHABLE_API_KEY": settings.STRIPE_PUBLISHABLE_API_KEY}, name='donate'),
     url(r'^donate/process/$', process_donation, name='process_donation'),
     url(r'^directions/$', TemplateView.as_view(template_name='main/directions.html'), name='directions'),
+    url(r'^donationpage_thankyou/$', TemplateView.as_view(template_name='main/donationpage_thankyou.html'), name='donationpage_thankyou'),
+    url(r'^donationpage/$', TemplateView.as_view(template_name='main/donationpage.html'), name='donationpage', kwargs={"STRIPE_PUBLISHABLE_API_KEY": settings.STRIPE_PUBLISHABLE_API_KEY}),
     url(r'^mailchimp/$', TemplateView.as_view(template_name='main/partials/_kickstarter_mailchimp.html'), name='mailchimp'),
     url(r'^fileupload/$', file_upload, name='file_upload'),
 )
