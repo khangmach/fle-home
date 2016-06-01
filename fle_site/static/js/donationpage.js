@@ -86,7 +86,7 @@ $(function(){
                 dataType: "json",
                 contentType: "application/json",
                 beforeSend: function(xhr, settings) {
-                    xhr.setRequestHeader("X-CSRFToken", data.csrfmiddlewaretoken);
+                    xhr.setRequestHeader("X-CSRFToken", csrfmiddlewaretoken);
                 },
                 success: function(){
                     window.location.assign("/donate/thankyou/");
