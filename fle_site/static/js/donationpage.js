@@ -11,7 +11,7 @@ $(function() {
     //"Other"input field slides down
     $("#other-amount").click(function() {
         $("#input-amount").slideDown(); //input fild slides down
-        
+
         input_field.focus(); //cursor goes to text-field
 
         //Setting payment buttons to disable when input is invalid
@@ -45,7 +45,7 @@ $(function() {
         $(this).toggleClass('active').siblings().removeClass("active");
     });
 
-    //Click stores value of preset $20, $50, $100 is stored 
+    //Click stores value of preset $20, $50, $100 is stored
     $(".btn-amount-number").click(function(){
         var amount = $(this).attr("value");
     });
@@ -89,11 +89,10 @@ $(function(){
                     xhr.setRequestHeader("X-CSRFToken", data.csrfmiddlewaretoken);
                 },
                 success: function(){
-                    window.location.replace("/donationpage_thankyou");
+                    window.location.assign("/donate/thankyou/");
                 }
             }).then(function(response) {
                 show_message(response.status, response.message, "transaction-message");
-
             });
         }
     });
@@ -102,7 +101,7 @@ $(function(){
 
     //'Pay by Card' is clicked
     btn_card.on('click', function(e) {
-        
+
         var give = "Give";
 
         //Check for monthly giving
@@ -116,7 +115,7 @@ $(function(){
             amount = $("#InputAmount").val();
             if (amount.length != 0 && amount.match(/(?=.)^\$?(([1-9][0-9]{0,2}(,[0-9]{3})*)|[0-9]+)?(\.[0-9]{1,2})?$/) && amount != 0 && amount <= 50000){ // Check if 'input' is valid
 
-                handler.open({ 
+                handler.open({
                     name: 'Learning Equality',
                     description: 'Donation',
                     amount: amount*100,
@@ -124,10 +123,10 @@ $(function(){
                 });
                 e.preventDefault();
             }else{
-                $('.alert-text').show(); 
+                $('.alert-text').show();
             }
         }else{ //If 'other' is not active
-            amount = $(".active").val(); 
+            amount = $(".active").val();
 
             handler.open({
                 name: 'Learning Equality',
@@ -155,7 +154,7 @@ $(function(){
 
 
 //Paypal Integration
-$(function(){ 
+$(function(){
 
     $('#btn-paypal').click(function(){
 
@@ -178,7 +177,7 @@ $(function(){
                 $('input:hidden[name=amount]').val(amount);
                 $('#paypal_once').submit();
                 $('.loader').show();
-                $(this).css('background-color','#48ABD9'); 
+                $(this).css('background-color','#48ABD9');
             }
         };
 
@@ -186,16 +185,16 @@ $(function(){
         if (  $(".active").val() == "custom"){
             var amount = $("#InputAmount").val();
             if (amount.length != 0 && amount.match(/(?=.)^\$?(([1-9][0-9]{0,2}(,[0-9]{3})*)|[0-9]+)?(\.[0-9]{1,2})?$/) && amount != 0){
-                
+
                 $(this).monthlyGiving();
-                
+
             }else{
                 $('.alert-text').show();
-            }  
+            }
         }else{
             amount = $(".active").val();
             $(this).monthlyGiving();
-        } 
+        }
     });
 });
 
