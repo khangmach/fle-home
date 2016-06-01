@@ -113,14 +113,14 @@ def process_donation(request):
         if monthly:
             charge = stripe.Customer.create(
                 source=token,
-                quantity=amount,
+                quantity=amount, # the plan is a $1 plan, so we use quantity to determine how many of those to subscribe the user to (to get total amount)
                 plan='le_donation_monthly_1',
                 email=email,
                 metadata=metadata,
             )
         else:
             charge = stripe.Charge.create(
-                amount=amount, # amount in cents, again
+                amount=amount * 100, # amount in cents
                 currency=data.get("currency") or "usd",
                 source=token,
                 metadata=metadata,
