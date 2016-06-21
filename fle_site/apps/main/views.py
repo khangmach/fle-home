@@ -11,7 +11,6 @@ from django.template.loader import render_to_string
 from django.template import RequestContext
 from django.contrib.auth.decorators import login_required
 from django.core.files.storage import get_storage_class
-from django.views.decorators.csrf import csrf_exempt
 
 from annoying.decorators import render_to
 from constantcontact import ConstantContact, Contact
@@ -65,19 +64,20 @@ def kolibri(request):
     }
 
 
-@csrf_exempt
-def cc_indiegogo_signup(request):
-    if request.method == "POST":
-        constantcontact = ConstantContact(settings.CONSTANT_CONTACT_API_KEY, settings.CONSTANT_CONTACT_ACCESS_TOKEN, settings.CONSTANT_CONTACT_API_URL)
-        contact = Contact()
-        contact.add_list_id(settings.CONSTANT_CONTACT_LIST_ID)
-        contact.set_email_address(request.POST['email'])
-        response = constantcontact.post_contacts(contact)
+# @csrf_exempt
+# def cc_indiegogo_signup(request):
+#     if request.method == "POST":
+#         constantcontact = ConstantContact(settings.CONSTANT_CONTACT_API_KEY, settings.CONSTANT_CONTACT_ACCESS_TOKEN, settings.CONSTANT_CONTACT_API_URL)
+#         contact = Contact()
+#         contact.add_list_id(settings.CONSTANT_CONTACT_LIST_ID)
+#         contact.set_email_address(request.POST['email'])
+#         response = constantcontact.post_contacts(contact)
 
-        if response.has_key('error_key'):
-            return HttpResponse(response['error_key'])
-        else:
-            return HttpResponse('201')
+#         if response.has_key('error_key'):
+#             return HttpResponse(response['error_key'])
+#         else:
+#             return HttpResponse('201')
+
 
 def process_donation(request):
 
@@ -97,6 +97,9 @@ def process_donation(request):
 
     # Get the credit card details submitted by the form
     token = data["id"]
+    amount = int(data['amount'])
+    monthly = data['recurring']
+    email = data['email']
 
     metadata = {}
     metadata.update(data)
@@ -107,18 +110,26 @@ def process_donation(request):
 
     # Create the charge on Stripe's servers - this will charge the user's card
     try:
-        charge = stripe.Charge.create(
-            amount=data["amount"], # amount in cents, again
-            currency=data.get("currency") or "usd",
-            source=token,
-            metadata=metadata,
-        )
+        if monthly:
+            charge = stripe.Customer.create(
+                source=token,
+                quantity=amount, # the plan is a $1 plan, so we use quantity to determine how many of those to subscribe the user to (to get total amount)
+                plan='le_donation_monthly_1',
+                email=email,
+                metadata=metadata,
+            )
+        else:
+            charge = stripe.Charge.create(
+                amount=amount * 100, # amount in cents
+                currency=data.get("currency") or "usd",
+                source=token,
+                metadata=metadata,
+            )
 
         return JsonResponse({"status": "success", "message": "Thank you for your generous donation! We appreciate your support for our mission of promoting equal opportunities for learners around the world!"})
 
     except Exception, e:
-
-        return JsonResponse({"status": "error", "message": "There was an error processing your donation payment ('%s'). Please try again." % e})
+        raise
 
 
 def handler_500(request):
@@ -129,19 +140,6 @@ def handler_500(request):
     }
     return HttpResponseServerError(render_to_string("main/500.html", context, context_instance=RequestContext(request)))
 
+
 def handler_404(request):
     return HttpResponseServerError(render_to_string("main/404.html", {}, context_instance=RequestContext(request)))
-
-
-@login_required
-@csrf_exempt
-def file_upload(request):
-    if request.method == 'POST':
-        storage_class = get_storage_class()()
-        file_object = request.FILES.values()[0]
-        filename = storage_class.save(None, file_object)
-        return HttpResponse(json.dumps({
-            "uploaded": 1,
-            "fileName": filename,
-            "url": settings.MEDIA_URL + "/" + filename,
-        }))
