@@ -20,3 +20,4 @@ Thumbs.db
 venv/*
 all_contributors.json
 summary.json
+/env
