@@ -40,7 +40,7 @@
 		<div class="row bottom-row">
 			<a href="#portfolioModal2" data-toggle="modal">
 				<div class="col-md-6 feature-tile first-tile">
-					<h4>Share Content &<br>Sync Data Seamlessly</h4>
+					<h4>Sync Content &<br>Data Seamlessly</h4>
 					<div id="sync" class="row tile-image"></div>
 					<div class="row learn-more-modal">
 						Learn More 
@@ -63,7 +63,7 @@
 
     <!-- Portfolio Modals -->
 
-    <!-- Preconfigured Modal -->
+    <!-- Runs On Anything Modal -->
     <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-hidden="true">
     	<div class="modal-dialog" role="document">
 	        <div class="modal-content">
@@ -77,19 +77,18 @@
 	                <div class="row">
 	                    <div class="my_col">
 	                        <div class="modal-body">
-	                            <h2>Preconfigured Tablet</h2>
-	                            <p class="item-intro text-muted">This campaign will enable us to build low-cost, customized Android tablets that are pre-installed and optimized to present educational content from Kolibri.</p>
-	                            <img class="img-responsive img-centered" src="{% static 'img/kickstarter/portfolio/tablet.gif' %}" alt="">
-	                            <p class="tablet-text">Why Android? 
+	                            <h2>Runs on Anything</h2>
+	                            <p class="tablet-text">
 	                            	<br>
 	                            	<br>
-	                            	When we designed our first-generation platform, KA Lite, we aimed for it to run on as many devices and operating systems as possible, to enable broad usage. However, while Android tablets could be used as client devices, they still required a nearby server (e.g. a Raspberry Pi) in order to access KA Lite.
+	                            	To facilitate broad, low-cost adoption, Kolibri is carefully designed to run on as many devices and operating systems as possible, leveraging existing legacy hardware or low-cost off-the-shelf devices. Kolibri runs on Windows, Linux, and OSX.
 	                            	<br>
 	                            	<br>
 	                            </p>
-	                            	<img class="img-responsive img-centered" src="{% static 'img/kickstarter/portfolio/box-tablet-composition2.png' %}" alt="">
-	                            <p class="tablet-text">
-	                            	The cost of Android tablets is plummeting, and they can serve as an ideal deployment platform -- we will be building Kolibri so that it will run standalone as an Android app, while still running on Windows, Linux and OSX.
+	                            <img class="img-responsive img-centered" src="{% static 'img/kickstarter/portfolio/tablet.gif' %}" alt="">
+<!-- 	                            	<img class="img-responsive img-centered" src="{% static 'img/kickstarter/portfolio/box-tablet-composition2.png' %}" alt="">
+ -->	                            <p class="tablet-text">
+	                            	The cost of Android tablets is plummeting, so we're also building Kolibri to be able to run standalone as an Android app, without needing a nearby server. Content can be loaded onto a tablet from a nearby server or peer-to-peer from another tablet, and then taken elsewhere and used by itself.
 	                            </p>
 	                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Feature</button>
 	                        </div>
@@ -172,13 +171,13 @@
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>"Byte-Size" Videos</h2>
-	                            <p class="item-intro text-muted">We're using an innovative video compressor which converts the video elements you see into scalable vector objects.</p>
+	                            <p class="item-intro text-muted">We're developing innovative video compression techniques that convert the pen strokes and objects in a blackboard-style video into scalable vector objects.</p>
 
-								<img class="img-responsive img-centered" src="{% static 'img/kickstarter/portfolio/vector.gif'  %}" alt="Compress 200MB Video down to 1MB without lossing quality">
+								<img class="img-responsive img-centered" src="{% static 'img/kickstarter/portfolio/vector.gif'  %}" alt="Compress 250MB Video down to 1MB without losing quality">
 
-	                            <p>This is tech-talk for the idea that a 250MB video can now be compressed into just a single megabyte, while retaining most of the original quality. This reduces the time and cost needed to download a large set of videos, and allows a large amount of content to be stored on a small, low-cost device.</p>
+	                            <p>In our tests, a 250MB video can now be compressed into just a single megabyte, while retaining most of the original quality. This reduces the time and cost needed to download a large set of videos, and allows a large amount of content to be stored on a small, low-cost device.</p>
 	                            <br>
-	                            <p>Select elements on the video by clicking and dragging your mouse around them. You can change their position and size!</p>
+	                            <p>Select elements on the video by clicking and dragging your mouse around them. You can change their position and size! (Try a <a href="https://rawgit.com/learningequality/video-vectorization/master/vectorvideoplayer/index.html">higher quality version with more features</a>, or <a href="https://github.com/learningequality/video-vectorization">read more</a>.)</p>
 	                            <br>
 	                            <center>
 	                                <canvas id="canvas" width="690" height="388" style="border:1px solid #000000"></canvas>
@@ -220,11 +219,11 @@
 	                            <!-- Project Details Go Here -->
 	                            <h2>Self-Paced Learning</h2>
 	                            <p class="item-intro text-muted">Track educational growth for individuals and groups of learners accurately and easily, even in informal educational contexts.</p>
-	                            <p>Kolibri will be installed with evaluation tools such as "coach reports," customized quizzes and exercises, and a recommendation tool that displays useful and relevant content that is based on how a learner engages with their content.</p>
+	                            <p>Kolibri will come with evaluation tools such as "coach reports," customized quizzes and exercises, and a recommendation tool that displays useful and relevant content that is based on a learner's history, progress, and goals.</p>
 	                            <img id="paced-learning" class="img-responsive img-centered" src="{% static 'img/kickstarter/portfolio/coach-reports.png' %}" alt="Coach Reports">
-	                            <p class="big"><mark>&#9733 Coach Reports:  </mark>   These are detailed progress reports that measure factors such as time taken to complete exercises, records on which questions have been answered correctly or incorrectly, and provide a picture on overall progress through a specific set of exercises and lessons.</p>
+	                            <p class="big"><mark>&#9733 Coach Reports:  </mark>   These are detailed progress reports that measure factors such as time taken to complete exercises, records on which questions have been answered correctly or incorrectly, and provide a picture of overall progress through a specific set of exercises and lessons.</p>
 	                            <p class="big"><mark>&#9733 Customized Quizzes and Exercises:  </mark>   Question sets and exercises can be created in Kolibri in multiple choice and free response format. This customized evaluation tool will help learners practice what they've learned and show what they know, while staying aligned with the goals and standards of their local curriculum.</p>
-	                            <p class="big"><mark>&#9733 Content Recommendation:  </mark>   Kolibri will recommend educational content to a learner based on the types of content and exercises they have previously engaged with.</p>
+	                            <p class="big"><mark>&#9733 Content Recommendation:  </mark>   Kolibri will recommend educational content to a learner based on the content and exercises they have previously engaged with.</p>
 	                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
 	                        </div>
 	                    </div>

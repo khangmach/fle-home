@@ -28,10 +28,10 @@
 	#how-image .row div p {
 		font-size: 15px;
 	}
-	.below-fold2 {
+/*	.below-fold2 {
 		min-height: 528px;
 		height: 50vh;
-	}
+	}*/
 	.fle_title_bold,
 	.fle_title h2 {
 		font-size: 35px;
@@ -112,7 +112,6 @@
 	}
 	#fle_intro {
 		background: white;
-		height: 850px;
 	}
 	.intro-heading {
 		font-size: 50px;

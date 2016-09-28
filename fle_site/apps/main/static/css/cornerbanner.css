@@ -57,6 +57,7 @@ body {
     float: right;
     right: -500%;
     bottom: 0;
+    height: 79px;
 }
 .banner_img {
 	position: relative;

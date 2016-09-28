@@ -415,7 +415,7 @@ section#contact {
   min-height: 800px;
   position: relative;
   top: -20px;
-  z-index: 5;
+  /*z-index: 5;*/
 }
 section#contact .section-heading {
   color: white;
@@ -859,7 +859,7 @@ mark{
   opacity: 1;
 }
 
-#join_campaign {
+#donate_button {
   color: #FFCC00;
   font-size:30px;
   font-weight: 100;
@@ -868,12 +868,12 @@ mark{
   border-radius: 15px;
   border: 5px solid #FFCC00;
 }
-#join_campaign:hover {
+#donate_button:hover {
   background-color: #FFCC00;
   color:#8670A1; 
 }
 
-#readmore_campaign {
+#contact_button {
   color: #FFCC00;
   font-size:30px;
   font-weight: 100;
@@ -882,7 +882,7 @@ mark{
   border-radius: 15px;
   border: 5px solid #FFCC00;
 }
-#readmore_campaign:hover {
+#contact_button:hover {
   background-color: #FFCC00;
   color: #8670A1;
 }
@@ -995,8 +995,8 @@ mark{
 
 
 .below-fold2 {
-  height: 80vh;
-  min-height: 628px;
+  /*height: 80vh;*/
+  /*min-height: 628px;*/
   background: white;
   text-align: center;
   background-size: cover;
