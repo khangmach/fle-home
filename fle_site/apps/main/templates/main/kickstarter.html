@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{% static 'css/_kickstarter_quote.css' %}">
     <link rel="stylesheet" href="{% static 'css/_kickstarter_mobile.css' %}?asdfghjkl">
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
-    <!-- <link rel="stylesheet" href="{% static 'css/igg_integration.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/igg_integration.css' %}">
 
     <!-- Custom Fonts -->
 
@@ -38,9 +38,6 @@
     </style>
 {% endblock headcss %}
 
-{% block footeroverride %}
-    {% include "main/partials/_footer_normal.html" %}
-{% endblock footeroverride %}
 
 {% block bodycontents %}
     <!-- Header -->
@@ -53,21 +50,22 @@
                         <div class="row">
                             <!-- <div id="campaign-intro-1">Announcing our next-generation platform</div> -->
                             <div id="intro_container">
-                            <div class="col-md-6">
-                                <div class="intro-heading">Kolibri<span class="hidden-xs hidden-sm" style="font-weight: 100; top:-8px; position: relative;">|</span> </div>
-                            </div>
-                            <div class="col-md-6">
-                                 <div class="intro-heading2">The offline app for<br>universal education</div>
-                            </div>
+                                <br><br><br><br>
+                                <div class="col-md-6">
+                                    <div class="intro-heading">Kolibri<span class="hidden-xs hidden-sm" style="font-weight: 100; top:-8px; position: relative;">|</span> </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="intro-heading2">The offline app for<br>universal education</div>
+                                </div>
+                                <br><br><br><br>
                             </div>
 
-                            <div class="videoWrapper">
+<!--                             <div class="videoWrapper">
                                 <iframe id="k_video" src="https://player.vimeo.com/video/143710663" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                            </div>
+                            </div> -->
     
-                            <center><a class="btn" id="igg_btn" href="https://learningequality.org/r/indiegogo-redirect">Back our Kolibri Campaign on <img id="indiegogo_generosity" alt="Indiegogo" src="{% static 'img/kickstarter/indiegogo_generosity.png' %}"></a></center>
                             <!-- <div class="countdown"></div> -->
-                            <br><br>
+                            <br><br><br><br>
                         </div>
                     </div>
                     <!-- <a id="down-arrow" href="#fle_intro">
@@ -92,10 +90,10 @@
 
         <!-- FLE how it works -->
         <section id="fle_how" class="row">
-            <center class="fle_title">
+<!--             <center class="fle_title">
                 <h1>HOW WILL IT WORK?</h1>
             </center>
-            {% include "main/partials/_kickstarter_how.html" %}
+ -->            {% include "main/partials/_kickstarter_how.html" %}
         </section>
 
         <!-- Features Section: Tile Design -->
@@ -106,7 +104,7 @@
                 <p class="slim-text">
                     Education is not "one-size fits all"
                     <br><br>
-                    <span>Learn more</span>
+                    <span><b>Learn more</b></span>
                 </p>
             </div></a>
             <br><br><br><br><br><br>
@@ -114,7 +112,7 @@
         </section>
 
         <!-- FLE History Section -->
-        <section id="fle_timeline" class="row">
+<!--         <section id="fle_timeline" class="row">
             <center class="fle_title">
                 <h1>WHO ARE WE?</h1>
                 <h2>We're the team that built <img src="{% static 'img/kickstarter/timeline/ka-lite-logo.png' %}"></h2>
@@ -128,7 +126,7 @@
 
             <div id="desktop-timeline"></div>
 
-        </section>
+        </section> -->
 
         <!-- FLE Quote Section -->
         <section id="fle_quote" class="hidden-xs">
@@ -141,7 +139,7 @@
             {% include "main/partials/_kickstarter_footer.html" %}
         </section>
 
-        <a href="#kickstarter-header" class="back-to-top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+        <!-- <a href="#kickstarter-header" class="back-to-top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a> -->
 
 
         <!-- Plugin JavaScript -->
@@ -279,8 +277,8 @@
                 $('.reddit_btn_2').click(function(){ga('send', 'event', 'crowdfunding', 'share', 'reddit-2');});
 
                 $('#igg_btn').click(function(){ga('send', 'event', 'crowdfunding', 'click_donate', 'top');});
-                $('#join_campaign').click(function(){ga('send', 'event', 'crowdfunding', 'click_donate', 'bottom');});
-                $('#readmore_campaign').click(function(){ga('send', 'event', 'crowdfunding', 'click_readmore', 'bottom');});
+                $('#donate_button').click(function(){ga('send', 'event', 'crowdfunding', 'click_donate', 'bottom');});
+                $('#contact_button').click(function(){ga('send', 'event', 'crowdfunding', 'click_readmore', 'bottom');});
 
                 $('.sticky-mailchimp').contents().find("#mc-embedded-subscribe").click(function(){ga('send', 'event', 'crowdfunding', 'signup_sticky', $('.sticky-mailchimp').contents().find(".email_input_k").val(), 1);});
                 $('.sticky-mailchimp2').contents().find("#mc-embedded-subscribe").click(function(){ga('send', 'event', 'crowdfunding', 'signup_sticky', $('.sticky-mailchimp2').contents().find(".email_input_k").val(), 1);});
