@@ -10,7 +10,8 @@ module.exports = function(grunt) {
         },
         files: {
           // target.css file: source.less file
-          "fle_site/static/css/styles.css": "fle_site/static/less/styles.less"
+          "fle_site/static/css/styles.css": "fle_site/static/less/styles.less",
+          "fle_site/static/css/greenhouse_styles.css": "fle_site/static/less/greenhouse_styles.less"
         }
       }
     }
