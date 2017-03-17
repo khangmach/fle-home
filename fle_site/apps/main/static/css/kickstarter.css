@@ -677,7 +677,7 @@ mark{
   text-align: center;
 }
 #footer-kolibri {
-  width: 300px;
+  width: 200px;
   position: relative;
   top: 30px;
   opacity: 0.7;
@@ -702,9 +702,9 @@ mark{
   font-family: "Montserrat";
   text-transform: none;
   font-weight: normal;
-  font-size: 60px;
+  font-size: 40px;
   color: white;
-  padding: 200px 0 0 0;
+  padding: 100px 0 0 0;
   margin: 0 !important;
 }
 
@@ -860,31 +860,29 @@ mark{
 }
 
 #donate_button {
-  color: #FFCC00;
-  font-size:30px;
+  color: #FFFFFF;
+  font-size:26px;
   font-weight: 100;
-  background-color: #8670A1;
+  background-color: #00AEF0;
   padding: 10px 30px;
-  border-radius: 15px;
-  border: 5px solid #FFCC00;
+  border-bottom: 5px solid #3A7AA2;
 }
 #donate_button:hover {
-  background-color: #FFCC00;
-  color:#8670A1; 
+  background-color: #4BCAFA;
+  color:#FFFFFF; 
 }
 
 #contact_button {
-  color: #FFCC00;
-  font-size:30px;
+  color: #FFFFFF;
+  font-size:26px;
   font-weight: 100;
-  background-color: #7E7D8A;
+  background-color: #996189;
   padding: 10px 30px;
-  border-radius: 15px;
-  border: 5px solid #FFCC00;
+  border-bottom: 5px solid #652553;
 }
 #contact_button:hover {
-  background-color: #FFCC00;
-  color: #8670A1;
+  background-color: #C67BB1;
+  color: #FFFFFF;
 }
 
 
