@@ -362,6 +362,7 @@ header {
 span.hidden-xs.hidden-sm {
   display: inline !important;
 }
+
 .intro-heading2 {
   color: white;
   z-index: -1;
@@ -373,6 +374,11 @@ span.hidden-xs.hidden-sm {
   text-align: left;
   left: -20px;
 }
+
+.intro-heading3 {
+  text-align:center;
+}
+
 #header-mailchimp {
   position: relative;
   z-index: 999;
