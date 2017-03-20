@@ -53,10 +53,11 @@
 	p.slim-text {
 		font-size: 24px;
 	}
-	#dreams, .fle_title h1,
+
+	/*#dreams, .fle_title h1,
 	#fle_timeline .fle_title h1 {
 		font-size: 50px;
-	}
+	}*/
 }
 
 @media screen and (max-width: 1060px) {
@@ -76,9 +77,14 @@
 	#slide_tablet {
 		display: none;
 	}
-	#dreams, .fle_title h1,
+
+	.fle_title h1,
 	#fle_timeline .fle_title h1 {
-		font-size: 40px;
+		font-size: 30px;
+	}
+
+	#dreams{
+		font-size:25px;
 	}
 	.sticky-signup2 {
 		text-align: center;
