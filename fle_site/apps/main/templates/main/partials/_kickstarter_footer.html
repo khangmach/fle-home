@@ -1,12 +1,46 @@
 {% load staticfiles %}
 
-<h1 id="dreams">Let's help their dreams take flight!</h1>
-<div id="footer-logo"><img id="footer-kolibri" src="{% static 'img/kickstarter/about/kolibri.png' %}"></div>
+
+<!--<div id="footer-logo"><img id="footer-kolibri" src="{% static 'img/kickstarter/about/kolibri.png' %}"></div>-->
+<h3 id="dreams">We're hard at work prepping Kolibri to take flight. <br>Subscribe to our newsletter for updates!</h3>
 <br><br><br>
 <center>
-<span class="lowcase"><a id="donate_button" href="{% url "donate" %}" target="_blank">Donate</a></span>
-&nbsp;&nbsp;&nbsp;
-<span class="lowcase"><a id="contact_button" href="mailto:info@learningequality.org">Contact Us</a></span>
+
+
+<!-- ======== Start Signup Form ========-->
+<div class="container">
+<!--<div class="pageTitle">NEW MASTER - FLE Insider Updates Signup</div>-->
+<form action="//learningequality.us6.list-manage.com/subscribe/post?u=023b9af05922dfc7f47a4fffb&amp;id=d56041116d" method="post" >
+<input type="hidden" name="u" value="023b9af05922dfc7f47a4fffb">
+<input type="hidden" name="id" value="d56041116d">
+<table cellpadding="5" cellspacing="0" border="0" align="center">
+
+<tr>
+<!--<td align="right" class="formLabel">Email Address <span class="req asterisk">*</span>:</td>-->
+<td>
+    <input type="email" autocapitalize="off" autocorrect="off" class="emailinput" name="MERGE0" id="MERGE0" size="25" placeholder="Email Address">
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<!--
+IF you want this to work with our Facebook app, your submit button *must* start with this:
+    <input type="submit"
+and end with a >. You can have whatever else you'd like in the rest of the tag, and we'll maintain any custom "value" you set.
+-->
+<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_023b9af05922dfc7f47a4fffb_d56041116d" tabindex="-1" value=""></div>
+<input type="submit" class="subbutton"  name="submit" value="Subscribe!" />
+</td>
+</tr>
+</table>
+</form>
+</div>
+
+<!-- ======== EndSignup Form ========-->
+
 </center>
 <br><br>
 
@@ -14,13 +48,38 @@
 	<!-- <img id="footer-kolibri" src="{% static 'img/kickstarter/about/kolibri.png' %}"> -->
 	<!-- <img id="footer-kickstarter" src="{% static 'img/kickstarter/kickstarter-logo.png' %}"> -->
     <div id="sign-up">
-        <div id="mc_embed_signup">
+        <div>
             <div class="social_btns" id="footer-social-btns">
-                <a class="fe_share_btn" href="https://www.facebook.com/sharer/sharer.php?u=learningequality.org/kolibri" target="_blank"><div class="fb_btn_2"><span class="fa-stack fa-3x"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></div></a>
+                
+                    <div class="fb_btn_2">
+                        <span class="fa-stack fa-3x">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x"></i>
+                        </span>
+
+                        <a class="social-buttons-footer" href="https://www.facebook.com/learningequality">Follow us on Facebook</a>
+
+                    </div>
+
+                    <br><br>
+
+                    <div class="tw_btn_2">
+                        <span class="fa-stack fa-3x">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x"></i>
+                        </span>
+
+                        <a class="social-buttons-footer" href="https://twitter.com/LearnEQ">Follow us on Twitter</a>
+                        
+                    </div>
+                
+
+                
+                
                 <!-- <div class="space_taker"></div> -->
-                <a class="twitter_follow_btn" href="http://twitter.com/home?status=@LearnEQ is using innovative %23EdTech to help bridge the %23DigitalDivide. Learn more about their new platform, %23Kolibri http://bit.ly/1QAUOuV" target="_blank"><div class="tw_btn_2"><span class="fa-stack fa-3x"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></div></a>
+                <!--<a class="twitter_follow_btn" href="https://twitter.com/LearnEQ" target="_blank"><div class="tw_btn_2"><span class="fa-stack fa-3x"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></div></a>-->
                 <!-- <div class="space_taker"></div> -->
-                <a class="reddit_submit_btn" href="http://www.reddit.com/submit?url=https://learningequality.org/kolibri&amp;title=" target="_blank"><div class="reddit_btn_2"><span class="fa-stack fa-3x"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-reddit fa-stack-1x"></i></span></div></a>
+                <!--<a class="reddit_submit_btn" href="http://www.reddit.com/submit?url=https://learningequality.org/kolibri&amp;title=" target="_blank"><div class="reddit_btn_2"><span class="fa-stack fa-3x"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-reddit fa-stack-1x"></i></span></div></a>-->
             </div>
         </div>
     </div>

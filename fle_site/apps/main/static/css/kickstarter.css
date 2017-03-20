@@ -362,6 +362,7 @@ header {
 span.hidden-xs.hidden-sm {
   display: inline !important;
 }
+
 .intro-heading2 {
   color: white;
   z-index: -1;
@@ -373,6 +374,19 @@ span.hidden-xs.hidden-sm {
   text-align: left;
   left: -20px;
 }
+
+.intro-heading3 {
+  text-align:center;
+  font-weight:300;
+  text-transform:uppercase;
+  font-family: "Montserrat";
+  font-size:24px;
+  margin-top:20px;
+  margin-bottom:10px;
+  line-height:1.1;
+  color:#ffffff;
+}
+
 #header-mailchimp {
   position: relative;
   z-index: 999;
@@ -412,7 +426,7 @@ section#contact {
   margin-bottom: -60px;
   padding: 0;
   height: 100vh;
-  min-height: 800px;
+  min-height: 600px;
   position: relative;
   top: -20px;
   /*z-index: 5;*/
@@ -676,10 +690,22 @@ mark{
 #footer-logo {
   text-align: center;
 }
+
+.social-buttons-footer{
+font-size:14px;
+color:#ffffff;
+padding-left:10px;
+top:10px;
+}
+
+.social-buttons-footer:hover{
+  color:#ffffff;
+}
+
 #footer-kolibri {
-  width: 300px;
+  width: 150px;
   position: relative;
-  top: 30px;
+  top: 60px;
   opacity: 0.7;
 }
 .foot_containor #footer-kickstarter {
@@ -702,11 +728,44 @@ mark{
   font-family: "Montserrat";
   text-transform: none;
   font-weight: normal;
-  font-size: 60px;
+  font-size: 40px;
   color: white;
-  padding: 200px 0 0 0;
+  padding: 100px 0 0 0;
   margin: 0 !important;
 }
+
+/*Styles for Updated Mailchimp Form*/
+.error {
+  color:#FF0000; 
+  font-weight:bold; 
+  font-size:12px; 
+  font-family:verdana;  
+  margin-top: 10px; 
+  margin-bottom:15px;
+}
+
+.small {
+  font-size:11px;
+}
+
+.subbutton { 
+  background-color:#00AEF0; 
+  color:#ffffff; border:none; 
+  width:300px; 
+  height:50px; 
+  border-bottom:5px solid #3A7AA2; 
+  font-size:18px; 
+}
+
+.emailinput{ 
+  width:300px;
+  height:50px; 
+  font-size:16px; 
+  border: 1px solid #E4E4E4; 
+  background-color:#ffffff; 
+  padding-left:5px; 
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);}
+
 
 /* Media Query Min-Width 700px */
 
@@ -846,7 +905,7 @@ mark{
   color: rgba(255, 255, 255, 1);
 }
 .social_btns {
-  font-size: 20px;
+  font-size: 9px;
   z-index: 3;
   position: relative;
 }
@@ -860,31 +919,29 @@ mark{
 }
 
 #donate_button {
-  color: #FFCC00;
-  font-size:30px;
+  color: #FFFFFF;
+  font-size:26px;
   font-weight: 100;
-  background-color: #8670A1;
+  background-color: #00AEF0;
   padding: 10px 30px;
-  border-radius: 15px;
-  border: 5px solid #FFCC00;
+  border-bottom: 5px solid #3A7AA2;
 }
 #donate_button:hover {
-  background-color: #FFCC00;
-  color:#8670A1; 
+  background-color: #4BCAFA;
+  color:#FFFFFF; 
 }
 
 #contact_button {
-  color: #FFCC00;
-  font-size:30px;
+  color: #FFFFFF;
+  font-size:26px;
   font-weight: 100;
-  background-color: #7E7D8A;
+  background-color: #996189;
   padding: 10px 30px;
-  border-radius: 15px;
-  border: 5px solid #FFCC00;
+  border-bottom: 5px solid #652553;
 }
 #contact_button:hover {
-  background-color: #FFCC00;
-  color: #8670A1;
+  background-color: #C67BB1;
+  color: #FFFFFF;
 }
 
 
