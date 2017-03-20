@@ -734,6 +734,39 @@ top:10px;
   margin: 0 !important;
 }
 
+/*Styles for Updated Mailchimp Form*/
+.error {
+  color:#FF0000; 
+  font-weight:bold; 
+  font-size:12px; 
+  font-family:verdana;  
+  margin-top: 10px; 
+  margin-bottom:15px;
+}
+
+.small {
+  font-size:11px;
+}
+
+.subbutton { 
+  background-color:#00AEF0; 
+  color:#ffffff; border:none; 
+  width:300px; 
+  height:50px; 
+  border-bottom:5px solid #3A7AA2; 
+  font-size:18px; 
+}
+
+.emailinput{ 
+  width:300px;
+  height:50px; 
+  font-size:16px; 
+  border: 1px solid #E4E4E4; 
+  background-color:#ffffff; 
+  padding-left:5px; 
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);}
+
+
 /* Media Query Min-Width 700px */
 
 @media (min-width: 700px) {
