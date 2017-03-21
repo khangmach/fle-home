@@ -2,6 +2,10 @@
 
 <!-- Responsive nav bar based on: http://getbootstrap.com/components/#navbar -->
 
+{% block headcss %}
+    <link rel="stylesheet" href="{% static 'css/google_banner.css' %}">
+{% endblock headcss %}
+
 <nav class="navbar navbar-default" id="fle-navbar" role="navigation">
   <div class="container-fluid">
       <div class="container-fluid brand-container">
@@ -43,6 +47,6 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<!-- <a href="https://learningequality.org/r/indiegogo-banner-redirect">
+ <!--<a href="https://learningequality.org/r/indiegogo-banner-redirect">
   <p id="indiegogo_text">We need your support on our Indiegogo Campaign; <span id="inner_indiegogo_text">Learn More! </span><span><img id="indiegogo_badge" alt="Indiegogo" src="{% static 'img/kickstarter/indiegogo_generosity.png' %}"></span></p>
-</a> -->
+</a>-->
