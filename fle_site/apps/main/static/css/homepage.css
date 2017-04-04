@@ -24,13 +24,12 @@ a:hover {
 	color: #3A7AA2;
 }
 .horizontal-divider {
-	margin: 8% auto;
+	margin: 2% auto;
 	color: #d7d7d7;
 	background: #d7d7d7;
-    width: 80%; 
-    height: 0px;
+    width: 90%; 
+    height: 1px;
     display: block;   
-    box-shadow: 0 2px 4px 1px #d7d7d7;
 }
 .title-banner {
 	text-align: center;
@@ -43,7 +42,7 @@ a:hover {
 	font-weight: bold;
 }
 .title-banner span {
-	color: #5BC49F;
+	color: #ffffff;
 	font-size: 16px;
 	max-width: 700px;
 }
@@ -53,11 +52,12 @@ a:hover {
 .container {
 	float: none;
 }
+
 #fle-inner-nav {
 	margin-bottom: 0;
 	border-radius: 0;
 	border: none;
-	background: #082133;
+	background: #f9f9f9;
 	visibility: hidden;
 }
 #fle-inner-nav.affix {
@@ -65,17 +65,17 @@ a:hover {
     display: all;
     top: 0px;
     width: 100%;
-    box-shadow: 1px 0px 10px 5px #000000;
+    box-shadow: 1px 0px 5px 2px #898989;
     visibility: visible;
 }
 .active a,
 #fle-inner-nav li:hover {
-	background: #557284 !important;
-	box-shadow: inset 0 0 8px #1f1f1f;
+	background: #00AEF0 !important;
+	color:#ffffff !important;
 }
 .inner-nav li a,
 .le {
-	color: white !important;
+	color: #00AEF0;
 }
 .navbar-header img {
 	max-height: 50px;
@@ -87,24 +87,42 @@ a:hover {
 	margin: 0 0 0 24%;
 }
 .quote, .author {
-	color: rgb(91, 196, 159);
+	color: #ffffff;
 }
 .btn {
 	margin: 5px;
 	margin-top: 15px;
-	background-color: #359372;
+	background-color: #00AEF0;
 	border-radius: 0px;
 	border: none;
 	padding: 15px 15px;
-	box-shadow: 1px 2px 2px 1px #434343;
 	color: white;
 	letter-spacing: 2px;
 }
 
+.btn:hover{
+	background-color:#3a7aa2;
+}
+
+
+/*=========== BOOTSTRAP NAV STYLE OVERWRITE===============*/
+
+.navbar-default .navbar-toggle{
+	border:none;
+}
+/*
+.navbar-default .navbar-toggle .icon-bar{
+background-color:#ffffff;
+}
+
+#fle-inner-nav > .navbar-header .navbar-toggle{
+background-color:#777777;
+}*/
+
 /*=========== LANDING SCREEN ===============*/
 
 .landing-screen {
-	background: url(../img/nalanda.jpg) no-repeat center center; 
+	background: url(../img/nalanda-bkg.jpg) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -113,18 +131,17 @@ a:hover {
 	max-width: 100%;
 }
 .landing-box {
-	background-color: rgba(37, 80, 105, 0.7);
-	padding: 75px 50px 75px 50px;
-	margin: 12% 50% 0 -50px;
+	padding: 45px 50px 25px 50px;
+	margin: 7% 50% 0 -50px;
 	display: block;
 	min-width: 340px;
-	box-shadow: 1px 1px 15px 1px #292929;
 }
 #landing-header {
 	font-size: 40px;
 	font-weight: 900;
 	color: white;
 	line-height: 1.5em;
+	text-shadow: 1px 1px #2e2e2e;
 }
 #landing-description {
 	font-size: 20px;
@@ -133,6 +150,8 @@ a:hover {
 	padding-top: 20px;
 	max-width: 500px;
 	line-height: 1.6em;
+	font-weight:normal;
+	text-shadow: 1px 1px #2e2e2e;
 }
 .learn-more {
 	color: white;
@@ -145,13 +164,14 @@ a:hover {
 
 .mission-screen {
 	background: url(../img/earth-bg.png) no-repeat center center;
+	background-size:350px;
 	-webkit-background-size: 50% contain;
 	-moz-background-size: 50% contain;
 	-o-background-size: 50% contain;
 	background-size: 50% contain;
 	text-align: center;
-	padding: 12% 0 12% 0;
-	max-height: 1200px;
+	padding: 4% 0 2% 0;
+	max-height: 400px;
 	margin: auto;
 	float: none;
 }
@@ -159,7 +179,7 @@ a:hover {
 	float: none;
 	margin: auto auto;
 	text-align: center;
-	padding: 8% 0 0 0;
+	padding-top:35px;
 }
 .mission-header {
 	font-weight: bold;
@@ -176,7 +196,6 @@ a:hover {
 	display: inline-block;
 }
 .form-button {
-	box-shadow: 2px 2px 2px 1px #bcbcbc !important;
 	padding: 10px 15px;
 }
 .form-control {
@@ -294,7 +313,7 @@ a:hover {
 .child-pic img {
 	max-width: 300px;
 	position: relative;
-	top: -100px;
+	top: -70px;
 }
 .child-number2 {
 	font-size: 45px;
@@ -345,7 +364,7 @@ a:hover {
 
 /*===================== THE BRIDGE ========================*/
 .bridge-banner {
-	background: url(../img/bridge.png) no-repeat right 15% bottom #0E3049;
+	background: url(../img/pencils.png) no-repeat right 15% bottom #0E3049;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -395,6 +414,7 @@ a:hover {
 .impact {
 	float: none;
 	text-align: left;
+	padding-top:60px;
 }
 .impact-box {
 	margin: auto;
@@ -402,9 +422,8 @@ a:hover {
 .impact img {
 	text-align: center;
 	float: none;
-	width: 85%;
-	max-width: 350px;
-	margin: 7% auto;
+	width: 45%;
+	max-width: 300px;
 	display: block;
 }
 .ka-lite h2 {
@@ -629,21 +648,21 @@ a:hover {
 }
 @media (max-width: 991px) {
 	#landing-header {
-		font-size: 20px;
+		font-size: 28px; /*prev 20*/
 	}
 	#landing-description {
 		font-size: 16px;
 	}
 	.landing-box {
-		padding: 50px 75px;
-		margin: 12% 50% 0 -50px;
+		padding: 50px 55px;
+		margin: 12% 50% 0 -30px;
 	}
 	.poverty img {
 		max-width: 225px;
 	}
 	.child-number,
 	.child-number2 {
-		font-size: 28px;
+		font-size: 20px;
 	}
 	.child-exp,
 	.child-exp2 {
