@@ -26,7 +26,7 @@
 <!-- ============= LANDING SCREEN ================ -->
 		<div class="row landing-screen">
 			<div class="container">
-				<div class="container col-xs-8 col-sm-8 col-md-9 col-lg-8 landing-box">
+				<div class="container col-xs-12 col-sm-12 col-md-9 col-lg-8 landing-box">
 					<span id="landing-header">HELPING MAKE UNIVERSAL EDUCATION A REALITY</span>
 					<span id="landing-description">We are bridging the global digital divide by bringing the online learning revolution offline.</span>
 				</div>
@@ -41,7 +41,7 @@
 		<div class="row mission-screen">
 			<div id="learn-more" class="col-xs-10 col-sm-8 col-md-8 col-lg-5 mission-box">
 				<h2 class="mission-header darkblue">Our Mission</h2>
-				<h4 class="mission-state bold">At <a href="{% url 'mission' %}"><span class="lightblue">Learning Equality</span></a>, we are committed to enabling universal access to high quality open educational resources, and creating tools that empower communities to author and share their own content.</h4>
+				<h4 class="mission-state bold">At Learning Equality, we are committed to enabling universal access to high quality open educational resources, and creating tools that empower communities to author and share their own content.</h4>
 				<a href="{% url 'mission' %}"><!-- <button type="submit" class="btn form-button btn-success" id="about-us">MORE ABOUT US</button> --></a>
 				<br/><br/><br/><br/><br/><br/><br/><br/>
 				<!--<h5 class="bold">Stay connected with our journey.</h5>
@@ -102,12 +102,13 @@
 
 			<div class="poverty container col-xs-10 col-sm-12 col-md-12 col-lg-9">
 				<div id="poverty-intro">
-					<span class="bold">Poverty rates have greatly decreased over the past few decades. However, more than 1.5 billion people around the world are still afflicted by poverty.</span>
+					<h4 class="mission-state bold">Poverty rates have greatly decreased over the past few decades. However, more than 1.5 billion people around the world are still afflicted by poverty.</h4>
 				</div>
 					<img src="{% static 'img/cycle.png' %}" alt="Cycle of poverty">
-				<div id="believe-box">
-					<span class="bold left believe">WE BELIEVE</span>
-					<span id="cycle" class="left">Education is both the key to breaking the cycle of poverty and opening the door to human flourishing.</span>
+
+				<div class="child-total">
+					<span class="child-number2 bold left believe darkblue">We Believe</span>
+					<span class="child-exp2 bold">Education is both the key to breaking the cycle of poverty and opening the door to human flourishing.</span>
 				</div>
 			</div>
 			<hr class="horizontal-divider">
@@ -133,7 +134,7 @@
 			<!-- ============= THE DIVIDE ================ -->
 			<div class="divide container col-xs-10 col-sm-12 col-md-12 col-lg-9">
 				<div id="divide-intro">
-					<span class="bold">There are now more resources online than ever before for accessing high quality educational content for free in any subject.<br>However,</span>
+					<h4 class="mission-state bold">There are now more resources online than ever before for accessing high quality educational content for free in any subject.<br>However,</h4>
 				</div>
 				<img src="{% static 'img/no-wifi.png' %}" alt="No Wifi">
 				<div id="divide-box">
@@ -141,7 +142,7 @@
 					<span id="disconnected" class="left bold">ARE DISCONNECTED</span>
 				</div>
 				<div id="divide-outro">
-					<span>This is the divide. The 60% of the world who could benefit the most from this tremendous opportunity lack the connectivity needed to access it.</span>
+					<h4 class="mission-state bold">This is the divide. The 60% of the world who could benefit the most from this tremendous opportunity lack the connectivity needed to access it.</h4>
 				</div>
 			</div>
 		</div>
@@ -158,7 +159,7 @@
 			</div>
 			<div class="bridge container col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="bridge-intro bold">
-					<span>A universal education means that anyone, anywhere -- online or offline -- can access it. We realized the potential emerging out of three converging trends:</span>
+					<h4 class="mission-state bold">A universal education means that anyone, anywhere -- online or offline -- can access it. We realized the potential emerging out of three converging trends:</h4>
 				</div>
 				<div class="bridge-box bbox row">
 					<div class="cost-effective col-lg-4 col-md-4 col-sm-4">
@@ -180,7 +181,7 @@
 				</div>
 				<hr class="horizontal-divider">
 				<div class="bridge-intro bold">
-					<span>Leveraging these trends, we build and support educational tools that bridge the digital divide by being:</span>
+					<h4 class="mission-state bold">Leveraging these trends, we build and support educational tools that bridge the digital divide by being:</h4>
 				</div>
 				<div class="bridge-box row">
 					<div class="cost-effective col-lg-4 col-md-4 col-sm-4">
@@ -215,24 +216,27 @@
 			</div>
 			<div class="impact-box container">
 				<div class="impact container col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<img src="{% static 'img/ka-lite.png'%}" alt="KA Lite">
-					<div class="ka-lite col-lg-7 col-md-7 col-sm-7">
-						<h2><strong>An offline version of Khan Academy</strong></h2>
+					<div class="ka-lite col-lg-6 col-md-6 col-sm-7">
+						<img src="{% static 'img/ka-lite.png'%}" alt="KA Lite">
+						<h3><strong>An offline version of Khan Academy</strong></h3>
 						<p>Installed in more than 175 countries and territories, used by hundreds of organizations, and deployed in schools, orphanages, refugee camps, community centers, and correctional facilities around the world.</p>
 						<a href="{% url 'ka_lite' %}"><button type="button" class="nav btn btn-success">LEARN MORE</button></a>
 					</div>
-					<div class="ka-lite-vid col-lg-5 col-md-5 col-sm-5">
-						<iframe width="560" height="315" src="//www.youtube.com/embed/nFlmmV90u8w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+					<div class="ka-lite-vid col-lg-6 col-md-5 col-sm-5">
+						<iframe width="630" height="260" src="//www.youtube.com/embed/nFlmmV90u8w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<!-- ============= CAROUSEL ================ -->
 	<div class="container carousel-box">
-		<!-- ============= CAROUSEL ================ -->
+		
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="7500">
 		  <!-- Indicators -->
+		  
+			
 		  <ol class="carousel-indicators">
 		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -240,6 +244,7 @@
 		  </ol>
 
 		  <!-- Wrapper for slides -->
+		  
 		  <div class="carousel-inner" role="listbox">
 		  	<div class="item active active-link">
 		      <a href="https://learningequality.org/blog/2013/inspiring-confidence-by-edward-j-hills"><img src="{% static 'img/washington.jpg' %}" id="carousel-img" alt="Washington"></a>
@@ -269,21 +274,25 @@
 		      </div>
 		    </div>
 		  </div>
-
+			
 		  <!-- Controls -->
+
 		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 		    <span class="sr-only">Previous</span>
 		  </a>
+
 		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
 		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 		    <span class="sr-only">Next</span>
 		  </a>
 		  
 		</div>
+
+		
 		<!-- ============= END CAROUSEL ================ -->
-
-
+		
+		
 		<div class="blog-box" id="blog-box">
 			<a href="{% url 'blog' %}" class="blog" target="_blank"><div>
 				<h3>READ OUR BLOG</h3>
@@ -292,9 +301,9 @@
 	 			<h3>IN THE NEWS</h3>
 			</div></a>
 		</div>
-	</div>
+		</div>
 
-		<div class="container partners col-lg-12 col-md-12 col-sm-12">
+		<div class="container partners col-lg-12 col-md-12 col-sm-6 col-xs-6">
 			<h3><strong>Our Partners and Sponsors</strong></h3>
 			<img src="{% static 'img/unicef.png' %}" alt="UNICEF">
 			<img src="{% static 'img/khan.png' %}" alt="Khan Academy">
@@ -312,39 +321,23 @@
 				<span>You can help us make universal education a reality.</span>
 			</div>
 			<div class="involved container">
-				<!--<div class="container">
-					<div class="col-lg-6 col-md-6 col-sm-6">
-						<img class="donate_backgroud_img" src="{% static 'img/donate_backgroud_img.png' %}">
-					</div>
-					<div class="donate col-lg-6 col-md-6 col-sm-6">
-						<h3><strong>Invest in a bright future</strong></h3>
-						<a href="{% url 'donate' %}"><button class="give btn form-button btn-success">DONATE</button></a>
-					</div>
-				</div>-->
 				<div class="container involve-links">
 					<div class="container">	
 						<div class="col-lg-4 col-md-4 col-sm-4">
 							<i id="deploymentIcon" class="fa fa-paper-plane fa-5x"></i>
 							<p>Join the team! Help us deploy world-changing tools.</p>
+							<a href="{% url 'infographic' %}"><button class="btn form-button btn-success">DEPLOY</button> </a>
+
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-4">
 							<img src="{% static 'img/github.png' %}" alt="GitHub">
 							<p>Help build world-changing tools! Check out our open-source repositories.</p>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4">
-							<img src="{% static 'img/translate.png' %}" alt="Translate">
-							<p>Help make our tools available in more languages!</p>
-						</div>
-					</div>
-					<div class="container">
-						<div class="col-lg-4 col-md-4 col-sm-4">
-							<a href="{% url 'infographic' %}"><button class="btn form-button btn-success">DEPLOY</button> </a>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4">
 							<a href="https://github.com/learningequality"><button class="btn form-button btn-success">GITHUB</button></a>
 							<a href="{% url 'jobs' %}"><button class="btn form-button btn-success">JOBS</button></a>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-4">
+							<img src="{% static 'img/translate.png' %}" alt="Translate">
+							<p>Help make our tools available in more languages!</p>
 							<a href="https://github.com/learningequality/ka-lite/wiki/Internationalization:-Contributing-Translations"><button class="btn form-button btn-success">TRANSLATE</button></a>
 						</div>
 					</div>

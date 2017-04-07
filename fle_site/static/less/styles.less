@@ -104,9 +104,9 @@ a {
     }
 
     a {
-        color: @white;
+        color: #ffffff;
         &:hover {
-            color: @off-white;
+            color: @white;
         }
     }
     b.caret {
@@ -118,12 +118,12 @@ a {
     }
     .fle-logo {
         height: 1px;
-        font-size: 20px;
+        font-size: 16px;
         letter-spacing: 1px;
         font-family: @logo_font;
         font-weight: 700;
         position: relative;
-        margin-top: -6px;
+        margin-top: -4px;
         .logo-font-thin {
             font-weight: 100;
         }
@@ -137,7 +137,7 @@ a {
         }
     }
     #le-logo{
-        height: 35px;
+        height: 30px;
         margin-right: 5px;
         margin-top: -3px;
     }
@@ -154,13 +154,14 @@ a {
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-color: @darkgray;
+    background-color: #151515;
     color: @white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     .row {
         margin-right: 0px;
     }
+
     a {
         color: @white;
         text-decoration: none;
@@ -175,9 +176,11 @@ a {
     }
     .list-icons{
         list-style-type: none;
-        float: right;
+        padding-left:15px;
+        float: left;
         li {
             display: inline;
+            margin-right:10px;
             .fb-like {
                 top: -5px;
                 padding-right: 4px;
@@ -189,17 +192,56 @@ a {
             }
         }
         @media (max-width: 989px) {
-            float: none;
-            text-align: center;
+            float: left;
             padding-top: 10px;
             position: relative;
-            left: -5px;
+            padding-left:15px;
         }
     }
+
     #cc-icon {
         height: 15px;
         margin-left: 8px;
     }
+
+    .footer-email{ 
+    width:210px;
+    height:35px; 
+    font-size:14px; 
+    border: 1px solid #E4E4E4; 
+    background-color:#ffffff; 
+    padding-left:5px; 
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
+    }
+
+    .footer-subbutton { 
+    background-color:#00AEF0; 
+    color:#ffffff; border:none; 
+    width:100px; 
+    height:35px; 
+    font-size:14px; 
+    }
+
+    @media (min-width:992px){
+        .email-area{
+        top:-40px;
+        }
+    }
+
+    .news-heading{
+    color:#ffffff;
+        @media (max-width: 989px) {
+            margin-top:25px;
+        }
+
+    }
+
+    #mce-success-response{
+        font-size:12px;
+        padding-top:5px;
+        color: #00AEF0;
+    }
+
 }
 
 // --------------------
@@ -911,6 +953,7 @@ div.comm-btns.row {
 .navbar-nav li:hover {
  background-color: #346E92;
 }
+
 
 //indiegogo
 #igg_btn {
