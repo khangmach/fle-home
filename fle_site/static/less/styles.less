@@ -24,14 +24,8 @@ html {
 body {
     background-color: @white;
     @media (min-width: 990px) {
-        margin-bottom: @footer-height;
         padding-bottom: 0px;
         }
-    @media (max-width: 989px) {
-        margin-bottom: @footer-height-collapsed;
-        // padding-bottom: @footer-height-collapsed;
-
-    }
 }
 
 html, span, a, p, h1, h2 , h3, h4, h5, h6, li, dt, dd {
@@ -152,7 +146,6 @@ a {
 
 #footer {
     width: 100%;
-    position: absolute;
     bottom: 0;
     background-color: #151515;
     color: @white;
@@ -484,6 +477,10 @@ a.icon:before {
     }
 }
 
+.panel-extra{
+    margin-bottom: 120px;
+}
+
 // Shared side nav for about pages
 
 .side-nav {
@@ -676,7 +673,6 @@ a.icon:before {
 
 #download {
     background-color:#E7EFF4;
-    margin-bottom: 100px;
     padding-bottom: 150px;
     .download-content {
         h2 {
