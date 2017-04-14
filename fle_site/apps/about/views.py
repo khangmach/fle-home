@@ -39,6 +39,12 @@ def jobs(request):
         "jobs": Job.objects.active()
     }
 
+@render_to("about/grants.html")
+def grants(request):
+    return {
+        "jobs": Job.objects.active()
+    }
+
 @render_to("about/supporters.html")
 def supporters(request):
     sponsors = SupportingOrganization.objects.filter(organization_type__title="sponsor")
