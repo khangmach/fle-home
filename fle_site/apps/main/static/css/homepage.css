@@ -75,13 +75,13 @@ a:hover {
 }
 .active a,
 #fle-inner-nav li:hover {
-	background: #00AEF0;
+	background: #008fc4;
 	color:#ffffff;
 }
 
 .inner-nav li a,
 .le {
-	color: #00AEF0;
+	color: #008fc4;
 }
 
 .navbar-header img {
@@ -106,7 +106,7 @@ a:hover {
 .btn {
 	margin-top:15px;
 	margin-bottom:15px;
-	background-color: #00AEF0;
+	background-color: #008fc4;
 	border-radius: 0px;
 	border: none;
 	padding: 15px 15px;
@@ -119,8 +119,8 @@ a:hover {
 }
 
 .btn-success{
-	background-color:#00AEF0;
-	border-color:#00AEF0;
+	background-color:#008fc4;
+	border-color:#008fc4;
 }
 
 /*===========BOOTSTRAP NAV STYLE OVERWRITE===============*/
@@ -131,7 +131,7 @@ a:hover {
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover{
-	background-color: #00AEF0;
+	background-color: #008fc4;
 	color:#ffffff;
 }
 
