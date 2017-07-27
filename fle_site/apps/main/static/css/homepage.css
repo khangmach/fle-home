@@ -75,7 +75,7 @@ a:hover {
 }
 .active a,
 #fle-inner-nav li:hover {
-	background: #008fc4;
+	background: #00AEF0;
 	color:#ffffff;
 }
 
@@ -140,7 +140,7 @@ a:hover {
 }
 
 #fle-navbar li > a:hover{
-	background-color:#306484;
+	background-color:#00AEF0;
 	color:#ffffff;
 }
 
@@ -152,12 +152,11 @@ a:hover {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 100vh;
+	height: 60vh;
 	max-width: 100%;
 }
 .landing-box {
-	padding: 45px 50px 25px 50px;
-	margin: 7% 50% 0 -50px;
+	margin: 50px 50px 0px 0px;
 	display: block;
 	min-width: 340px;
 }
@@ -695,9 +694,9 @@ a:hover {
 	#landing-description {
 		font-size: 20px;
 	}
-	.landing-box {
+	/*.landing-box {
 		padding: 50px 55px;
-	}
+	}*/
 	.poverty img {
 		max-width: 225px;
 	}
@@ -853,14 +852,14 @@ a:hover {
 
 
 /*========= MOBILE DEVICES FLIPPED ON SIDE ============*/
-@media (max-height: 768px) {
+@media (max-height: 500px) {
 	.landing-screen {
-		max-height: 768px;
+		max-height: 500px;
 	}
 }
-@media (max-height: 667px) {
+@media (max-height: 500px) {
 	.landing-screen {
-		max-height: 667px;
+		max-height: 500px;
 	}
 }
 @media (max-height: 587px) {
