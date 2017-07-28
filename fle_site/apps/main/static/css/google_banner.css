@@ -26,10 +26,11 @@
 }
 
 .bloglink{
-  padding:8px;
+  padding:12px;
   color:#ffffff;
   background-color:#00AEF0;
   font-size:16px;
+  border-radius:2px;
 }
 
 .bloglink:hover{

@@ -15,7 +15,7 @@
 
       <img alt="Learning Equality" id="google-le-logo" src="{% static 'img/fle-logo-center.png' %}">
       <img alt="Google.org" id="google-logo" src="{% static 'img/google.org_tm_color_96x36px.png' %}">
-      <p class="funding-text">Learning Equality is proudly one of the first grant recipients under Google.org’s Global Education Commitment. <br><br/><a class="bloglink" href="http://bit.ly/2mLDSsL">Read more on our blog</a></p>
+      <p class="funding-text">Learning Equality is proudly one of the first grant recipients under Google.org’s Global Education Commitment. <br><br/><a class="bloglink" href="http://bit.ly/2mLDSsL">READ OUR BLOG</a></p>
       
   </div>
 </div>
@@ -29,11 +29,12 @@
 				<div class="container col-xs-12 col-sm-12 col-md-9 col-lg-8 landing-box">
 					<span id="landing-header">HELPING MAKE UNIVERSAL EDUCATION A REALITY</span>
 					<span id="landing-description">We are bridging the global digital divide by bringing the online learning revolution offline.</span>
-				</div>
-				<div class="landing-buttons ">
-					<a href="#learn-more"><button type="button" class="btn btn-success">LEARN MORE</button></a>
+					<a href="#learn-more"><button type="button" class="btn btn-success">OUR MISSION</button></a>
 					<a href="#involved"><button type="button" class="nav btn btn-success">GET INVOLVED</button></a>
 				</div>
+				
+					
+				
 			</div>
 		</div>
 
@@ -60,7 +61,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="le navbar-brand scroll-to-top" href="#"><!--<img src="{% static 'img/fle-logo.png' %}" alt="Logo">-->LEARNING EQUALITY</a>
+	          <a class="le navbar-brand scroll-to-top" href="#"><!--<img src="{% static 'img/fle-logo.png' %}" alt="Logo">-->OUR MISSION</a>
 	        </div>
 	        <!-- Collect the nav links, forms, and other content for toggling -->
 	      <div class="collapse navbar-collapse" id="ka-inner-nav-collapse">
@@ -90,25 +91,42 @@
 			<!-- ============= POVERTY ================ -->
 			<div class="title-banner divide-banner" id="divide">
 				<h1>THE DIVIDE</h1>
-				<span>Understand why universal education is our cause.</span>
+				<span>Understand why access to universal education is our cause.</span>
 			</div>
 
-			<div class="poverty container col-xs-10 col-sm-12 col-md-12 col-lg-9">
-				<div id="poverty-intro">
+
+			<div id="poverty-intro">
 					<h4 class="mission-state bold">Poverty rates have greatly decreased over the past few decades. However, more than 1.5 billion people around the world are still afflicted by poverty.</h4>
-				</div>
-					<img src="{% static 'img/cycle.png' %}" alt="Cycle of poverty">
-
-				<div class="child-total">
-					<span class="child-number2 bold left believe darkblue">We Believe</span>
-					<span class="child-exp2 bold">Education is both the key to breaking the cycle of poverty and opening the door to human flourishing.</span>
-				</div>
 			</div>
-			<hr class="horizontal-divider">
+
+			<div class="container-fluid">
+				<div class="row divide-row">
+
+					<div class="col-md-12 col-sm-12 col-xs-12 divide-columns">
+						<img src="{% static 'img/cycle.png' %}" class="divide-images" alt="Cycle of poverty">
+						<div class="divide-sections">
+						<span class="child-number2 bold left believe darkblue">We Believe</span>
+						<span class="child-exp2 bold">Education is both the key to breaking the cycle of poverty and opening the door to human flourishing.</span>
+						</div>
+					</div>
+
+					<div class="col-md-12 col-sm-12 col-xs-12 divide-columns">
+						<img src="{% static 'img/children.png'%}" class="divide-images" alt="children">
+						<div class="divide-sections">
+						<span class="child-number2 bold left believe darkblue">1 IN 3</span>
+						<span class="child-exp2 bold">Children around the world lack access to a quality basic education</span>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+
 		
 
 			<!-- ============= CHLDREN ================ -->
-			<div class="container children col-xs-10 col-sm-12 col-md-12 col-lg-10">
+			<!--<div class="container children col-xs-10 col-sm-12 col-md-12 col-lg-10">
 				<div class="child">
 					<div class="child-total">
 						<div>
@@ -121,13 +139,13 @@
 					</div>
 				</div>
 			</div>
-			<hr class="horizontal-divider">
+			<hr class="horizontal-divider">-->
 
 
 			<!-- ============= THE DIVIDE ================ -->
 			<div class="divide container col-xs-10 col-sm-12 col-md-12 col-lg-9">
 				<div id="divide-intro">
-					<h4 class="mission-state bold">There are now more resources online than ever before for accessing high quality educational content for free in any subject.<br>However,</h4>
+					<h4 class="mission-state bold">There are now more quality, free, open educational resources online than ever before. However,</h4>
 				</div>
 				<img src="{% static 'img/no-wifi.png' %}" alt="No Wifi">
 				<div id="divide-box">
@@ -135,7 +153,7 @@
 					<span id="disconnected" class="left bold">ARE DISCONNECTED</span>
 				</div>
 				<div id="divide-outro">
-					<h4 class="mission-state bold">This is the divide. The 60% of the world who could benefit the most from this tremendous opportunity lack the connectivity needed to access it.</h4>
+					<h4 class="mission-state bold">This is the divide. The 60% of the world who could benefit the most from open educational resources lack the connectivity needed to access them.</h4>
 				</div>
 			</div>
 		</div>
@@ -147,28 +165,26 @@
 
 			<div class="title-banner bridge-banner" id="bridge">
 				<h1>THE BRIDGE</h1>
-				<p class="quote"><em>"Education is the most powerful weapon we can use to change the world."</em></p>
-				<p class="author"><br><em>- Nelson Mandela</em></p>
 			</div>
 			<div class="bridge container col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="bridge-intro bold">
-					<h4 class="mission-state bold">A universal education means that anyone, anywhere -- online or offline -- can access it. We realized the potential emerging out of three converging trends:</h4>
+					<h4 class="mission-state bold">Universal education means that anyone, anywhere -- online or offline -- can access it. We realized the potential emerging out of three converging trends:</h4>
 				</div>
 				<div class="bridge-box bbox row">
 					<div class="cost-effective col-lg-4 col-md-4 col-sm-4">
 						<img src="{% static 'img/cc.png'%}" alt="Creative Commons">
 						<h3 class="bold">Open Educational Resources</h3>
-						<p>More and more learning materials are being released under Creative Commons licenses, which allow them to be shared, used, and remixed freely, both online and offline.</p>
+						<p>More and more learning materials are being released under Creative Commons licenses, which allow them to be shared, used, and remixed freely.</p>
 					</div>
 					<div class="collaborate col-lg-4 col-md-4 col-sm-4">
 						<img src="{% static 'img/low-cost.png'%}" alt="Cost Effective">
 						<h3 class="bold">Low Cost Computing</h3>
-						<p>The cost of hardware is decreasing much faster than the cost of Internet bandwidth; devices like the Raspberry Pi and low-end Android tablets open up computing to new segments of humanity.</p>
+						<p>The cost of hardware is decreasing much faster than the cost of internet bandwidth; devices like the Raspberry Pi and low-end Android tablets open up computing to new segments of humanity.</p>
 					</div>
 					<div class="designed col-lg-4 col-md-4 col-sm-4">
 						<img src="{% static 'img/sneakernet.png'%}" alt="Sneakernet">
 						<h3 class="bold">Sneakernet Sharing</h3>
-						<p>In the absence of Internet connectivity, content and software can be distributed through existing human networks, carried on USB sticks and other portable devices to be shared with others.</p>
+						<p>In the absence of internet connectivity, content and software can be distributed through existing human networks, carried on USB sticks and other portable devices to be shared with others.</p>
 					</div>
 					<!--<button class="btn form-button btn-success">LEARN MORE</button>-->
 				</div>
@@ -180,17 +196,17 @@
 					<div class="cost-effective col-lg-4 col-md-4 col-sm-4">
 						<img src="{% static 'img/flexible.png'%}" alt="Flexible and Lightweight">
 						<h3 class="bold">Flexible and Lightweight</h3>
-						<p>In order to enable access for as many people as possible, our tools are designed to run on a broad diversity of devices, ranging from old repurposed hardware, to a wide variety of new low-cost devices.</p>
+						<p>In order to enable access for as many people as possible, our tools are designed to run on a broad diversity of devices, ranging from repurposed hardware, to a wide variety of new low-cost devices.</p>
 					</div>
 					<div class="collaborate col-lg-4 col-md-4 col-sm-4">
 						<img src="{% static 'img/collaborate.png'%}" alt="Collaborate">
 						<h3 class="bold comm">Empowering for Communities</h3>
-						<p>Every person, community, or country knows its own needs and values best, and our role is to collaborate in supporting self-fulfilment, not to dictate solutions. We want to create tools to allow people to learn, teach, create, and share on their own terms.</p>
+						<p>Every person, community, or country knows its own needs and values best. Our role is to collaborate in supporting self-fulfilment, not to dictate solutions. We strive to create tools to allow people to learn, teach, create, and share on their own terms.</p>
 					</div>
 					<div class="designed col-lg-4 col-md-4 col-sm-4">
 						<img src="{% static 'img/design.png'%}" alt="Designed for Everyone">
 						<h3 class="bold">Designed for Everyone</h3>
-						<p>Our tools aim to support diverse user needs, in both classrooms and informal learning environments. We work with our partners to understand and support the needs of contexts that range from orphanages, to schools, to prisons, to refugee camps, to homes.</p>
+						<p>Our tools aim to support diverse user needs in a variety of contexts. We work with our partners to understand and support the needs of orphanages, schools, correctional facilities, refugee camps, and homes.</p>
 					</div>
 					<!--<button class="btn form-button btn-success">LEARN MORE</button>-->
 				</div>
@@ -203,7 +219,7 @@
 		<div class="container-fluid">
 
 			<div class="title-banner impact-banner">
-				<h1>OUR IMPACT</h1>
+				<h1>OUR PRODUCTS</h1>
 				<p class="quote"><em>"The function of education is to teach one to think intensively and to think critically.<br>Intelligence plus character - that is the goal of true education."</em></p>
 				<p class="author"><em><br>- Martin Luther King Jr.</em></p>
 			</div>
@@ -296,7 +312,7 @@
 		</div>
 		</div>
 
-		<div class="container partners col-lg-12 col-md-12 col-sm-6 col-xs-6">
+		<div class="container partners col-lg-12 col-md-12 col-sm-12 col-xs-6">
 			<h3><strong>Our Partners and Sponsors</strong></h3>
 			<img src="{% static 'img/unicef.png' %}" alt="UNICEF">
 			<img src="{% static 'img/khan.png' %}" alt="Khan Academy">
