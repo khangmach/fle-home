@@ -1,7 +1,7 @@
 /*=========== GLOBAL VARIABLES ===================*/
 p, span, h1, h2, 
 h3, h4, h5, h6, .btn {
-	font-family: 'Helvetica Neue', 'Open Sans', 'Montserrat';
+	font-family: 'Open Sans', 'Helvetica Neue', 'Montserrat';
 	line-height: 1.4em;
 	color: #333333;
 	font-weight: bold;
@@ -107,20 +107,20 @@ a:hover {
 	margin-top:15px;
 	margin-bottom:15px;
 	background-color: #008fc4;
-	border-radius: 0px;
-	border: none;
-	padding: 15px 15px;
+	border:none;
+	border-radius:2px;
+	padding: 12px 12px;
 	color: white;
 	letter-spacing: 2px;
 }
 
-.btn:hover{
+.btn:hover, .btn:focus{
 	background-color:#3a7aa2;
 }
 
+
 .btn-success{
-	background-color:#008fc4;
-	border-color:#008fc4;
+	background-color:#00AEF0;
 }
 
 /*===========BOOTSTRAP NAV STYLE OVERWRITE===============*/
@@ -144,6 +144,10 @@ a:hover {
 	color:#ffffff;
 }
 
+.navbar-default .navbar-collapse{
+	border-color:#212121;
+}
+
 /*=========== LANDING SCREEN ===============*/
 
 .landing-screen {
@@ -152,7 +156,7 @@ a:hover {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 60vh;
+	height: 90vh;
 	max-width: 100%;
 }
 .landing-box {
@@ -362,6 +366,24 @@ a:hover {
 	width: 85%;
 	margin: 0 5% 5% 0;
 	display: inline-block;
+}
+.divide-images{
+	width:200px; 
+	margin-right:20px;
+}
+.divide-columns{
+	padding:30px;
+}
+.divide-sections{
+	width:220px; 
+	height:auto; 
+	text-align:left; 
+	display:inline-block; 
+	vertical-align: middle;
+}
+.divide-row{
+	margin-top:20px; 
+	margin-bottom:20px;
 }
 #divide-box {
 	display: inline-block;
@@ -864,15 +886,15 @@ a:hover {
 }
 @media (max-height: 587px) {
 	#landing-header {
-		font-size: 40px;
+		font-size: 28px;
 	}
 	#landing-description,
 	.btn {
-		font-size: 20px;
+		font-size: 16px;
 	}
 	.landing-box {
-		margin: 5% 40% 0 -35px;
-		padding: 15px 35px 15px 35px;
+		margin: 15% 5% 0 -35px;
+		padding: 15px 0px 15px 35px;
 		width: 100%;
 	}
 	.poverty img {
