@@ -156,7 +156,7 @@ a:hover {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 90vh;
+	height: 60vh;
 	max-width: 100%;
 }
 .landing-box {
@@ -893,7 +893,7 @@ a:hover {
 		font-size: 16px;
 	}
 	.landing-box {
-		margin: 15% 5% 0 -35px;
+		/*margin: 15% 5% 0 -35px;*/
 		padding: 15px 0px 15px 35px;
 		width: 100%;
 	}

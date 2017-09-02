@@ -4,7 +4,11 @@
   
     <div class="container">
 
-        <div class="row">
+
+            <div class="row"> <!--Start first row-->
+
+            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12" style="margin-bottom:30px; margin-left:-15px;"> <!--Start socials column-->
+
             <ul class="list-icons">
                     <li>
                         <a href="https://www.facebook.com/learningequality" title="Visit us on Facebook" target="_blank">
@@ -28,6 +32,117 @@
                     </li>
             </ul>
 
+
+            </div> <!--End socials column-->
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 subscription-column"> <!--Start subscription column-->
+                <h5 class="subscription-label">Follow our newsletter!</h5>
+
+                <!-- ======== Start Signup Form ========-->
+
+                <div class="col-lg-4 col-md-6 col-sm-12 subscription-form">
+                <!--<div class="pageTitle">NEW MASTER - FLE Insider Updates Signup</div>-->
+                <form action="//learningequality.us6.list-manage.com/subscribe/post?u=023b9af05922dfc7f47a4fffb&amp;id=d56041116d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <!--<input type="hidden" name="u" value="023b9af05922dfc7f47a4fffb">
+                <input type="hidden" name="id" value="d56041116d">-->
+                <table cellpadding="0" cellspacing="0" border="0" align="left">
+
+                <tr>
+                <!--<td align="right" class="formLabel">Email Address <span class="req asterisk">*</span>:</td>-->
+                <td>
+                <!--<h5 class="news-heading">Follow our Newsletter!</h5>-->
+                <input type="email" autocapitalize="off" autocorrect="off" class="footer-email" name="MERGE0" id="MERGE0" size="25" placeholder="Email Address">
+                <input type="submit" class="footer-subbutton"  name="submit" value="Subscribe!" id="mc-embedded-subscribe" />
+
+                </td>
+                </tr>
+
+                <tr>
+                <td align="center">
+                <!--
+                IF you want this to work with our Facebook app, your submit button *must* start with this:
+                 <input type="submit"
+                and end with a >. You can have whatever else you'd like in the rest of the tag, and we'll maintain any custom "value" you set.
+                -->
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_023b9af05922dfc7f47a4fffb_d56041116d" tabindex="-1" value=""></div>
+
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div> 
+
+
+                </td>
+                </tr>
+                </table>
+                </form>
+                </div>
+
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+                </script>
+
+                <!-- ======== EndSignup Form ========-->
+
+            </div><!--End subsription column-->
+
+            </div> <!--End first row-->
+
+
+            <div class="footer-break"></div>
+
+            <div class="row sitemap">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <h5 class="footer-column-headers">About Us</h5>
+                    <br>
+                    <ul>
+                        <li><a href="{% url 'mission' %}">Learning Equality</a></li>
+                        <li><a href="{% url 'values' %}">Core Values</a></li>
+                        <li><a href="{% url 'team' %}">Meet the team</a></li>
+                        <li><a href="{% url 'board' %}">Board of Directors</a></li>
+                        <li><a href="{% url 'supporters' %}">Supporters and friends</a></li>
+                        <li><a href="{% url 'press' %}">Press and media</a></li>
+                        <li><a href="{% url 'internships' %}">Internships</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <h5 class="footer-column-headers">Kolibri</h5>
+                    <br>
+                    <ul>
+                        <li><a href="{% url 'indiegogo' %}">About Kolibri</a></li>
+                        <li><a href="{% url 'press' %}">Press and media</a></li>
+                        <li><a href="https://drive.google.com/open?id=0B9ZzDms8cSNgY0JIX3hZVDlUTWc">Brand assets</a></li>
+                        <li><a href="https://kolibridemo.learningequality.org/">Demo</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <h5 class="footer-column-headers">KA Lite</h5>
+                    <br>
+                    <ul>
+                        <li><a href="http://ka-lite.readthedocs.io/en/latest/installguide/install_main.html" target="_blank">Download</a></li>
+                        <li><a href="http://demo.learningequality.org/" target="_blank">Demo KA Lite</a></li>
+                        <li><a href ="{% url 'infographic' %}">Deploy</a></li>
+                        <li><a href="http://ka-lite.readthedocs.io/en/0.17.x/developer_docs/translation.html">Help translate</a></li>
+                        <li><a href="https://community.learningequality.org/" target="_blank">Community forums</a></li>
+                        <li><a href="https://github.com/learningequality/ka-lite/wiki/Report%20Bugs%20by%20Creating%20Issues" target="_blank">Report a bug</a></li>
+                        <li><a href="{% url 'map_add' %}">Share your story!</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <h5 class="footer-column-headers">Explore</h5>
+                    <br>
+                    <ul>
+                        <li><a href="{% url 'blog' %}" target="_blank">Blog</a></li>
+                        <li><a href="https://community.learningequality.org/" target="_blank">Forum</a></li>
+                        <li><a href="{% url 'donate' %}">Donate</a></li>
+                        <li><a href="{% url 'jobs' %}">Careers</a></li>
+                        <li><a href="mailto:info@learningequality.org">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        <div class="row">
+
             <br><br><br>
 
             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -35,58 +150,9 @@
 
                 <br/><br/>
 
-                  <a href="mailto:info@learningequality.org" data-modal-toggle="contactModal" id="contact" class="modal-toggle">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                <a href="{% url 'jobs' %}">Jobs</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                <a href="{% url 'internships' %}">Internships</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                <a href="{% url 'donate' %}">Donate</a>
-
             </div>
 
-            <!-- ======== Start Signup Form ========-->
-
-            <div class="col-lg-4 col-md-6 col-sm-12 email-area">
-            <!--<div class="pageTitle">NEW MASTER - FLE Insider Updates Signup</div>-->
-            <form action="//learningequality.us6.list-manage.com/subscribe/post?u=023b9af05922dfc7f47a4fffb&amp;id=d56041116d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <!--<input type="hidden" name="u" value="023b9af05922dfc7f47a4fffb">
-            <input type="hidden" name="id" value="d56041116d">-->
-            <table cellpadding="0" cellspacing="0" border="0" align="left">
-
-            <tr>
-            <!--<td align="right" class="formLabel">Email Address <span class="req asterisk">*</span>:</td>-->
-            <td>
-                <h5 class="news-heading">Follow our Newsletter!</h5>
-                <input type="email" autocapitalize="off" autocorrect="off" class="footer-email" name="MERGE0" id="MERGE0" size="25" placeholder="Email Address">
-                <input type="submit" class="footer-subbutton"  name="submit" value="Subscribe!" id="mc-embedded-subscribe" />
-
-            </td>
-            </tr>
-
-            <tr>
-            <td align="center">
-            <!--
-            IF you want this to work with our Facebook app, your submit button *must* start with this:
-             <input type="submit"
-            and end with a >. You can have whatever else you'd like in the rest of the tag, and we'll maintain any custom "value" you set.
-            -->
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_023b9af05922dfc7f47a4fffb_d56041116d" tabindex="-1" value=""></div>
-
-            <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-            </div> 
-
-
-            </td>
-            </tr>
-            </table>
-            </form>
-            </div>
-
-            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
-            </script>
-
-            <!-- ======== EndSignup Form ========-->
+            
     </div>
 </div>
 
