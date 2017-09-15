@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    background-color: @white;
+    background-color: #ffffff;
     @media (min-width: 990px) {
         padding-bottom: 0px;
         }
@@ -46,7 +46,7 @@ hr {
 }
 
 a {
-    color: @blue;
+    color: #00AEF0;
 }
 
 #wrap {
@@ -66,6 +66,35 @@ a {
     margin: 0px;
 }
 
+
+//---------------------
+// **Navbar bootstrap overwrite
+//---------------------
+
+.navbar-default .navbar-toggle{
+    border:none;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover{
+    background-color: #008fc4;
+    color:#ffffff;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    background-color: #eaeaea;
+}
+
+#fle-navbar li > a:hover{
+    background-color:#00AEF0;
+    color:#ffffff;
+}
+
+.navbar-default .navbar-collapse{
+    border-color:#212121;
+}
+
+
 // --------------------
 // ** Navbar
 // --------------------
@@ -82,7 +111,7 @@ a {
 }
 
 #fle-navbar {
-    background-color: #151515;
+    background-color: #ffffff;
     border: 0px;
     border-radius: 0px;
     margin-bottom: 0px;
@@ -102,13 +131,13 @@ a {
     }
 
     a {
-        color: #ffffff;
+        color: #212121;
         &:hover {
             color: @white;
         }
     }
     b.caret {
-        border-top-color: @white;
+        border-top-color: #212121;
         border-bottom-color: @white;
     }
     .brand-container {
@@ -210,9 +239,9 @@ a {
     }
 
     .footer-subbutton { 
-    background-color:#008fc4; 
+    background-color:#00AEF0; 
     color:#ffffff; border:none; 
-    width:100px; 
+    width:144px; 
     height:35px; 
     font-size:14px; 
     }

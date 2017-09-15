@@ -36,11 +36,11 @@
             </div> <!--End socials column-->
 
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 subscription-column"> <!--Start subscription column-->
-                <h5 class="subscription-label">Follow our newsletter!</h5>
+                <h5 class="subscription-label">Stay up-to-date!</h5>
 
                 <!-- ======== Start Signup Form ========-->
 
-                <div class="col-lg-4 col-md-6 col-sm-12 subscription-form">
+                <div class="col-lg-6 col-md-6 col-sm-12 subscription-form">
                 <!--<div class="pageTitle">NEW MASTER - FLE Insider Updates Signup</div>-->
                 <form action="//learningequality.us6.list-manage.com/subscribe/post?u=023b9af05922dfc7f47a4fffb&amp;id=d56041116d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <!--<input type="hidden" name="u" value="023b9af05922dfc7f47a4fffb">
@@ -52,7 +52,7 @@
                 <td>
                 <!--<h5 class="news-heading">Follow our Newsletter!</h5>-->
                 <input type="email" autocapitalize="off" autocorrect="off" class="footer-email" name="MERGE0" id="MERGE0" size="25" placeholder="Email Address">
-                <input type="submit" class="footer-subbutton"  name="submit" value="Subscribe!" id="mc-embedded-subscribe" />
+                <input type="submit" class="footer-subbutton"  name="submit" value="Join our mailing list" id="mc-embedded-subscribe" />
 
                 </td>
                 </tr>
@@ -103,6 +103,7 @@
                         <li><a href="{% url 'supporters' %}">Supporters and friends</a></li>
                         <li><a href="{% url 'press' %}">Press and media</a></li>
                         <li><a href="{% url 'internships' %}">Internships</a></li>
+                        <li><a href="{% url 'jobs' %}">Careers</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
@@ -110,9 +111,8 @@
                     <br>
                     <ul>
                         <li><a href="{% url 'indiegogo' %}">About Kolibri</a></li>
-                        <li><a href="{% url 'press' %}">Press and media</a></li>
-                        <li><a href="https://drive.google.com/open?id=0B9ZzDms8cSNgY0JIX3hZVDlUTWc">Brand assets</a></li>
-                        <li><a href="https://kolibridemo.learningequality.org/">Demo</a></li>
+                        <li><a href="http://kolibri.readthedocs.io/en/stable/dev/getting_started.html">Download Kolibri</a></li>
+                        <li><a href="https://kolibridemo.learningequality.org/">Demo Kolibri</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
@@ -121,21 +121,20 @@
                     <ul>
                         <li><a href="http://ka-lite.readthedocs.io/en/latest/installguide/install_main.html" target="_blank">Download</a></li>
                         <li><a href="http://demo.learningequality.org/" target="_blank">Demo KA Lite</a></li>
-                        <li><a href ="{% url 'infographic' %}">Deploy</a></li>
-                        <li><a href="http://ka-lite.readthedocs.io/en/0.17.x/developer_docs/translation.html">Help translate</a></li>
-                        <li><a href="https://community.learningequality.org/" target="_blank">Community forums</a></li>
-                        <li><a href="https://github.com/learningequality/ka-lite/wiki/Report%20Bugs%20by%20Creating%20Issues" target="_blank">Report a bug</a></li>
-                        <li><a href="{% url 'map_add' %}">Share your story!</a></li>
+                        <li><a href ="{% url 'infographic' %}">Deploy KA Lite</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <h5 class="footer-column-headers">Explore</h5>
+                    <h5 class="footer-column-headers">Community</h5>
                     <br>
                     <ul>
-                        <li><a href="{% url 'blog' %}" target="_blank">Blog</a></li>
-                        <li><a href="https://community.learningequality.org/" target="_blank">Forum</a></li>
+                        <li><a href="{% url 'blog' %}" target="_blank">Read our blog</a></li>
+                        <li><a href="https://community.learningequality.org/" target="_blank">Community forums</a></li>
+                        <li><a href="http://ka-lite.readthedocs.io/en/0.17.x/developer_docs/translation.html">Help translate</a></li>
+                        <li><a href="https://github.com/learningequality/ka-lite/wiki/Report%20Bugs%20by%20Creating%20Issues" target="_blank">Report a bug</a></li>
+                        <li><a href="http://learningequality.us6.list-manage.com/subscribe/post?u=023b9af05922dfc7f47a4fffb&id=d56041116d">Subscribe to newsletter</a></li>
                         <li><a href="{% url 'donate' %}">Donate</a></li>
-                        <li><a href="{% url 'jobs' %}">Careers</a></li>
+                        <li><a href="{% url 'map_add' %}">Share your story!</a></li>
                         <li><a href="mailto:info@learningequality.org">Contact us</a></li>
                     </ul>
                 </div>
@@ -146,7 +145,9 @@
             <br><br><br>
 
             <div class="col-lg-6 col-md-6 col-sm-12">
-                &copy; 2017 Learning Equality&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/"><img id="cc-icon" src="{% static 'img/icons/cc-by-sa-4.0.png' %}" alt="Creative Commons Attribution 4.0 International License" title="Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License"></a>
+                &copy; 2017 Learning Equality&nbsp; <br/>
+                Learning Equality is a 501(c)3 nonprofit organization<br/>
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA</a>
 
                 <br/><br/>
 
