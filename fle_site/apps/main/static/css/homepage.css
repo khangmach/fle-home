@@ -5,7 +5,6 @@ h3, h4, h5, h6, .btn {
 	line-height: 1.4em;
 	color: #333333;
 	font-weight: bold;
-	letter-spacing: 0.045em;
 }
 
 a:hover {
@@ -34,12 +33,14 @@ a:hover {
 }
 
 .title-banner {
-	text-align: center;
-	padding: 3% 0;
+	text-align: left;
+	padding: 2% 0;
+	padding-left:40px;
 }
 
 .title-banner h1 {
-	margin-bottom: 2%;
+	margin:0;
+	padding:0;
 	color: white;
 	font-weight: bold;
 }
@@ -123,31 +124,6 @@ a:hover {
 	background-color:#00AEF0;
 }
 
-/*===========BOOTSTRAP NAV STYLE OVERWRITE===============*/
-
-.navbar-default .navbar-toggle{
-	border:none;
-}
-
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:hover{
-	background-color: #008fc4;
-	color:#ffffff;
-}
-
-.navbar-default .navbar-nav>li>a:hover{
-	background-color: #eaeaea;
-}
-
-#fle-navbar li > a:hover{
-	background-color:#00AEF0;
-	color:#ffffff;
-}
-
-.navbar-default .navbar-collapse{
-	border-color:#212121;
-}
-
 /*=========== LANDING SCREEN ===============*/
 
 .landing-screen {
@@ -156,7 +132,7 @@ a:hover {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 90vh;
+	height: 350px;
 	max-width: 100%;
 }
 .landing-box {
@@ -188,15 +164,22 @@ a:hover {
 	text-align: center;
 }
 
+.banner-cta{
+	color:#ffffff;
+	border-left:2px solid #ffffff;
+	padding-left:15px;
+}
+
 /*============ MISSION STATEMENT =================== */
 
 .mission-screen {
-	background: url(../img/earth-bg.png) no-repeat center center;
-	background-size:350px;
+	background: url(../img/world-map-adjusted.png) no-repeat center center;
+	background-size:600px;
 	-webkit-background-size: 50% contain;
 	-moz-background-size: 50% contain;
 	-o-background-size: 50% contain;
 	background-size: 50% contain;
+	background-color:#ffffff;
 	text-align: center;
 	margin-top:42px;
 	padding: 4% 0 2% 0;
@@ -204,6 +187,7 @@ a:hover {
 	margin: auto;
 	float: none;
 }
+
 .mission-box {
 	float: none;
 	margin: auto auto;
@@ -212,11 +196,14 @@ a:hover {
 }
 .mission-header {
 	font-weight: bold;
+	text-align:left;
+	color:#00AEF0;
 }
 .mission-state {
 	line-height: 1.3em;
-	max-width: 700px;
 	margin: auto;
+	text-align:left;
+	font-weight:lighter;
 }
 #about-us {
 	margin: 5% 0 18% 0;
@@ -239,11 +226,7 @@ a:hover {
 /*===================== THE DIVIDE ========================*/
 
 .divide-banner {
-	background: url(../img/divide.png) no-repeat left 30% center #0E3049;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
-	background-size: contain;
+	background-color:#008fc4;
 }
 .divide-screen {
 	text-align: center;
@@ -255,7 +238,6 @@ a:hover {
 }
 #poverty-intro span,
 #divide-intro span {
-	font-size: 20px;
 	text-align: center;
 }
 #believe-box {
@@ -285,6 +267,11 @@ a:hover {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.graphic-text{
+	font-size:18px;
+}
+
 /*======== CHILDREN ========*/
 .children,
 .child-box {
@@ -359,7 +346,14 @@ a:hover {
 	margin: 0 auto;
 	max-width: 700px;
 	float: none;
-	text-align: center;
+	margin-bottom:30px;
+}
+
+#divide-blurb{
+	margin: 0 auto;
+	text-align: left;
+	font-weight:lighter;
+	margin-bottom:30px;
 }
 .divide img {
 	max-width: 180px;
@@ -368,14 +362,15 @@ a:hover {
 	display: inline-block;
 }
 .divide-images{
-	width:200px; 
+	width:180px; 
 	margin-right:20px;
 }
 .divide-columns{
 	padding:30px;
+	margin-bottom:20px;
 }
 .divide-sections{
-	width:220px; 
+	width:380px; 
 	height:auto; 
 	text-align:left; 
 	display:inline-block; 
@@ -401,21 +396,21 @@ a:hover {
 #disconnected {
 	font-size: 22px;
 }
+
+.disconnected-blurb {
+	font-weight:lighter;
+	font-size:18px;
+}
+
 #divide-outro {
 	margin: 0 auto 8% auto;
-	max-width: 600px;
-	float: none;
-	text-align: center;
-	font-size: 17px;
+	text-align: left;
+	max-width:700px;
 }
 
 /*===================== THE BRIDGE ========================*/
 .bridge-banner {
-	background: url(../img/pencils.png) no-repeat right 15% bottom #0E3049;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
-	background-size: contain;
+	background-color:#008fc4;
 }
 .bridge {
 	margin: 4% auto;
@@ -426,6 +421,8 @@ a:hover {
 	text-align: center;
 	font-size: 20px;
 	max-width: 800px;
+	padding-left:15px;
+	padding-right:15px;
 }
 .bridge-box {
 	float: none;
@@ -440,7 +437,7 @@ a:hover {
 
 .bridge img {
  	position: center;
- 	max-height: 120px;
+ 	max-height: 80px;
 }
 .bridge-box span {
 	text-align: center;
@@ -449,6 +446,7 @@ a:hover {
 .bridge-box h3 {
 	font-size: 20px;
 	text-align:left;
+	color:#00AEF0;
 }
 .bbox {
 	margin-bottom: 8%;
@@ -456,34 +454,28 @@ a:hover {
 
 /*===================== OUR IMPACT ========================*/
 .impact-banner {
-	background: url(../img/impact.png) no-repeat left 20% bottom #0E3049;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
-	background-size: contain;
+	background-color:#008fc4;
 }
 .impact {
 	float: none;
 	text-align: left;
-	padding-top:60px;
-	padding-bottom:60px;
+	padding-top:10px;
+	padding-bottom:10px;
 }
 .impact-box {
 	margin: auto;
+	margin-bottom:20px;
 }
 .impact img {
 	text-align: center;
 	float: none;
-	width: 200px;
+	width: 160px;
 	display: block;
-}
-.ka-lite h2 {
-	color: #0A4732;
+	margin-top:40px;
 }
 .ka-lite p {
 	font-size: 16px;
 	font-weight: normal;
-	max-width: 410px;
 }
 .ka-lite-vid iframe {
 	max-width: 550px;
@@ -584,7 +576,7 @@ a:hover {
 }
 
 .involved{
-	margin-bottom:110px;
+	margin-bottom:30px;
 }
 
 .partners img {
@@ -592,12 +584,64 @@ a:hover {
 	margin: 3% 3% 50px 3%;
 }
 
+.impact-section {
+	background: url(../img/impact-map.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height:300px; 
+	width:100%; 
+	padding:30px; 
+	padding-top:60px;
+}
 
+.impact-text {
+	text-align:center;
+	color:#ffffff;
+	margin:0 auto;
+	max-width:840px;
+}
+
+.impact-cta {
+	text-align:center;
+}
+
+.impact-report {
+	max-width:700px; 
+	overflow:hidden;
+	margin-bottom:15px;
+}
+.report-cover {
+	float:left; 
+	margin-right:15px;
+}
+
+.report-header {
+	margin-top:0px; 
+	margin-bottom:30px;
+	color:#00AEF0;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+.google-impact-video {
+	width:100%;
+}
+
+.google-impact {
+	margin-right:10px;
+}
+
+.impact-row {
+	padding:60px;
+}
 
 
 /*===================== GET INVOLVED ========================*/
 .involve-banner {
-	background: #0E3049;
+	background-color:#008fc4;
+	margin-top:40px;
 }
 .donate {
 	margin-top: 7%;
@@ -681,14 +725,9 @@ a:hover {
 }
 
 .involve-links img, i {
-	max-height: 115px;
+	max-height: 80px;
 	margin: 8% auto;
 	color:#0E3049;
-}
-
-#deploymentIcon{
-	margin-top:15%;
-	margin-bottom:14%;
 }
 
 #br {
@@ -711,14 +750,11 @@ a:hover {
 }
 @media (max-width: 991px) {
 	#landing-header {
-		font-size: 28px;
+		font-size: 32px;
 	}
 	#landing-description {
 		font-size: 20px;
 	}
-	/*.landing-box {
-		padding: 50px 55px;
-	}*/
 	.poverty img {
 		max-width: 225px;
 	}
@@ -728,7 +764,7 @@ a:hover {
 	}
 	.child-exp,
 	.child-exp2 {
-		font-size: 15px;
+		font-size: 18px;
 	}
 	.child-box {
 		max-width: 220px;
@@ -888,12 +924,15 @@ a:hover {
 	#landing-header {
 		font-size: 28px;
 	}
-	#landing-description,
 	.btn {
 		font-size: 16px;
 	}
+
+	#landing-description{
+		font-size:16px;
+	}
+
 	.landing-box {
-		margin: 15% 5% 0 -35px;
 		padding: 15px 0px 15px 35px;
 		width: 100%;
 	}

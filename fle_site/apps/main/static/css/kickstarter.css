@@ -348,7 +348,7 @@ header {
 }
 #intro_container {
   margin-left: 50px;
-  margin-top: 90px;
+  margin-top: 140px;
 }
 .intro-heading {
   font-family: "Montserrat";
@@ -418,18 +418,17 @@ span.hidden-xs.hidden-sm {
 /* LAST CALL TO ACTION */
 section#contact {
   background: url('../img/kickstarter/cambodia.jpg');
-  background-position: left 10%;
+  background-position: left 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: -60px;
   padding: 0;
-  height: 100vh;
-  min-height: 600px;
+  height: 40vh;
+  min-height: 400px;
   position: relative;
   top: -20px;
-  /*z-index: 5;*/
 }
 section#contact .section-heading {
   color: white;
@@ -730,7 +729,7 @@ top:10px;
   font-weight: normal;
   font-size: 40px;
   color: white;
-  padding: 100px 0 0 0;
+  padding: 50px 0 0 0;
   margin: 0 !important;
 }
 
@@ -753,8 +752,8 @@ top:10px;
   color:#ffffff; border:none; 
   width:300px; 
   height:50px; 
-  border-bottom:5px solid #3A7AA2; 
-  font-size:18px; 
+  font-size:16px; 
+  text-transform:uppercase;
 }
 
 .emailinput{ 

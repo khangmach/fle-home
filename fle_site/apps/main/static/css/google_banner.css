@@ -1,39 +1,29 @@
-/*Google Navbar*/
+/*Banner Navbar*/
 
-.googlenav{
+a{
+  color:#00AEF0;
+}
+
+.bannernav{
   margin:0; 
   text-align:center; 
-  background-color:#f9f9f9; 
+  background-color:#ffffff; 
+  background:url(../img/kickstarter/about/kolibri-adjust.png) no-repeat 50% -10px;
+  background-size:230px;
   color:#3a3a3a; 
-  padding-top:16px;
+  padding-top:11px;
   padding-bottom:11px;
 }
 
-#google-logo{
-  padding-bottom:5px;
-}
-
-#google-le-logo{
+#banner-logo{
   padding-bottom:5px; 
   height:30px; 
   margin-right:15px;
 }
 
-.funding-text{
+.banner-text{
   color:#3a3a3a;
-  font-size:15px;
-  padding:10px;
-}
-
-.bloglink{
-  padding:12px;
-  color:#ffffff;
-  background-color:#00AEF0;
   font-size:16px;
-  border-radius:2px;
-}
-
-.bloglink:hover{
-  color:#ffffff;
-  background-color: #3a7aa2;
+  padding:10px;
+  font-weight:bold;
 }
