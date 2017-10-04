@@ -5,6 +5,7 @@ from markupfield.fields import MarkupField
 from django.db import models
 from django.template.defaultfilters import slugify
 
+
 class Person(models.Model):
     name = models.CharField(max_length=100)
     title = models.CharField(max_length=100)
@@ -16,6 +17,7 @@ class Person(models.Model):
     def slug(self):
         return slugify(self.name)
 
+
 class TeamMemberManager(models.Manager):
     def current(self):
         return super(TeamMemberManager, self).get_query_set().filter(alumni=False, published=True).order_by('?')
@@ -23,20 +25,38 @@ class TeamMemberManager(models.Manager):
     def alumni(self):
         return super(TeamMemberManager, self).get_query_set().filter(alumni=True, published=True).order_by('?')
 
+
 class TeamMember(Person):
     picture = models.ImageField(upload_to="team_pics")
 
     objects = TeamMemberManager()
 
 
+class BoardMemberManager(models.Manager):
+    def board(self):
+        return super(BoardMemberManager, self).get_query_set().filter(advisor=False).order_by('?')
+
+    def advisor(self):
+        return super(BoardMemberManager, self).get_query_set().filter(advisor=True).order_by('?')
+
+
 class BoardMember(Person):
     picture = models.ImageField(upload_to="board_pics")
+    advisor = models.BooleanField(default=True)
+
+    objects = BoardMemberManager()
+
+
+class Translator(models.Model):
+    name = models.CharField(max_length=100)
+    title = models.CharField(max_length=100, blank=True)
+    picture = models.ImageField(upload_to="translator_pics")
 
 
 class PressLogo(models.Model):
     title = models.CharField(max_length=150)
     picture = models.ImageField(upload_to="press_logos", help_text="Please only upload images 70x70!")
-    
+
     def __str__(self):
         return self.title
 
