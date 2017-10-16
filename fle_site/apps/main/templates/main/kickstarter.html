@@ -58,7 +58,7 @@
                                     <div class="intro-heading">Kolibri<span class="hidden-xs hidden-sm" style="font-weight: 100; top:-8px; position: relative;">|</span> </div>
                                 </div>
                                 <div class="col-md-6">
-                                     <div class="intro-heading2">The offline app for<br>universal education</div>
+                                     <div class="intro-heading2">The offline app for universal education</div>
                                 </div>
                                 
                                 
@@ -68,10 +68,6 @@
 
                                 
                             </div>
-
-<!--                             <div class="videoWrapper">
-                                <iframe id="k_video" src="https://player.vimeo.com/video/143710663" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                            </div> -->
     
                             <!-- <div class="countdown"></div> -->
                             <br><br><br><br>
@@ -90,8 +86,6 @@
 
         </header>
 
-        <img id="slide_tablet" alt="sliding tablet" src="/static/img/kickstarter/tablet-min.png">
-
         <!-- Below the fold version 2 -->
         <section id="fle_intro" class="row">
             {% include "main/partials/_kickstarter_intro2.html" %}
@@ -105,48 +99,86 @@
  -->            {% include "main/partials/_kickstarter_how.html" %}
         </section>
 
-        <!-- Features Section: Tile Design -->
-        <section id="fle_features" class="row">
-            <br><br><br><br><br><br>
-            <a href="#portfolioModal1" data-toggle="modal"><div class="fle_title_bold">
-                Curated Educational Content<br>
-                <p class="slim-text">
-                    Education is not "one-size fits all"
-                    <br><br>
-                    <span><b>Learn more</b></span>
-                </p>
-            </div></a>
-            <br><br><br><br><br><br>
+                <!-- Features Section: Tile Design -->
+        
+           
             {% include "main/partials/_kickstarter_features_tiledesign.html" %}
-        </section>
+        
 
-        <!-- FLE History Section -->
-<!--         <section id="fle_timeline" class="row">
-            <center class="fle_title">
-                <h1>WHO ARE WE?</h1>
-                <h2>We're the team that built <img src="{% static 'img/kickstarter/timeline/ka-lite-logo.png' %}"></h2>
-                <h3>which has been bringing online education from Khan Academy to the offline world.</h3>
-                <h1 class="wow fadeInDown">
-                    <img src="{% static 'img/kickstarter/KA-Lite/KA-year.png' %}">
-                    <img id="ka-year" src="{% static 'img/kickstarter/KA-Lite/KA-people.png' %}">
-                    <img src="{% static 'img/kickstarter/KA-Lite/KA-160.png' %}">
-                </h1>
-            </center>
+        <div class="container-fluid studio-container">
+            <div class="row kolibri-studio">
+                <div class="col-sm-12 kolibri-intro">
+                    <h2>Customizable  Digital Curriculum</h2>
+                    <h4>Education is not "one-size fits all."</h4><br>
+                </div>
 
-            <div id="desktop-timeline"></div>
+                <div class="col-sm-12">
+                        <img src="{% static 'img/kickstarter/studio-tablet.png' %}" class="center-block studio-tablet">
+                </div>
 
-        </section> -->
+            </div>
 
-        <!-- FLE Quote Section -->
-        <section id="fle_quote" class="hidden-xs">
-            {% include "main/partials/_kickstarter_quote.html" %}
-        </section>
+            <div class="row kolibri-copy">
+                <div class="col-xs-12 col-sm-6 col-md-6 kolibri-blurbs">
+                    <h4>Tools to Support Effective Learning</h4>
+                    <p>Interactive exercises, real-time feedback, differentiated group instruction, customizable learning pathways, and other tools to support both self-paced and collaborative learning.</p>
+                    <br>
+                    <a href="#portfolioModal1" data-toggle="modal">Learn more</a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <h4>No Internet required</h4>
+                    <p>Low cost devices equipped with Kolibri enable learners to engage with a vast library of educational content, totally offline.</p>
+                    <br>
+                    <a href="#portfolioModal5" data-toggle="modal">Explore content</a>
+                </div>
+            </div>
+
+            <div class="row kolibri-feature-row">
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        
+                        <a href="#portfolioModal0" data-toggle="modal"><img src="{% static 'img/kickstarter/devices.png' %}" class="center-block"></a>
+                        <h5>Runs on anything</h5>
+                        <a href="#portfolioModal0" data-toggle="modal">Read more</a>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        
+                        <a href="#portfolioModal3" data-toggle="modal"><img src="{% static 'img/kickstarter/byte.png' %}" class="center-block"></a>
+                        <h5>Packaged for offline use</h5>
+                        <a href="#portfolioModal3" data-toggle="modal">Read more</a>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        
+                        <a href="#portfolioModal2" data-toggle="modal"><img src="{% static 'img/kickstarter/syncing.png' %}" class="center-block"></a>
+                        <h5>Syncing and sharing</h5>
+                        <a href="#portfolioModal2" data-toggle="modal">Read more</a>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        
+                        <a href="#portfolioModal4" data-toggle="modal"><img src="{% static 'img/kickstarter/self-paced.png' %}" class="center-block"></a>
+                        <h5>Self-paced learning</h5>
+                        <a href="#portfolioModal4" data-toggle="modal">Read more</a>
+                    </div>
+            </div>
+                
+            
+        
+        </div>
+
+       <div class="container-fluid">
+            <div class="row translate-row">
+                <div class="col-sm-12">
+                    <h4>Help translate Kolibri!</h4>
+                    <!-- <a href="/translate.html">Learn more about contributing</a> -->
+                    <a href="{% url 'translate' %}">Learn more about contributing</a> 
+                </div>
+            </div>
+        </div>
 
 
         <!-- Contact Section -->
-        <section id="contact" class="not-parallax-section">
-            {% include "main/partials/_kickstarter_footer.html" %}
-        </section>
+        <!--<section id="contact" class="not-parallax-section">
+            {% comment %}{% include "main/partials/_kickstarter_footer.html" %}{% endcomment %}
+        </section>-->
 
         <!-- <a href="#kickstarter-header" class="back-to-top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a> -->
 

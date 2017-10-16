@@ -27,6 +27,7 @@
 	.btn-xl, #steps div p,
 	#how-image .row div p {
 		font-size: 15px;
+		font-weight:lighter;
 	}
 /*	.below-fold2 {
 		min-height: 528px;
@@ -34,7 +35,8 @@
 	}*/
 	.fle_title_bold,
 	.fle_title h2 {
-		font-size: 35px;
+		font-size: 28px;
+		/*max-width:700px;*/
 	}
 	#steps div h3,
 	.the_quote_2,
@@ -45,19 +47,15 @@
 		height: 100px;
 	}
 	.feature-tile {
-		padding-top: 4%;
+		padding-top: 2%;
 	}
 	.feature-tile h4,
 	.quote_1, .lowcase,
 	#how-image .row div h2,
 	p.slim-text {
-		font-size: 24px;
+		font-size: 18px;
 	}
 
-	/*#dreams, .fle_title h1,
-	#fle_timeline .fle_title h1 {
-		font-size: 50px;
-	}*/
 }
 
 @media screen and (max-width: 1060px) {
@@ -165,10 +163,6 @@
 		top: 0;
 		left: 0;
 	}
-	.use-image {
-		height: 60px;
-		width: auto;
-	}
 	.fle_title {
 		padding: 30px 0;
 		top: -5px;
@@ -205,16 +199,10 @@
 	}
 	.fle_title_bold {
 		text-align: center;
-		padding: 0;
+		padding-top:0;
 		width: 100%;
 		margin: 0;
-	}
-	.fle_title_bold .fle_title_h2 {
-		font-size: 40px;
-	}
-	p.slim-text {
-		max-width: 200px;
-		margin: 30px auto 0 auto;
+		margin-top:-32px;
 	}
 	span.slogan {
 		font-size: 23px;
@@ -238,7 +226,6 @@
 		border-right: none;
 		border-left: none;
 		border-top: none;
-		border-bottom: 2px solid #8670A1 !important;
 	}
 	.portfolio-modal .close-modal .lr,
 	.portfolio-modal .close-modal .lr .rl,
@@ -327,7 +314,11 @@
     	text-align: center !important;
 	}
 }
-
+@media screen and (max-width: 768px) {
+	.kolibri-blurbs {
+		margin-bottom:50px;
+	}
+}
 @media screen and (max-width: 700px) {
 	.countdown {
 		zoom: 0.8;
