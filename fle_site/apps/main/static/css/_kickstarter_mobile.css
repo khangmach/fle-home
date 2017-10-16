@@ -11,32 +11,18 @@
 		left: 3%;
 	}
 	.sticky-mailchimp {
-		/*width: 991px;*/
-		/*right: -25%;*/
 		float: right;
 		position: relative;
 		margin-top: -14px;
 	}
-	/*.email_input_k {
-		width: 220px;
-		font-size: 15px;
-	}
-	.email_submit_k {
-		width: 200px;
-	}*/
 	.btn-xl, #steps div p,
 	#how-image .row div p {
 		font-size: 15px;
 		font-weight:lighter;
 	}
-/*	.below-fold2 {
-		min-height: 528px;
-		height: 50vh;
-	}*/
 	.fle_title_bold,
 	.fle_title h2 {
 		font-size: 28px;
-		/*max-width:700px;*/
 	}
 	#steps div h3,
 	.the_quote_2,
