@@ -4,63 +4,6 @@
 <script src="{% static 'js/fabric.js' %}"></script>
 <script src="{% static 'js/data.js' %}"></script>
 
-<div class="container-fluid" id="feature-container">
-	<div class="col-md-5 feature-space">
-		<div>
-			<img src="{% static 'img/kickstarter/about/kolibri.png' %}">
-		</div>
-		<span id="kolibri-name">Kolibri</span>
-		<div>
-			<span class="slogan">Learn.</span>
-			<span class="slogan">Create.</span>
-			<span class="slogan">Share.</span>
-		</div>
-	</div>
-	<div class="col-md-7" id="tile-container">
-		<div class="row top-row">
-			<a href="#portfolioModal0" data-toggle="modal">
-				<div class="col-md-6 feature-tile first-tile">
-					<h4>Runs on<br>Anything</h4>
-					<div id="out-of-box" class="row tile-image"></div>
-					<div class="row learn-more-modal">
-						Learn More 
-					</div>
-				</div>
-			</a>
-			<a href="#portfolioModal3" data-toggle="modal">
-				<div class="col-md-6 feature-tile last-tile">
-					<h4>Innovative<br>"Byte-Size" Videos</h4>
-					<div id="vector" class="row tile-image"></div>
-					<div class="row learn-more-modal">
-						Learn More 
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="row bottom-row">
-			<a href="#portfolioModal2" data-toggle="modal">
-				<div class="col-md-6 feature-tile first-tile">
-					<h4>Sync Content &<br>Data Seamlessly</h4>
-					<div id="sync" class="row tile-image"></div>
-					<div class="row learn-more-modal">
-						Learn More 
-					</div>
-				</div>
-			</a>
-			<a href="#portfolioModal4" data-toggle="modal">
-				<div class="col-md-6 feature-tile last-tile">
-					<h4>Learn at Your<br>Own Pace</h4>
-					<div id="progress-report" class="row tile-image"></div>
-					<div class="row learn-more-modal">
-						Learn More 
-					</div>
-				</div>
-			</a>
-		</div>
-	</div>
-</div>
-
-
     <!-- Portfolio Modals -->
 
     <!-- Runs On Anything Modal -->
@@ -86,8 +29,7 @@
 	                            	<br>
 	                            </p>
 	                            <img class="img-responsive img-centered" src="{% static 'img/kickstarter/portfolio/tablet.gif' %}" alt="">
-<!-- 	                            	<img class="img-responsive img-centered" src="{% static 'img/kickstarter/portfolio/box-tablet-composition2.png' %}" alt="">
- -->	                            <p class="tablet-text">
+                            <p class="tablet-text">
 	                            	The cost of Android tablets is plummeting, so we're also building Kolibri to be able to run standalone as an Android app. Content can be loaded onto a tablet from a nearby server or peer-to-peer from another tablet, and then taken elsewhere and used by itself.
 	                            </p>
 	                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Feature</button>
@@ -115,11 +57,58 @@
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>Content Curation</h2>
-	                            <p class="item-intro text-muted">We have developed a web-based tool that allows organizations to upload and curate their own educational content. Anyone can bundle and distribute their content into custom channels, allowing communities to align content with local curricular standards to best serve the needs of their learners.</p>
-	                            <img class="img-responsive img-centered" src="{% static 'img/kickstarter/portfolio/content_curation.gif' %}" alt="">
-	                            <p class="big"><mark>&#9733 Remix existing channels:  </mark>   Kolibri allows educational content producers and organizations to combine content from various channels to make a broad library of high quality and locally relevant educational content available to offline learners. For example, an instructor could create a new channel by combining math content from the Khan Academy, interactive physics simulations from PhET, and a story from African Storybook, allowing them to easily integrate a variety of learning materials to fit their curriculum.</p>
-	                            <p class="big"><mark>&#9733 Upload new content:  </mark>   When content producers come up with their own learning materials that they want to include, they can upload their content to Kolibri, and remix it with content from existing channels.</p>
-	                            <p class="big"><mark>&#9733 Integrate new and existing content:  </mark>   Kolibri allows educational content producers and organizations to combine existing content with their own. If an organization knows from experience that certain math lessons are favored by students, and they have demonstrated that their own original exercises are effective, they can create a new channel and combine their content with pre-existing content from another public channel to optimize their curriculum.</p>
+	                            <p class="item-intro text-muted">Our web-based standalone tool KOLIBRI STUDIO gives users full control over the organization of their educational materials. Using this content curation system, anyone can explore pre-organized libraries of open educational resources, and bundle, tag, differentiate, re-order, and distribute their content into custom channels. Kolibri Studio takes open educational resource use to the next level by enabling alignment to local curricular standards, allowing educators to easily browse and select from libraries, and letting users compare materials from a variety of sources.</p>
+	                            <img class="img-responsive img-centered" src="{% static 'img/kickstarter/portfolio/studio-gif1.gif' %}" alt="">
+	                            <p class="big"><mark>&#9733 Build, re-order, and redesign your own library of digital resources.  </mark>   Using the Studio interface, an instructor could create a channel for students’ use from the existing library, for example: combining math content from Khan Academy, interactive physics simulations from PhET, and a story from African Storybook, easily integrate a variety of learning materials into their curriculum.</p>
+	                            <img class="img-responsive img-centered" src="{% static 'img/kickstarter/portfolio/studio-gif2.gif' %}" alt="">
+	                            <p class="big">
+	                            <p class="big"><mark>&#9733 Upload new materials  </mark>   Whether they’re student-created products, quality sample lesson plans, or digitized local books, any local materials can easily be uploaded onto Kolibri Studio to be combined and supplemented with content from around the world. </p>
+	                            <p class="big"><mark>&#9733 Align to curriculum:  </mark>   With Studio’s channel structure, clipboard utility, search tools, and browsable topic trees, users have the tools to map open educational resources to their own curricular and learning objectives. Working personally with our partners, Learning Equality is also working to provide libraries pre-aligned to high-use standards, such as those of Mexico’s SEP and India’s NCERT.</p>
+	
+	                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	            <div class="close-modal" data-dismiss="modal">
+	                <div class="lr">
+	                    <div class="rl">
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="container">
+	                <div class="row">
+	                    <div class="my_col">
+	                        <div class="modal-body">
+	                            <!-- Project Details Go Here -->
+	                            <h2>Explore content</h2>
+	                            <p class="item-intro text-muted">Available in dozens of languages, the Kolibri libraries are designed to support a well-rounded curriculum:</p>
+	                            <ul style="text-align:left; max-width:700px; margin:0 auto; margin-bottom:10px;">
+	                            	<li>Subject-specific videos, reading materials, simulations, games, and more for the academic curriculum</li>
+	                            	<li>Lesson plans, content refreshers, pedagogical guides, and classroom management resources to support educator</li>
+	                            	<li>Literacy-building libraries of children’s books and freeform reading materials</li>
+	                            	<li>General reference and contextual resources</li>
+	                            	<li>Life skills materials on subjects such as health, safety, trauma recovery, digital literacy, and others</li>
+	                            </ul>
+
+	                            <p>Some of our content sources include:</p>
+	                            <a href="https://www.khanacademy.org/" target="_blank"><img src="{% static 'img/kickstarter/khan-academy.png' %}"></a>
+	                            <a href="https://www.aflatoun.org/" target="_blank"><img src="{% static 'img/kickstarter/Aflatoun.png' %}"></a>
+	                            <a href="http://www.africanstorybook.org/" target="_blank"><img src="{% static 'img/kickstarter/African-storybook.png' %}"></a>
+	                            <a href="https://www.librarieswithoutborders.org/" target="_blank"><img src="{% static 'img/kickstarter/Libraries-without-borders.png' %}"></a>
+	                            <a href="http://prathambooks.org/" target="_blank"><img src="{% static 'img/kickstarter/Pratham-books.png' %}"></a>
+	                            <a href="https://www.sikana.tv/en" target="_blank"><img src="{% static 'img/kickstarter/Sikana.png' %}"></a>
+	                            <a href="hhttp://tahriracademy.org/" target="_blank"><img src="{% static 'img/kickstarter/Tahrir.png' %}"></a>
+	                           
+								<br><br>
 	                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
 	                        </div>
 	                    </div>
@@ -178,21 +167,8 @@
 	                            <p>In our tests, a 250MB video can now be compressed into just a single megabyte, while retaining most of the original quality. This reduces the time and cost needed to download a large set of videos, and allows a large amount of content to be stored on a small, low-cost device.</p>
 	                            <br>
 	                       
-	                            <br>
-	                            <center>
-	                                <canvas id="canvas" width="690" height="388" style="border:1px solid #000000"></canvas>
-	                            </center>
-	                            <img id="vec_bg_img" src="{% static 'img/kickstarter/portfolio/5.png' %}" style="display:none"><!-- a hack to get the image url -->
-	                            <script src="{% static 'js/action updated.js' %}"></script>
-	                            <br>
-	                            <br>
-	                            <div id="button-wrapper">
-	                                <button class="btn play-btn" onclick="startAnimation()">PLAY</button>
-	                                <button class="btn btn-primary" onclick="restartAnimation()">Restart</button>
-	                                <button class="btn btn-primary" onclick="pauseAnimation()">Pause</button>
-	                            </div>
-	                            <br>
-	                            <br>
+	                         
+	                          
 	                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
 	                        </div>
 	                    </div>

@@ -34,64 +34,54 @@
 
 <!-- ============= MISSION SCREEN ================ -->
 		<div class="row mission-screen">
-			<div id="learn-more" class="col-xs-10 col-sm-8 col-md-8 col-lg-8 mission-box">
+			<div id="learn-more" class="col-xs-10 col-sm-10 col-md-10 col-lg-10 mission-box">
 				<h2 class="mission-header darkblue">Our Mission</h2>
-				<h3 class="mission-state">Learning Equality is committed to enabling every person in the world to realize their right to a quality education, by supporting the creation, adaptation and distribution of open educational resources, and creating supportive tools for innovative pedagogy.</h3>
-				<br/><br/><br/><br/><br/>
+				<h3 class="our-mission">Learning Equality is committed to enabling every person in the world to realize their right to a quality education, by supporting the creation, adaptation and distribution of open educational resources, and creating supportive tools for innovative pedagogy.</h3>
+				<br/><br/>
 
 			</div>
 		</div>
 	</div>
 
-<!-- ============= PROBLEM ================ -->
-	<div class="row divide-screen">
-		<div class="container-fluid">
 
-			<!-- ============= POVERTY ================ -->
-			<div class="title-banner divide-banner" id="divide">
-				<h2 class="banner-cta">THE DIVIDE</h2>
+<!-- ============= DIVIDE START ================ -->
+	<div class="container-fluid divide-screen">
+
+		<div class="title-banner divide-banner" id="divide">
+				<br><h2 class="banner-cta">The Divide</h2><br><br>
 			</div>
 
-			<div class="container-fluid">
-				<div class="row divide-row">
-
-					<div class="col-md-12 col-sm-12 col-xs-12 divide-columns">
-						<img src="{% static 'img/cycle.png' %}" class="divide-images" alt="Cycle of poverty">
-						<div class="divide-sections">
-						<span class="child-number2 bold left believe darkblue">We believe</span>
-						<span class="child-exp2 graphic-text bold">Education is both the key to breaking the cycle of poverty and opening the door to human flourishing.</span>
-						</div>
-					</div>
-
-					<div class="col-md-12 col-sm-12 col-xs-12 divide-columns">
-						<img src="{% static 'img/children.png'%}" class="divide-images" alt="children">
-						<div class="divide-sections">
-						<span class="child-number2 bold left believe darkblue">1 in 3</span>
-						<span class="child-exp2 graphic-text bold">Children around the world lack access to a quality basic education</span>
-						</div>
-					</div>
-
-				</div>
-
-
+		<div class="row focus-row">
+			<div class="col-sm-12 col-md-12">
+				<span class="child-number2 bold left believe darkblue text-center">1 in 3</span>
+				<p class="text-center">Children around the world lack access to a quality basic education</p>
+				<img src="{% static 'img/children.png'%}" class="children-ratio center-block" alt="children">
+				
 			</div>
+		</div>
 
+		<br><br>
 
-			<!-- ============= THE DIVIDE ================ -->
-			<div class="divide container col-xs-10 col-sm-12 col-md-12 col-lg-9">
-				<div id="divide-intro">
-					<span class="child-exp2 disconnected-blurb">There are now more quality, free, open educational resources online than ever before. However,</span>
-				</div>
-
-				<img src="{% static 'img/no-wifi.png' %}" alt="No Wifi">
-				<div id="divide-box">
-					<span class="bold left divide-number">4.5 BILLION<br></span>
-					<span id="disconnected" class="left bold">ARE DISCONNECTED</span>
-				</div>
-				<div id="divide-outro">
-					<span class="child-exp2 disconnected-blurb">This is the divide. The 60% of the world who could benefit the most from open educational resources and supporting pedagogical tools lack the connectivity needed to access them.</span>
-				</div>
+		<div class="row focus-row">
+			<div class="col-sm-6 col-md-6 col-lg-6 believe-blurb">
+				<span class="child-number2 bold left believe darkblue">We believe</span>
+				<p>Education is both the key to breaking the cycle of poverty and opening the door to human flourishing. There are now more quality, free, open educational resources online than ever before. However...</p>
 			</div>
+			<div class="col-sm-4 col-md-6 col-lg-6">
+				<img src="{% static 'img/cycle.png' %}" class="cycle-image center-block" alt="Cycle of poverty">
+			</div>
+		</div>
+
+		<div class="row focus-row">
+			<div class="col-xs-12 col-sm-6 col-md-6 disconnected-column">
+				<br><br>
+				<span class="child-number2 bold left believe darkblue">4.5 billion are disconnected</span>
+				<p>This is the divide. The 60% of the world who could benefit the most from open educational resources and supporting pedagogical tools lack the connectivity needed to access them.</p>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-6">
+				<img src="{% static 'img/no-wifi.png' %}" alt="No Wifi" class="center-block wifi-globe">
+			</div>
+			
 		</div>
 	</div>
 
@@ -100,19 +90,19 @@
 		<div class="container-fluid">
 
 			<div class="title-banner bridge-banner" id="bridge">
-				<h2 class="banner-cta">THE BRIDGE</h2>
+				<h2 class="banner-cta">The Bridge</h2>
 			</div>
 			<div class="bridge container col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="bridge-intro bold">
 					<h4 class="mission-state bold">For learners to realize their right to quality education means that anyone, anywhere—online or offline—can access it. We realized the potential emerging out of four converging trends:</h4>
 				</div>
 				<div class="bridge-box bbox row">
-					<div class="cost-effective col-lg-6 col-md-6 col-sm-6">
-						<img src="{% static 'img/cc.png'%}" alt="Creative Commons">
+					<div class="cost-effective col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<img src="{% static 'img/OER.png'%}" alt="OER">
 						<h3 class="bold">1. Open Educational Resources</h3>
 						<p>More and more learning materials are being released under Creative Commons licenses, which allows them to be shared, used, and remixed freely. These Open Educational Resources (OER) now feature an increasing number of digital curricula.</p>
 					</div>
-					<div class="collaborate col-lg-6 col-md-6 col-sm-6">
+					<div class="collaborate col-lg-6 col-md-6 col-sm-6 col-xs-12">
 						<img src="{% static 'img/low-cost.png'%}" alt="Cost Effective">
 						<h3 class="bold">2. Low Cost Computing</h3>
 						<p>The cost of hardware is decreasing much faster than the cost of Internet bandwidth; devices like the Raspberry Pi and low-cost Android tablets open up computing to more users than ever before.</p>
@@ -162,12 +152,12 @@
 		<div class="container-fluid">
 
 			<div class="title-banner impact-banner">
-				<h2 class="banner-cta">OUR SOLUTIONS</h2>
+				<h2 class="banner-cta">Our Solutions</h2>
 			</div>
 			<div class="impact-box container">
-				<div class="impact container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="impact container row">
 					<div class="col-lg-3 col-md-4 col-sm-4">
-						<img src="{% static 'img/kickstarter/about/kolibri.png'%}" alt="Kolibri">
+						<a href="{% url 'indiegogo' %}"><img src="{% static 'img/kickstarter/Kolibri-tablet.png'%}" alt="Kolibri tablet"></a>
 					</div>
 					<div class="ka-lite col-lg-9 col-md-8 col-sm-8">
 						<h2><strong>Kolibri</strong></h2>
@@ -179,9 +169,9 @@
 			</div>
 
 			<div class="impact-box container">
-				<div class="impact container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="impact container row">
 					<div class="col-lg-3 col-md-4 col-sm-4">
-						<img src="{% static 'img/ka-lite.png'%}" alt="Kolibri">
+						<a href="{% url 'ka_lite' %}"><img src="{% static 'img/kickstarter/KA-lite-tablet.png'%}" alt="KA Lite tablet"></a>
 					</div>
 					<div class="ka-lite col-lg-9 col-md-8 col-sm-8">
 						<h2><strong>KA Lite</strong></h2>
@@ -200,11 +190,8 @@
 	<div class="row impact-screen" id="impact">
 		<div class="container-fluid">
 
-			<div class="title-banner impact-banner">
-				<h2 class="banner-cta">OUR IMPACT</h2>
-			</div>
-
 			<section class="impact-section">
+				<h2 class="banner-cta">Our Impact</h2>
 				<h4 class="impact-text">We have reached millions of learners with KA Lite all around the globe, and we will reach millions more with Kolibri. Read about those who shared their story with us and share your own!</h4>
 				<div class="impact-cta">
 				<a href="https://learningequality.org/ka-lite/map/"><button type="button" class="btn btn-success">SEE THE MAP</button></a>
@@ -215,28 +202,22 @@
 
 			<div class="row impact-row">
 
-				<div class="col-lg-12 google-impact" >
-					<p>With KA Lite, learning outcomes have improved in the various communities where our collaborators have worked.  Read about the studies conducted in places such as Guatemala, India, and Cameroon.</p>
-					<br/>
-					<iframe width="560" height="500" class="google-impact-video" src="https://www.youtube.com/embed/h8-oQvITb3M" frameborder="0" allowfullscreen></iframe>
-				</div>
+				<div class="row impact-row">
 
-			</div>
-
-			<h3 class="report-header">Recent Reports</h3>
-
-			<div class="row impact-row">
+				<h3 class="report-header">Recent Reports</h3>
+				<p>With KA Lite, learning outcomes have improved in the various communities where our collaborators have worked. Read about the studies conducted in places such as Guatemala, India, and Cameroon.</p>
+				<br><br>
 
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 			
 					<div class="impact-report">
 						<img class="report-cover" src="{% static 'img/Funsepa_report.png'%}">
-							<h5>Fundación Sergio Paiz Andrade</h5>
+							<h4>Fundación Sergio Paiz Andrade</h4>
 							<a target="_blank" href="https://learningequality.org/media/FUNSEPA_Final_Evaluation_Report_27May2016.pdf">READ MORE</a>
 					</div>
 					<div class="impact-report">
 						<img class="report-cover" src="{% static 'img/Cameroun-report.png'%}">
-							<h5>Transforming Education in Cameroon</h5>
+							<h4>Transforming Education in Cameroon</h4>
 							<a target="_blank" href="media/Rapport-Etude-Cameroun_KL_ENG.pdf">READ MORE</a>
 					</div>
 				</div>
@@ -245,17 +226,26 @@
 					
 					<div class="impact-report">
 						<img class="report-cover" src="{% static 'img/Hirshleifer-report.png'%}">
-							<h5>Incentives for Effort or Outputs? A Field Experiment to Improve Student Performance</h5>
+							<h4>Incentives for Effort or Outputs? A Field Experiment to Improve Student Performance</h4>
 							<a target="_blank" href="https://www.povertyactionlab.org/sites/default/files/publications/Hirshleifer_Incentives%20for%20Output_Jan2016.pdf">READ MORE</a>
 					</div>
 					<div class="impact-report">
 						<img class="report-cover" src="{% static 'img/vf_report.png'%}">
-							<h5>Connected Education</h5>
+							<h4>Connected Education</h4>
 							<a target="_blank" href="http://www.vodafone.com/content/dam/vodafone/connected-education/vodafone_connected_education.pdf">READ MORE</a>
 					</div>
 				</div>
 
 			</div>
+
+				<div class="col-lg-12 google-impact" >
+					
+					
+					<iframe width="560" height="500" class="google-impact-video center-block" src="https://www.youtube.com/embed/h8-oQvITb3M" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+			</div>
+		
 
 		</div>
 	</div>
@@ -266,24 +256,24 @@
 		<div class="container-fluid">
 
 			<div id="involved" class="title-banner involve-banner">
-				<h2 class="banner-cta">GET INVOLVED</h2>
+				<h2 class="banner-cta">Get Involved</h2>
 			</div>
 			<div class="involved container">
 				<div class="container involve-links">
 					<div class="container">	
-						<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 							<i class="fa fa-paper-plane fa-5x"></i>
 							<p>Join the team!</p>
 							<a href="{% url 'jobs' %}"><button class="btn form-button btn-success">JOBS</button></a>
 							<a href="{% url 'internships' %}"><button class="btn form-button btn-success">INTERNSHIPS</button> </a>
 
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 							<img src="{% static 'img/github.png' %}" alt="GitHub">
 							<p>Build world-changing tools! Check out our open-source repositories.</p>
 							<a target="_blank" href="https://github.com/learningequality"><button class="btn form-button btn-success">GITHUB</button></a>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 							<img src="{% static 'img/translate.png' %}" alt="Translate">
 							<p>Help make our tools available in more languages!</p>
 							<a target="_blank" href="https://github.com/learningequality/ka-lite/wiki/Internationalization:-Contributing-Translations"><button class="btn form-button btn-success">TRANSLATE</button></a>
@@ -295,10 +285,10 @@
 	</div>
 
 
-
+</div>
 <!-- ============= FOOTER ================ -->
 
-</div>
+
 
 <script type="text/javascript">
  //Scrollspy

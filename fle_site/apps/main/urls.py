@@ -20,4 +20,5 @@ urlpatterns = patterns(__package__ + '.views',
     url(r'^donate/$', TemplateView.as_view(template_name='main/donationpage.html'), name='donate', kwargs={"STRIPE_PUBLISHABLE_API_KEY": settings.STRIPE_PUBLISHABLE_API_KEY}),
     url(r'^donate/process/$', process_donation, name='process_donation'),
     url(r'^donate/thankyou/$', TemplateView.as_view(template_name='main/donationpage_thankyou.html'), name='donationpage_thankyou'),
+    url(r'^translate/$',  TemplateView.as_view(template_name='main/translate.html'), name='translate')
 )

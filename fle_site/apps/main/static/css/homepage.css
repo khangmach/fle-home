@@ -34,8 +34,6 @@ a:hover {
 
 .title-banner {
 	text-align: left;
-	padding: 2% 0;
-	padding-left:40px;
 }
 
 .title-banner h1 {
@@ -165,25 +163,19 @@ a:hover {
 }
 
 .banner-cta{
-	color:#ffffff;
-	border-left:2px solid #ffffff;
-	padding-left:15px;
+	color:#00AEF0;
+	font-weight:lighter;
+	text-align:center;
+	padding-top:20px;
+	font-size:42px;
 }
 
 /*============ MISSION STATEMENT =================== */
 
 .mission-screen {
-	background: url(../img/world-map-adjusted.png) no-repeat center center;
-	background-size:600px;
-	-webkit-background-size: 50% contain;
-	-moz-background-size: 50% contain;
-	-o-background-size: 50% contain;
-	background-size: 50% contain;
 	background-color:#ffffff;
 	text-align: center;
-	margin-top:42px;
-	padding: 4% 0 2% 0;
-	max-height: 400px;
+	margin-top:20px;
 	margin: auto;
 	float: none;
 }
@@ -192,18 +184,19 @@ a:hover {
 	float: none;
 	margin: auto auto;
 	text-align: center;
-	padding-top:35px;
+	padding-top:20px;
 }
 .mission-header {
-	font-weight: bold;
+	font-weight: lighter;
 	text-align:left;
 	color:#00AEF0;
 }
-.mission-state {
+.mission-state, .our-mission {
 	line-height: 1.3em;
 	margin: auto;
 	text-align:left;
 	font-weight:lighter;
+	font-size:24px;
 }
 #about-us {
 	margin: 5% 0 18% 0;
@@ -225,12 +218,32 @@ a:hover {
 
 /*===================== THE DIVIDE ========================*/
 
-.divide-banner {
-	background-color:#008fc4;
-}
 .divide-screen {
-	text-align: center;
+	background-color:#f9f9f9;
+	padding-bottom:40px;
 }
+.focus-row{
+	max-width:1000px; 
+	margin:0 auto;
+}
+
+.wifi-globe{
+	width:280px;
+}
+
+.disconnected-column{
+	padding-top:20px;
+	padding-left:40px;
+}
+
+.focus-text{
+	text-align:center; 
+	margin-top:40px; 
+	margin-bottom:40px; 
+	padding-left:30px; 
+	padding-right:30px;
+}
+
 /*======== POVERTY ========*/
 #poverty-intro {
 	margin: 8% 0 6% 0;
@@ -361,14 +374,20 @@ a:hover {
 	margin: 0 5% 5% 0;
 	display: inline-block;
 }
-.divide-images{
-	width:180px; 
-	margin-right:20px;
+.children-ratio{
+	width:90%;
+	max-width:700px;
+	min-width:300px; 
 }
-.divide-columns{
-	padding:30px;
-	margin-bottom:20px;
+.cycle-image{
+	width:280px;
 }
+
+.believe-blurb{
+	padding-top:40px;
+	padding-left:45px;
+}
+
 .divide-sections{
 	width:380px; 
 	height:auto; 
@@ -409,12 +428,6 @@ a:hover {
 }
 
 /*===================== THE BRIDGE ========================*/
-.bridge-banner {
-	background-color:#008fc4;
-}
-.bridge {
-	margin: 4% auto;
-}
 .bridge-intro {
 	float: none;
 	margin: 0 auto 8% auto;
@@ -437,7 +450,7 @@ a:hover {
 
 .bridge img {
  	position: center;
- 	max-height: 80px;
+ 	width:280px;
 }
 .bridge-box span {
 	text-align: center;
@@ -453,9 +466,6 @@ a:hover {
 }
 
 /*===================== OUR IMPACT ========================*/
-.impact-banner {
-	background-color:#008fc4;
-}
 .impact {
 	float: none;
 	text-align: left;
@@ -471,7 +481,7 @@ a:hover {
 	float: none;
 	width: 160px;
 	display: block;
-	margin-top:40px;
+	margin-top:20px;
 }
 .ka-lite p {
 	font-size: 16px;
@@ -578,6 +588,10 @@ a:hover {
 .involved{
 	margin-bottom:30px;
 }
+.involved-screen{
+	background-color:#f9f9f9;
+	margin-bottom:-40px;
+}
 
 .partners img {
 	max-width: 140px;
@@ -593,7 +607,10 @@ a:hover {
 	min-height:300px; 
 	width:100%; 
 	padding:30px; 
-	padding-top:60px;
+}
+
+.impact-section h2{
+	color:#ffffff;
 }
 
 .impact-text {
@@ -601,9 +618,10 @@ a:hover {
 	color:#ffffff;
 	margin:0 auto;
 	max-width:840px;
+	font-weight:lighter;
 }
 
-.impact-cta {
+.impact-cta, .text-center {
 	text-align:center;
 }
 
@@ -611,6 +629,7 @@ a:hover {
 	max-width:700px; 
 	overflow:hidden;
 	margin-bottom:15px;
+	text-align:left;
 }
 .report-cover {
 	float:left; 
@@ -622,11 +641,11 @@ a:hover {
 	margin-bottom:30px;
 	color:#00AEF0;
 	text-align:center;
-	text-transform:uppercase;
 }
 
 .google-impact-video {
 	width:100%;
+	max-width:950px;
 }
 
 .google-impact {
@@ -634,15 +653,14 @@ a:hover {
 }
 
 .impact-row {
-	padding:60px;
+	padding:20px;
+	padding-top:20px;
+	max-width: 1000px;
+	margin:0 auto;
 }
 
 
 /*===================== GET INVOLVED ========================*/
-.involve-banner {
-	background-color:#008fc4;
-	margin-top:40px;
-}
 .donate {
 	margin-top: 7%;
 }
@@ -716,7 +734,7 @@ a:hover {
 }
 
 .involve-links {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .involve-links p {
@@ -854,8 +872,8 @@ a:hover {
 	.mission-header {
 		font-size: 25px;
 	}
-	.mission-state {
-		font-size: 16px;
+	.mission-state, .our-mission {
+		font-size: 18px;
 	}
 	#about-us {
 		margin-bottom: 25%;
@@ -929,7 +947,7 @@ a:hover {
 	}
 
 	#landing-description{
-		font-size:16px;
+		font-size:20px;
 	}
 
 	.landing-box {
