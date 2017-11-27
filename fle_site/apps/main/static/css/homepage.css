@@ -125,12 +125,12 @@ a:hover {
 /*=========== LANDING SCREEN ===============*/
 
 .landing-screen {
-	background: url(../img/Nalanda-bkg.jpg) no-repeat center center; 
+	background: url(../img/Nalanda-classroom2.jpg) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 350px;
+	height: 400px;
 	max-width: 100%;
 }
 .landing-box {
@@ -474,7 +474,7 @@ a:hover {
 }
 .impact-box {
 	margin: auto;
-	margin-bottom:20px;
+	padding:40px;
 }
 .impact img {
 	text-align: center;
@@ -626,11 +626,23 @@ a:hover {
 }
 
 .impact-report {
-	max-width:700px; 
 	overflow:hidden;
 	margin-bottom:15px;
 	text-align:left;
 }
+.case-studies{
+	padding:0;
+}
+.impact-report h3{
+	text-transform:uppercase; 
+	color:#212121;
+}
+
+.impact-report a{
+	text-decoration:underline;
+	font-weight:bold;
+}
+
 .report-cover {
 	float:left; 
 	margin-right:15px;
@@ -645,11 +657,10 @@ a:hover {
 
 .google-impact-video {
 	width:100%;
-	max-width:950px;
 }
 
 .google-impact {
-	margin-right:10px;
+	padding:0;
 }
 
 .impact-row {
@@ -658,7 +669,6 @@ a:hover {
 	max-width: 1000px;
 	margin:0 auto;
 }
-
 
 /*===================== GET INVOLVED ========================*/
 .donate {
