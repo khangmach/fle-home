@@ -32,7 +32,6 @@ class TeamMember(Person):
 class BoardMember(Person):
     picture = models.ImageField(upload_to="board_pics")
 
-
 class PressLogo(models.Model):
     title = models.CharField(max_length=150)
     picture = models.ImageField(upload_to="press_logos", help_text="Please only upload images 70x70!")
