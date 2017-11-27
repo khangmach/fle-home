@@ -1,0 +1,81 @@
+{% extends 'about/base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Translators{% endblock title %}
+{% block about_translators_active %}active{% endblock about_translators_active %}
+
+{% block extrahead %}
+<script>
+$(document).ready(function() {
+    $(".button-popover").popover({
+        trigger: "hover"
+    });
+});
+</script>
+{% endblock extrahead %}
+
+{% block about_content %}
+
+<div id="team-content">
+    <div class="page-header">
+        <h1>
+            Thanks to our translators!
+        </h1>
+    </div>
+
+    {# For computers and above #}
+    <div class="hidden-sm hidden-xs">
+        <div class="row">
+        {% for person in translators %}
+            <div class="col-md-3">
+                <a onclick="javascript:$('#{{ person.slug }}').modal('toggle');">
+                    <img class="img-thumbnail team-img-overlay" src="{{ MEDIA_URL }}{{ person.picture }}">
+                </a>
+                <h3>
+                    {{ person.name }}
+                </h3>
+                <h4>
+                    {{ person.title }}
+                </h4>
+            </div>
+
+            {% if not forloop.last %}
+                {% if forloop.counter|divisibleby:"4" %}
+                    </div><div class="row">
+                {% endif %}
+            {% endif %}
+
+        {% endfor %}
+        </div>
+    </div>
+
+    {# For tablets and below #}
+    <div class="visible-sm visible-xs">
+        <div class="row">
+        {% for person in translators %}
+            <div class="col-sm-4">
+                <a onclick="javascript:$('#{{ person.slug }}').modal('toggle');">
+                    <img class="img-thumbnail team-img-overlay" src="{{ MEDIA_URL }}{{ person.picture }}">
+                </a>
+                <h3>
+                    {{ person.name }}
+                </h3>
+                <h4>
+                    {{ person.title }}
+                </h4>
+            </div>
+
+            {% if not forloop.last %}
+                {% if forloop.counter|divisibleby:"3" %}
+                    </div><div class="row">
+                {% endif %}
+            {% endif %}
+
+        {% endfor %}
+        </div>
+    </div>
+
+
+</div>
+{% endblock about_content %}
