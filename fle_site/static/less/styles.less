@@ -1141,3 +1141,9 @@ div.comm-btns.row {
 #contactModal {
     overflow-y: hidden !important;
 }
+
+
+// fix for 15px right-margin bug https://github.com/twbs/bootstrap/issues/9855
+.modal-open, .modal-open .navbar-fixed-top {
+    margin-right:0 !important;
+}

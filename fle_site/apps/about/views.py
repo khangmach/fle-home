@@ -6,7 +6,7 @@ from django.conf import settings
 
 from annoying.decorators import render_to
 
-from models import TeamMember, BoardMember, PressArticle, Internship, Job, SupportingOrganization
+from models import TeamMember, BoardMember, PressArticle, Internship, Job, SupportingOrganization, Translator
 
 @render_to("about/team.html")
 def team(request):
@@ -18,7 +18,8 @@ def team(request):
 @render_to("about/board.html")
 def board(request):
     return {
-        "board_members": BoardMember.objects.order_by("?")
+        "board_members": BoardMember.objects.board(),
+        "advisor_members": BoardMember.objects.advisor()
     }
 
 @render_to("about/press.html")
@@ -52,4 +53,10 @@ def supporters(request):
     return {
         "sponsors": sponsors,
         "partners": partners
+    }
+
+@render_to("about/translators.html")
+def translators(request):
+    return {
+        "translators": Translator.objects.order_by("?")
     }
