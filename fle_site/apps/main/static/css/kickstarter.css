@@ -44,7 +44,6 @@ input {
 .fle_title {
   font-size: 40px;
   padding: 90px 5%;
-/*  background-color: #F5F5F5;*/
   background-color: white;
   position: relative;
   z-index: 2;
@@ -334,6 +333,7 @@ h6 {
   padding: 0;
   position: absolute;
   width: 100%;
+  padding:20px;
 }
 
 /* HEADER */
@@ -428,13 +428,18 @@ span.hidden-xs.hidden-sm {
   margin-bottom:30px;
 }
 
-.kolibri-copy a, .translate-row a{
+.kolibri-copy a, .translate-row a, .download-btn{
   border:2px solid #996189; 
   padding:14px; 
   color:#ffffff; 
   font-size:18px;
   background-color:#996189;
   text-decoration:none;
+}
+
+.kolibri-copy a:hover, .translate-row a:hover, .download-btn:hover{
+  background-color:#72486F;
+  border:2px solid #72486F;
 }
 
 .kolibri-copy{
@@ -444,7 +449,6 @@ span.hidden-xs.hidden-sm {
 .studio-tablet{
   width:70%; 
   max-width:700px; 
-  min-width:450px; 
   margin:0 auto; 
 }
 
@@ -459,7 +463,7 @@ span.hidden-xs.hidden-sm {
 .kolibri-feature-row a{
   color:#996189; 
   font-size:16px; 
-  text-align:center;
+  text-align:left;
   text-transform:uppercase;
   display:inherit;
   font-weight:bolder;
@@ -475,8 +479,7 @@ span.hidden-xs.hidden-sm {
 .translate-row{
   border-top:2px solid #e0e0e0;
   padding-top:24px;
-  height:180px; 
-  max-height:240px;
+  padding-bottom:24px;
   text-align:center;
 }
 
@@ -485,7 +488,7 @@ span.hidden-xs.hidden-sm {
   margin-top:30px;
 }
 
-.translate-row h4::after{
+.translate-blurb h4::after{
   content: url('../img/kickstarter/heart.png');
   margin-left: 6px;
   padding-top:3px;
@@ -496,6 +499,7 @@ span.hidden-xs.hidden-sm {
   background-color:#f7f7f7; 
   height:300px; 
   margin-bottom:40px;
+  margin-top:50px;
 }
 
 .translate-copy{
@@ -508,6 +512,83 @@ span.hidden-xs.hidden-sm {
 
 .translate-copy ul > li{
   font-size:14px;
+}
+
+/*Download page*/
+.download-btn:hover{
+  color:#ffffff;
+}
+
+.tab-pane{
+  margin-top:50px;
+}
+
+.nav-tabs{
+  text-align:center;
+}
+
+.nav-tabs > li{
+  float:none;
+  display:inline-block;
+}
+
+.version-disclaimer{
+  font-size:10px;
+  font-style:italic;
+}
+
+.resource-container{
+  background-color:#f7f7f7; 
+  padding:50px;
+  margin-bottom:-40px;
+}
+
+.download-container{
+  margin-top:80px;
+}
+
+.spec-container{
+  background-color:#ffffff;
+}
+
+.download-container img{
+  width:420px;
+}
+
+.resource-container{
+  padding-left:50px; 
+  padding-right:50px;
+}
+
+.tab-content{
+  text-align: center;
+  margin-bottom:40px;
+}
+
+.spec-column{
+  padding:40px;
+}
+
+
+/*===================== HARDWARE GRANT ========================*/
+.grant-recipient{
+  width:240px; 
+  margin-top:20px; 
+  margin-right:20px; 
+  margin-bottom:20px;
+}
+
+.grant-section{
+  max-width:850px;
+}
+
+.grant-blurb{
+  padding-top:20px;
+}
+
+.hardware-container{
+  padding:40px; 
+  margin-top:80px;
 }
 
 /* LAST CALL TO ACTION */
@@ -551,7 +632,6 @@ section#contact .bridge-photo,
 section#contact .section-heading,
 #footer-mailchimp {
   z-index: 1;
-  /*color: #8670A1;*/
 }
 
 
@@ -1190,7 +1270,7 @@ top:10px;
 
 }
 .use-image{
-  width:180px;
+  width:120px;
   text-align: center;
   vertical-align: center;
 }

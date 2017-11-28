@@ -52,7 +52,6 @@ class Translator(models.Model):
     title = models.CharField(max_length=100, blank=True)
     picture = models.ImageField(upload_to="translator_pics")
 
-
 class PressLogo(models.Model):
     title = models.CharField(max_length=150)
     picture = models.ImageField(upload_to="press_logos", help_text="Please only upload images 70x70!")

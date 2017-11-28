@@ -50,7 +50,6 @@
                 <div class="intro-text">
                     <div class="container">
                         <div class="row">
-                            <!-- <div id="campaign-intro-1">Announcing our next-generation platform</div> -->
                             <div id="intro_container">
                                 
                                  
@@ -69,15 +68,9 @@
                                 
                             </div>
     
-                            <!-- <div class="countdown"></div> -->
                             <br><br><br><br>
                         </div>
                     </div>
-                    <!-- <a id="down-arrow" href="#fle_intro">
-                        <div class="arrow-down">
-                            <img id="header-btn" src="{% static 'img/kickstarter/arrow.png' %}">
-                        </div>
-                    </a> -->
 
                 </div>
             </div>
@@ -93,9 +86,7 @@
 
         <!-- FLE how it works -->
         <section id="fle_how" class="row">
-<!--             <center class="fle_title">
-                <h1>HOW WILL IT WORK?</h1>
-            </center>
+<!--        
  -->            {% include "main/partials/_kickstarter_how.html" %}
         </section>
 
@@ -134,29 +125,46 @@
             </div>
 
             <div class="row kolibri-feature-row">
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                        
-                        <a href="#portfolioModal0" data-toggle="modal"><img src="{% static 'img/kickstarter/devices.png' %}" class="center-block"></a>
-                        <h5>Runs on anything</h5>
-                        <a href="#portfolioModal0" data-toggle="modal">Read more</a>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <img src="{% static 'img/kickstarter/devices.png' %}" class="center-block">
                     </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                        
-                        <a href="#portfolioModal3" data-toggle="modal"><img src="{% static 'img/kickstarter/byte.png' %}" class="center-block"></a>
-                        <h5>Packaged for offline use</h5>
-                        <a href="#portfolioModal3" data-toggle="modal">Read more</a>
+                    <div class="col-sm-7 col-md-7 col-lg-7">
+                        <h4>Runs on anything</h4>
+                        <p>To facilitate broad, low-cost adoption, Kolibri is carefully designed to run on as many devices and operating systems (including Windows, Linux and OSX) as possible, leveraging existing legacy hardware or low-cost off-the-shelf devices. The cost of Android tablets is plummeting, so we're also building Kolibri to run standalone as an Android app. <br><br>The cost of Android tablets is plummeting, so we're also building Kolibri to be able to run standalone as an Android app. Content can be loaded onto a tablet from a nearby server or peer-to-peer from another tablet, and then taken elsewhere and used by itself.</p>
                     </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                        
-                        <a href="#portfolioModal2" data-toggle="modal"><img src="{% static 'img/kickstarter/syncing.png' %}" class="center-block"></a>
-                        <h5>Syncing and sharing</h5>
-                        <a href="#portfolioModal2" data-toggle="modal">Read more</a>
+            </div>
+
+            <div class="row kolibri-feature-row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <img src="{% static 'img/kickstarter/byte.png' %}" class="center-block">
                     </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                        
-                        <a href="#portfolioModal4" data-toggle="modal"><img src="{% static 'img/kickstarter/self-paced.png' %}" class="center-block"></a>
-                        <h5>Self-paced learning</h5>
-                        <a href="#portfolioModal4" data-toggle="modal">Read more</a>
+                    
+                    <div class="col-sm-7 col-md-7 col-lg-7">
+                        <h4>Packaged for Offline Use</h4>
+                        <p>We developed special processes to package online learning materials to be taken offline. One of our innovations is a video compression technique that convert the pen strokes and objects in a blackboard-style video into scalable vector objects. <br><br>In our tests, a 250MB video can now be compressed into just a single megabyte, while retaining most of the original quality. This reduces the time and cost needed to download a large set of videos, and allows a large amount of content to be stored on a small, low-cost device.</p>
+                    </div>
+            </div>
+
+            <div class="row kolibri-feature-row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <img src="{% static 'img/kickstarter/self-paced.png' %}" class="center-block">
+                    </div>
+                    
+                    <div class="col-sm-7 col-md-7 col-lg-7">
+                        <h4>Self-Paced Learning</h4>
+                        <p>Track educational growth for individuals and groups of learners accurately and easily, even in informal educational contexts.<br><br> Kolibri comes with tools such as a coach dashboard, exam creation, exercises, assignment of content for differentiated instruction, and a recommendation tool that displays useful and relevant next steps based on a learner's history, progress, and goals.</p>
+                        <a href="#portfolioModal4" data-toggle="modal">Learn more</a>
+                    </div>
+            </div>
+
+            <div class="row kolibri-feature-row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <img src="{% static 'img/kickstarter/syncing.png' %}" class="center-block">
+                    </div>
+                    
+                    <div class="col-sm-7 col-md-7 col-lg-7">
+                        <h4>Syncing and Sharing</h4>
+                        <p>Devices running Kolibri will be able to find and directly connect with each other over a local Wi-Fi network, allowing for easy content sharing and data updates.</p>
                     </div>
             </div>
                 
@@ -166,10 +174,13 @@
 
        <div class="container-fluid">
             <div class="row translate-row">
-                <div class="col-sm-12">
+                <div class="col-sm-6 col-md-6 translate-blurb">
                     <h4>Help translate Kolibri!</h4>
-                    <!-- <a href="/translate.html">Learn more about contributing</a> -->
                     <a href="{% url 'translate' %}">Learn more about contributing</a> 
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <h4>Learn about our Device Fund</h4>
+                    <a href="{% url 'hardware_grant' %}">More information</a> 
                 </div>
             </div>
         </div>
