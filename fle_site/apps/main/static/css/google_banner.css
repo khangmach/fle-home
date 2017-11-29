@@ -7,12 +7,13 @@ a{
 .bannernav{
   margin:0; 
   text-align:center; 
-  background-color:#ffffff; 
-  background:url(../img/kickstarter/about/kolibri-adjust.png) no-repeat 50% -10px;
-  background-size:230px;
-  color:#3a3a3a; 
-  padding-top:11px;
-  padding-bottom:11px;
+  background-color:#f9f9f9; 
+  color:#212121; 
+  padding:20px;
+}
+
+.navbar-inner > p{
+  margin:0;
 }
 
 #banner-logo{
@@ -25,5 +26,4 @@ a{
   color:#3a3a3a;
   font-size:16px;
   padding:10px;
-  font-weight:bold;
 }
