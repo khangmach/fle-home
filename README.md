@@ -4,7 +4,7 @@ This is the code for Learning Equality's homepage: [https://learningequality.org
 
 Short URL for the site is [http://leq.ngo](http://leq.ngo)
 
-ping @carinediaz for text changes and @khangmach for technical changes and deployment of changes
+Ping @carinediaz to review content changes and @khangmach to review design changes.
 
 ## Environment Setup
 
