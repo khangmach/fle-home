@@ -514,6 +514,10 @@ span.hidden-xs.hidden-sm {
   font-size:14px;
 }
 
+.globe-image{
+  width:400px;
+}
+
 /*Download page*/
 .download-btn:hover{
   color:#ffffff;
@@ -552,7 +556,7 @@ span.hidden-xs.hidden-sm {
 }
 
 .download-container img{
-  width:420px;
+  width:400px;
 }
 
 .resource-container{

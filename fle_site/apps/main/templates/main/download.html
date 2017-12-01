@@ -1,0 +1,112 @@
+{% extends base_template %}
+
+{% load staticfiles %}
+
+{% block title %}Download Kolibri{% endblock title%}
+
+{% block headcss %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta property="og:image" content="{% static 'img/kickstarter/fb-sharedlink.png' %}" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/flipclock.css' %}">
+    <link rel="stylesheet" href="{% static 'css/kickstarter.css' %}">
+    <link rel="stylesheet" href="{% static 'css/_kickstarter_features.css' %}">
+    <link rel="stylesheet" href="{% static 'css/_kickstarter_how.css' %}">
+    <link rel="stylesheet" href="{% static 'css/_kickstarter_quote.css' %}">
+    <link rel="stylesheet" href="{% static 'css/_kickstarter_mobile.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/igg_integration.css' %}">
+
+    <!-- Custom Fonts -->
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:100,400,700' rel='stylesheet' type='text/css'>
+
+{% endblock headcss %}
+
+
+{% block bodycontents %}
+
+
+    <!-- Header -->
+    <div id="body">
+
+        <div class="container-fluid download-container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <img src="{% static 'img/kickstarter/download-kolibri.png' %}" alt="download-box-image" class="center-block">
+                </div>
+                <div class="col-sm-6 col-md-6 spec-column">
+                    <h3>Download Kolibri</h3>
+                    <h5>Version 1.0</h5>
+                    <p>
+                        <b>Released:</b> November 24, 2017<br>
+                        <a href="http://kolibri.readthedocs.io/en/develop/changelog.html">Release Notes</a><br><br>
+                        <b>Supported browsers:</b><br> Google Chrome, Internet Explorer, Firefox, Opera<br>
+                        <br>
+                        <b>Supported languages:</b><br> English, Español, Français, Kiswahili, Português<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#windows" role="tab">Windows</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#android" role="tab">Android</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#debian" role="tab">Debian/Ubuntu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#PyPi" role="tab">PyPi</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="windows" role="tabpanel">
+                <a class="download-btn" href="#">DOWNLOAD</a><br><br><br>
+                <p>Compatible with Windows 7+</p>
+                <a href="#">Installation instructions for Windows</a>
+            </div>
+            <div class="tab-pane" id="android" role="tabpanel">
+                <a class="download-btn" href="#">DOWNLOAD</a><br><br><br>
+                <p>Compatible with Android 4+</p>
+                <a href="#">Installation instructions for Android</a>
+            </div>
+            <div class="tab-pane" id="debian" role="tabpanel">
+                <a class="download-btn" href="#">DOWNLOAD</a><br><br><br>
+                <p>Compatible with Debian 1+</p>
+                <a href="#">Installation instructions for Debian</a>
+            </div>
+            <div class="tab-pane" id="PyPi" role="tabpanel">
+                <a class="download-btn" href="#">DOWNLOAD</a><br><br><br>
+                <p>Compatible with PyPi 1+</p>
+                <a href="#">Installation instructions for PyPi</a>
+            </div>
+        </div>
+
+        <div class="container-fluid resource-container">
+            <h4>Resources</h4>
+            <br>
+            <a href="http://kolibri.readthedocs.io/">Latest Kolibri documentation</a>
+            <br>
+            <a href="https://github.com/learningequality/kolibri">Check out GitHub for older versions</a>
+            <p class="version-disclaimer">Please note that we do not have long term support for older versions of Kolibri</p>
+            <br><br>
+            <h4>License and privacy statement</h4>
+            <p>By downloading and using Kolibri, you agree to the license terms and privacy statements as described below:<br><br>Tart cookie fruitcake soufflé cake. Icing tart soufflé sweet roll danish gummi bears pie sesame snaps. Sugar plum cotton candy caramels jelly pastry. Pie candy canes bonbon chocolate cake danish. Tootsie roll cookie candy marshmallow sugar plum. Pastry gummies tootsie roll biscuit tart pie biscuit powder. Chocolate cake cookie danish dragée brownie soufflé gummies.</p>
+        </div>
+
+
+    </div>
+      
+    
+
+{% endblock bodycontents %}
