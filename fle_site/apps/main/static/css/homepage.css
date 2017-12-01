@@ -134,9 +134,9 @@ a:hover {
 	max-width: 100%;
 }
 .landing-box {
-	margin: 50px 50px 0px 0px;
-	display: block;
-	min-width: 340px;
+	margin-top:55px;
+	padding:20px;
+	text-align:center;
 }
 #landing-header {
 	font-size: 40px;
@@ -148,11 +148,9 @@ a:hover {
 #landing-description {
 	font-size: 20px;
 	display: block;
-	color: white;
+	color: #ffffff;
 	padding-top: 20px;
-	max-width: 500px;
 	line-height: 1.6em;
-	font-weight:normal;
 	text-shadow: 1px 1px #2e2e2e;
 }
 .learn-more {
@@ -778,7 +776,7 @@ a:hover {
 }
 @media (max-width: 991px) {
 	#landing-header {
-		font-size: 32px;
+		font-size: 28px;
 	}
 	#landing-description {
 		font-size: 20px;
