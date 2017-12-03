@@ -348,6 +348,24 @@ header {
 #intro_container {
   margin-left: 50px;
   margin-top: 140px;
+  text-align:left;
+}
+#intro-download-btn {
+  padding:12px; 
+  border:2px solid #ffffff; 
+  background-color:#ffffff; 
+  color:#996189; 
+  font-size:20px; 
+  font-weight:bold;
+}
+#intro-demo-btn {
+  padding:12px; 
+  border:2px solid #ffffff; 
+  background-color:transparent; 
+  color:#ffffff; 
+  font-size:20px; 
+  font-weight:bold; 
+  margin-left:8px;
 }
 .intro-heading {
   font-family: "Open Sans", sans-serif;
@@ -357,6 +375,9 @@ header {
   position: relative;
   z-index: -1;
   text-align: right;
+}
+.kolibri-title{
+  font-size:42px;
 }
 span.hidden-xs.hidden-sm {
   display: inline !important;
@@ -573,6 +594,18 @@ span.hidden-xs.hidden-sm {
   padding:40px;
 }
 
+/*Documentation page*/
+.documentation-container{
+  padding:50px; 
+  margin-top:50px;
+}
+
+.documentation-intro{
+  margin-top:80px;
+  padding:50px;
+}
+
+
 
 /*===================== HARDWARE GRANT ========================*/
 .grant-recipient{
@@ -591,7 +624,7 @@ span.hidden-xs.hidden-sm {
 }
 
 .hardware-container{
-  padding:40px; 
+  padding:50px; 
   margin-top:80px;
 }
 
@@ -1227,7 +1260,7 @@ top:10px;
 }
 
 #kolibri_logo{
-  width: 260px;
+  width: 600px;
   margin-top: 30px;
 }
 
@@ -1245,8 +1278,10 @@ top:10px;
   line-height: 140%;
   text-transform: initial;
   font-family: "Open Sans", sans-serif;
-  max-width: 600px;
+  max-width: 880px;
   margin: auto;
+  text-align:left;
+  margin-top:20px;
 }
 
 .below-fold2 h3{

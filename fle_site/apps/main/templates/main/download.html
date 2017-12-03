@@ -35,14 +35,14 @@
         <div class="container-fluid download-container">
             <div class="row">
                 <div class="col-sm-6 col-md-6">
-                    <img src="{% static 'img/kickstarter/download-kolibri.png' %}" alt="download-box-image" class="center-block">
+                    <img src="{% static 'img/kickstarter/download-kolibri.png' %}" class="center-block">
                 </div>
                 <div class="col-sm-6 col-md-6 spec-column">
                     <h3>Download Kolibri</h3>
-                    <h5>Version 1.0</h5>
+                    <h5>Version 0.7.0</h5>
                     <p>
-                        <b>Released:</b> November 24, 2017<br>
-                        <a href="http://kolibri.readthedocs.io/en/develop/changelog.html">Release Notes</a><br><br>
+                        <b>Released:</b> December 1, 2017<br>
+                        <a href="http://kolibri.readthedocs.io/en/develop/changelog.html" target="_blank">Release Notes</a><br><br>
                         <b>Supported browsers:</b><br> Google Chrome, Internet Explorer, Firefox, Opera<br>
                         <br>
                         <b>Supported languages:</b><br> English, Español, Français, Kiswahili, Português<br>
@@ -61,7 +61,7 @@
                 <a class="nav-link" data-toggle="tab" href="#android" role="tab">Android</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#debian" role="tab">Debian/Ubuntu</a>
+                <a class="nav-link" data-toggle="tab" href="#linux" role="tab">Linux</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#PyPi" role="tab">PyPi</a>
@@ -71,33 +71,31 @@
         <!-- Tab panes -->
         <div class="tab-content">
             <div class="tab-pane active" id="windows" role="tabpanel">
-                <a class="download-btn" href="#">DOWNLOAD</a><br><br><br>
-                <p>Compatible with Windows 7+</p>
-                <a href="#">Installation instructions for Windows</a>
+                <a class="download-btn" href="https://github.com/learningequality/kolibri/releases/download/v0.7.0-beta5/KolibriSetup-0.7.0.dev020171201172142_git.exe" target="_blank">DOWNLOAD</a><br><br><br>
+                <p>Compatible with Windows Vista, 7, 8.1, 10</p>
+                <a href="http://kolibri.readthedocs.io/en/develop/install.html#windows" target="blank">Installation instructions for Windows</a>
             </div>
             <div class="tab-pane" id="android" role="tabpanel">
-                <a class="download-btn" href="#">DOWNLOAD</a><br><br><br>
-                <p>Compatible with Android 4+</p>
-                <a href="#">Installation instructions for Android</a>
+                <a class="download-btn" href="https://github.com/learningequality/kolibri/releases/download/v0.7.0-beta5/kolibri-0.7.0.dev020171201172142_git-py2.py3-none-any.apk" target="_blank">DOWNLOAD</a><br><br><br>
+                <a href="http://kolibri.readthedocs.io/en/develop/install.html#android" target="blank">Installation instructions for Android</a>
             </div>
-            <div class="tab-pane" id="debian" role="tabpanel">
-                <a class="download-btn" href="#">DOWNLOAD</a><br><br><br>
-                <p>Compatible with Debian 1+</p>
-                <a href="#">Installation instructions for Debian</a>
+            <div class="tab-pane" id="linux" role="tabpanel">
+                <a class="download-btn" href="https://github.com/learningequality/kolibri/releases/download/v0.7.0-beta5/kolibri-0.7.0.dev020171201172142-git.pex" target="_blank">DOWNLOAD</a><br><br><br>
+                <p>Compatible with Python 3.4+</p>
+                <a href="http://kolibri.readthedocs.io/en/develop/install.html#linux" target="blank">Installation instructions for Linux</a>
             </div>
             <div class="tab-pane" id="PyPi" role="tabpanel">
-                <a class="download-btn" href="#">DOWNLOAD</a><br><br><br>
-                <p>Compatible with PyPi 1+</p>
-                <a href="#">Installation instructions for PyPi</a>
+                <a class="download-btn" href="https://github.com/learningequality/kolibri/releases/tag/v0.7.0-beta5" target="_blank">DOWNLOAD</a><br><br><br>
+                <a href="http://kolibri.readthedocs.io/en/develop/install.html#advanced-installation-options" target="blank">Installation instructions for PyPi</a>
             </div>
         </div>
 
         <div class="container-fluid resource-container">
             <h4>Resources</h4>
             <br>
-            <a href="http://kolibri.readthedocs.io/">Latest Kolibri documentation</a>
+            <a href="{% url 'docs' %}" target="_blank">Latest Kolibri documentation</a>
             <br>
-            <a href="https://github.com/learningequality/kolibri">Check out GitHub for older versions</a>
+            <a href="https://github.com/learningequality/kolibri" target="_blank">Check out GitHub for older versions</a>
             <p class="version-disclaimer">Please note that we do not have long term support for older versions of Kolibri</p>
             <br><br>
             <h4>License and privacy statement</h4>

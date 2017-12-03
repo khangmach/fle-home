@@ -22,20 +22,7 @@
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:100,400,700' rel='stylesheet' type='text/css'>
-    <style>
-        #fle-navbar {
-        -webkit-transform: translateZ(7px);
-           -moz-transform: translateZ(7px);
-             -o-transform: translateZ(7px);
-                transform: translateZ(7px);
-        }
-        .sticky-signup {
-        -webkit-transform: translateZ(7px);
-           -moz-transform: translateZ(7px);
-             -o-transform: translateZ(7px);
-                transform: translateZ(7px);
-        }
-    </style>
+    
 {% endblock headcss %}
 
 
@@ -50,26 +37,18 @@
                 <div class="intro-text">
                     <div class="container">
                         <div class="row">
-                            <div id="intro_container">
-                                
-                                 
-                                <div class="col-md-6">
-                                    <div class="intro-heading">Kolibri<span class="hidden-xs hidden-sm" style="font-weight: 100; top:-8px; position: relative;">|</span> </div>
-                                </div>
-                                <div class="col-md-6">
-                                     <div class="intro-heading2">The offline app for universal education</div>
-                                </div>
-                                
-                                
-                                <div class="col-sm-12">
-                                     <p class="intro-heading3">Watch us take flight this fall!</p>
-                                </div>
-
-                                
+                            <div id="intro_container"">
+                                    <br>
+                                    <h1 class="kolibri-title">Kolibri</h1>
+                                    <h3>The offline app for universal education</h3>
+                                    <br><br><br>
+                                    <a id="intro-download-btn" href="{% url 'download' %}" target="_blank">Download</a>
+                                    <a id="intro-demo-btn" href="http://kolibridemo.learningequality.org/" target="_blank">Demo</a>
+                                    <br><br><br><br><br>
                             </div>
-    
-                            <br><br><br><br>
+                            
                         </div>
+                        
                     </div>
 
                 </div>

@@ -138,12 +138,12 @@
 		max-width: 225px;
 	}
 	#kolibri_logo {
-		width: 70%;
-		max-width: 250px;
-		margin-bottom: 30px;
+		width: 80%;
+		max-width: 600px;
 	}
 	.below-fold2 h2 {
 		font-size: 20px;
+		padding:20px;
 	}
 	.shift-down2 {
 		top: 0;
