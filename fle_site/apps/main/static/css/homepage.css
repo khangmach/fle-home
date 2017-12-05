@@ -136,7 +136,7 @@ a:hover {
 .landing-box {
 	margin-top:55px;
 	padding:20px;
-	text-align:center;
+	text-align:left;
 }
 #landing-header {
 	font-size: 40px;
@@ -194,7 +194,7 @@ a:hover {
 	margin: auto;
 	text-align:left;
 	font-weight:lighter;
-	font-size:24px;
+	font-size:18px;
 }
 #about-us {
 	margin: 5% 0 18% 0;

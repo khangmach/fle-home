@@ -147,6 +147,9 @@ a:hover {
 .text-muted {
   color: #141414;
 }
+.content-partner{
+  width:300px;
+}
 p.slim-text {
   width: 100%;
   font-size: 18px;
@@ -568,6 +571,11 @@ span.hidden-xs.hidden-sm {
   margin-bottom:-40px;
 }
 
+.download-options{
+  margin-bottom:40px;
+  width:60px;
+}
+
 .download-container{
   margin-top:80px;
 }
@@ -726,7 +734,6 @@ ul.social-buttons li a {
 }
 .portfolio-modal .modal-content p {
   margin-bottom: 30px;
-  font-size: 20px;
   text-align: left;
   max-width: 600px;
   margin: auto;
@@ -819,7 +826,7 @@ img::-moz-selection {
 mark{
   background-color: transparent;
   font-weight: 900;
-  color: #47B56C;
+  color: #996189;
 }
 .play-btn{
   background-color: #33CC33;
