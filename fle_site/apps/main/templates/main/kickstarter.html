@@ -22,20 +22,7 @@
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:100,400,700' rel='stylesheet' type='text/css'>
-    <style>
-        #fle-navbar {
-        -webkit-transform: translateZ(7px);
-           -moz-transform: translateZ(7px);
-             -o-transform: translateZ(7px);
-                transform: translateZ(7px);
-        }
-        .sticky-signup {
-        -webkit-transform: translateZ(7px);
-           -moz-transform: translateZ(7px);
-             -o-transform: translateZ(7px);
-                transform: translateZ(7px);
-        }
-    </style>
+    
 {% endblock headcss %}
 
 
@@ -50,26 +37,18 @@
                 <div class="intro-text">
                     <div class="container">
                         <div class="row">
-                            <div id="intro_container">
-                                
-                                 
-                                <div class="col-md-6">
-                                    <div class="intro-heading">Kolibri<span class="hidden-xs hidden-sm" style="font-weight: 100; top:-8px; position: relative;">|</span> </div>
-                                </div>
-                                <div class="col-md-6">
-                                     <div class="intro-heading2">The offline app for universal education</div>
-                                </div>
-                                
-                                
-                                <div class="col-sm-12">
-                                     <p class="intro-heading3">Watch us take flight this fall!</p>
-                                </div>
-
-                                
+                            <div id="intro_container"">
+                                    <br>
+                                    <h1 class="kolibri-title">Kolibri</h1>
+                                    <h3>The offline app for universal education</h3>
+                                    <br><br><br>
+                                    <a id="intro-download-btn" href="{% url 'download' %}" target="_blank">Download</a>
+                                    <a id="intro-demo-btn" href="http://kolibridemo.learningequality.org/" target="_blank">Demo</a>
+                                    <br><br><br><br><br>
                             </div>
-    
-                            <br><br><br><br>
+                            
                         </div>
+                        
                     </div>
 
                 </div>
@@ -111,16 +90,16 @@
 
             <div class="row kolibri-copy">
                 <div class="col-xs-12 col-sm-6 col-md-6 kolibri-blurbs">
-                    <h4>Tools to Support Effective Learning</h4>
-                    <p>Interactive exercises, real-time feedback, differentiated group instruction, customizable learning pathways, and other tools to support both self-paced and collaborative learning.</p>
-                    <br>
-                    <a href="#portfolioModal1" data-toggle="modal">Learn more</a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <h4>No Internet required</h4>
-                    <p>Low cost devices equipped with Kolibri enable learners to engage with a vast library of educational content, totally offline.</p>
+                    <h4>THE KOLIBRI OFFLINE EDUCATIONAL LIBRARY</h4>
+                    <p>Kolibri is specially designed to provide offline access to a curated and openly licensed educational content library. Available in dozens of languages, the Kolibri libraries are designed to support a well-rounded curriculum, including both formal educational materials--such as lessons and assessments--and exploratory materials, such as books, games, and simulations.</p>
                     <br>
                     <a href="#portfolioModal5" data-toggle="modal">Explore content</a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <h4>THE KOLIBRI STUDIO CURRICULUM TOOL</h4>
+                    <p>Our web-based standalone tool KOLIBRI STUDIO gives users full control over the organization of their educational materials. Using this content curation system, anyone can explore pre-organized libraries of open educational resources, and bundle, tag, differentiate, re-order, and distribute their content into custom channels.</p>
+                    <br>
+                    <a href="#portfolioModal1" data-toggle="modal">Learn more</a>
                 </div>
             </div>
 
@@ -130,7 +109,7 @@
                     </div>
                     <div class="col-sm-7 col-md-7 col-lg-7">
                         <h4>Runs on anything</h4>
-                        <p>To facilitate broad, low-cost adoption, Kolibri is carefully designed to run on as many devices and operating systems (including Windows, Linux and OSX) as possible, leveraging existing legacy hardware or low-cost off-the-shelf devices. The cost of Android tablets is plummeting, so we're also building Kolibri to run standalone as an Android app. <br><br>The cost of Android tablets is plummeting, so we're also building Kolibri to be able to run standalone as an Android app. Content can be loaded onto a tablet from a nearby server or peer-to-peer from another tablet, and then taken elsewhere and used by itself.</p>
+                        <p>To facilitate broad, low-cost adoption, Kolibri is carefully designed to run on as many devices and operating systems (including Windows, Linux and OSX) as possible, leveraging existing legacy hardware or low-cost off-the-shelf devices. The cost of Android tablets is plummeting, so we're also building Kolibri to run standalone as an Android app.</p>
                     </div>
             </div>
 
@@ -179,7 +158,7 @@
                     <a href="{% url 'translate' %}">Learn more about contributing</a> 
                 </div>
                 <div class="col-sm-6 col-md-6">
-                    <h4>Learn about our Device Fund</h4>
+                    <h4>Kolibri Hardware Grants program</h4>
                     <a href="{% url 'hardware_grant' %}">More information</a> 
                 </div>
             </div>

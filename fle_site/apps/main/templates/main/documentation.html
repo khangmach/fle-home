@@ -1,0 +1,93 @@
+{% extends base_template %}
+
+{% load staticfiles %}
+
+{% block title %}Kolibri Documentation{% endblock title%}
+
+{% block headcss %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta property="og:image" content="{% static 'img/kickstarter/fb-sharedlink.png' %}" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/flipclock.css' %}">
+    <link rel="stylesheet" href="{% static 'css/kickstarter.css' %}">
+    <link rel="stylesheet" href="{% static 'css/_kickstarter_features.css' %}">
+    <link rel="stylesheet" href="{% static 'css/_kickstarter_how.css' %}">
+    <link rel="stylesheet" href="{% static 'css/_kickstarter_quote.css' %}">
+    <link rel="stylesheet" href="{% static 'css/_kickstarter_mobile.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/igg_integration.css' %}">
+
+    <!-- Custom Fonts -->
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:100,400,700' rel='stylesheet' type='text/css'>
+    
+{% endblock headcss %}
+
+
+{% block bodycontents %}
+
+
+    <!-- Header -->
+    <div id="body">
+
+        <div class="container-fluid documentation-intro">
+            <div class="row">
+                <div class="col-sm-12 col-md-8">
+                    <h3>Documentation</h3><br>
+                    <p>Hey there! Here you'll find documentation for our platform Kolibri, Kolibri studio, and the Kolibri educational toolkit. All docs are conveniently hosted and centralized on ReadTheDocs, where you'll also find additional information not covered here.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid resource-container">
+            <h4>Kolibri</h4><br>
+            
+            <p><strong>Current Kolibri version: 0.7.0</strong></p>
+            <a href="http://kolibri.readthedocs.io/en/develop/index.html" target="_blank">Full documentation</a><br><br>
+
+            <p><strong>Quick links</strong></p>
+            <a href="http://kolibri.readthedocs.io/en/develop/install.html" target="_blank">Installing Kolibri</a><br>
+            <a href="http://kolibri.readthedocs.io/en/develop/access.html" target="_blank">Running Kolibri</a><br>
+            <a href="http://kolibri.readthedocs.io/en/develop/learner.html" target="_blank">Kolibri learner documentation</a><br>
+            <a href="http://kolibri.readthedocs.io/en/develop/coach.html" target="_blank">Kolibri coach documentation</a><br>
+            <a href="http://kolibri.readthedocs.io/en/develop/manage.html" target="_blank">Kolibri admin documentation</a><br>
+            <br><br>
+            <p>For documentation on older versions of Kolibri, check out <a href="https://github.com/learningequality/kolibri" target="_blank">Github</a>.</p>
+
+        </div>
+
+        <div class="container-fluid documentation-container">
+            <h4>Kolibri Studio</h4><br>
+            
+            <a href="http://kolibri-studio.readthedocs.io/en/develop/kolibri_studio.html" target="_blank">About Kolibri Studio</a><br>
+            <a href="http://kolibri-studio.readthedocs.io/en/develop/access_studio.html" target="_blank">Accessing Kolibri Studio</a><br>
+            
+
+        </div>
+
+        <div class="container-fluid resource-container">
+            <h4>Kolibri Toolkit</h4><br>
+            
+            <p><strong>English</strong></p>
+            <a href="https://drive.google.com/open?id=1fW-4Bxw0U8gIZCGtp4Zljc5_c--SPGr8" target="_blank">Kolibri Training Pack</a><br>
+            <a href="https://drive.google.com/open?id=1wAAajSsNnu86PfjeAMaGOF6JivROjLXW" target="_blank">Sample Training Plan Agenda for Kolibri in formal schools</a><br>
+            <a href="https://drive.google.com/open?id=1I9706E9Ht-fbA79PZcJIyFEI2xWO-mesyY9Jmyg4Y9U" target="_blank">Blank Agenda for Training Session Planning</a><br>
+            <a href="https://drive.google.com/open?id=1_D9XuVMK77n9BD--5l1IkGqYjA80Xf61" target="_blank">Kolibri Translator Guidelines</a><br>
+            <a href="https://drive.google.com/open?id=0BziX9-4A2RIIT1dKVmZwV3lqeUk" target="_blank">Hardware List</a><br>
+            <a href="https://drive.google.com/open?id=0B9ZzDms8cSNgQlhZanVvOWgtNGM" target="_blank">Pedagogy Guide</a><br>
+            <a href="https://drive.google.com/open?id=0B9ZzDms8cSNgVHlmRXQwbUtnRE0" target="_blank">Peer Observation Guide</a><br>
+            <a href="https://drive.google.com/open?id=0B9ZzDms8cSNgVWRKdUlPc2lkTkk" target="_blank">Hardware Guide</a><br>
+            <br><br>
+            <p><a href="https://drive.google.com/open?id=0BziX9-4A2RIIWWE5eHVQUHdpZG8" target="_blank">Check here for documentation in other languages.</a></p>
+
+        </div>
+
+
+    </div>
+      
+    
+
+{% endblock bodycontents %}

@@ -147,6 +147,9 @@ a:hover {
 .text-muted {
   color: #141414;
 }
+.content-partner{
+  width:300px;
+}
 p.slim-text {
   width: 100%;
   font-size: 18px;
@@ -348,6 +351,24 @@ header {
 #intro_container {
   margin-left: 50px;
   margin-top: 140px;
+  text-align:left;
+}
+#intro-download-btn {
+  padding:12px; 
+  border:2px solid #ffffff; 
+  background-color:#ffffff; 
+  color:#996189; 
+  font-size:20px; 
+  font-weight:bold;
+}
+#intro-demo-btn {
+  padding:12px; 
+  border:2px solid #ffffff; 
+  background-color:transparent; 
+  color:#ffffff; 
+  font-size:20px; 
+  font-weight:bold; 
+  margin-left:8px;
 }
 .intro-heading {
   font-family: "Open Sans", sans-serif;
@@ -357,6 +378,9 @@ header {
   position: relative;
   z-index: -1;
   text-align: right;
+}
+.kolibri-title{
+  font-size:42px;
 }
 span.hidden-xs.hidden-sm {
   display: inline !important;
@@ -514,6 +538,10 @@ span.hidden-xs.hidden-sm {
   font-size:14px;
 }
 
+.globe-image{
+  width:400px;
+}
+
 /*Download page*/
 .download-btn:hover{
   color:#ffffff;
@@ -543,6 +571,11 @@ span.hidden-xs.hidden-sm {
   margin-bottom:-40px;
 }
 
+.download-options{
+  margin-bottom:40px;
+  width:60px;
+}
+
 .download-container{
   margin-top:80px;
 }
@@ -552,7 +585,7 @@ span.hidden-xs.hidden-sm {
 }
 
 .download-container img{
-  width:420px;
+  width:400px;
 }
 
 .resource-container{
@@ -568,6 +601,18 @@ span.hidden-xs.hidden-sm {
 .spec-column{
   padding:40px;
 }
+
+/*Documentation page*/
+.documentation-container{
+  padding:50px; 
+  margin-top:50px;
+}
+
+.documentation-intro{
+  margin-top:80px;
+  padding:50px;
+}
+
 
 
 /*===================== HARDWARE GRANT ========================*/
@@ -587,7 +632,7 @@ span.hidden-xs.hidden-sm {
 }
 
 .hardware-container{
-  padding:40px; 
+  padding:50px; 
   margin-top:80px;
 }
 
@@ -689,7 +734,6 @@ ul.social-buttons li a {
 }
 .portfolio-modal .modal-content p {
   margin-bottom: 30px;
-  font-size: 20px;
   text-align: left;
   max-width: 600px;
   margin: auto;
@@ -782,7 +826,7 @@ img::-moz-selection {
 mark{
   background-color: transparent;
   font-weight: 900;
-  color: #47B56C;
+  color: #996189;
 }
 .play-btn{
   background-color: #33CC33;
@@ -1223,7 +1267,7 @@ top:10px;
 }
 
 #kolibri_logo{
-  width: 260px;
+  width: 600px;
   margin-top: 30px;
 }
 
@@ -1241,8 +1285,10 @@ top:10px;
   line-height: 140%;
   text-transform: initial;
   font-family: "Open Sans", sans-serif;
-  max-width: 600px;
+  max-width: 880px;
   margin: auto;
+  text-align:left;
+  margin-top:20px;
 }
 
 .below-fold2 h3{
