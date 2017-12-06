@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{% static 'css/_kickstarter_quote.css' %}">
     <link rel="stylesheet" href="{% static 'css/_kickstarter_mobile.css' %}">
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/downloads.css' %}">
     <link rel="stylesheet" href="{% static 'css/igg_integration.css' %}">
 
     <!-- Custom Fonts -->
@@ -30,7 +31,7 @@
 
 
     <!-- Header -->
-    <div id="body">
+    <div id="body" class="download-page">
 
         <div class="container-fluid download-container">
             <div class="row">
@@ -41,11 +42,19 @@
                     <h3>Download Kolibri</h3>
                     <h5>Version 0.7.0</h5>
                     <p>
-                        <b>Released:</b> December 1, 2017<br>
-                        <a href="http://kolibri.readthedocs.io/en/develop/changelog.html" target="_blank">Release Notes</a><br><br>
-                        <b>Supported browsers:</b><br> Google Chrome, Internet Explorer, Firefox, Opera<br>
-                        <br>
-                        <b>Supported languages:</b><br> Arabic, English, Español, Farsi, Français, Kiswahili, Swahili, Urdu<br>
+                        <b>Released:</b> December 6, 2017<br>
+                        <a href="http://kolibri.readthedocs.io/en/release-v0.7.x/changelog.html" target="_blank">Release Notes</a>
+                    </p>
+                    <p>
+                        <b>Supported languages:</b><br> English, Arabic, Farsi, French, Spanish, Swahili, Urdu<br>
+                    </p>
+                    <p>
+                        <b>Coming soon:</b><br>
+                        <ul>
+                            <li>Bigger content library</li>
+                            <li>Additional coach features</li>
+                            <li>More languages - <a href="{% url 'translate' %}">help us translate!</a></li>
+                        </ul>
                     </p>
                 </div>
             </div>
@@ -109,8 +118,8 @@
 
     </div>
 
-    
-      
-    
+
+
+
 
 {% endblock bodycontents %}
