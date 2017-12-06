@@ -22,6 +22,6 @@ urlpatterns = patterns(__package__ + '.views',
     url(r'^donate/thankyou/$', TemplateView.as_view(template_name='main/donationpage_thankyou.html'), name='donationpage_thankyou'),
     url(r'^translate/$',  TemplateView.as_view(template_name='main/translate.html'), name='translate'),
     url(r'^download/$',  TemplateView.as_view(template_name='main/download.html'), name='download'),
-    url(r'^docs/$',  TemplateView.as_view(template_name='main/documentation.html'), name='docs'),
+    url(r'^documentation/$',  TemplateView.as_view(template_name='main/documentation.html'), name='docs'),
     url(r'^hardware_grant/$',  TemplateView.as_view(template_name='main/hardware_grant.html'), name='hardware_grant')
 )
