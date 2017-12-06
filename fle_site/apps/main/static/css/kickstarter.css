@@ -354,20 +354,20 @@ header {
   text-align:left;
 }
 #intro-download-btn {
-  padding:12px; 
-  border:2px solid #ffffff; 
-  background-color:#ffffff; 
-  color:#996189; 
-  font-size:20px; 
+  padding:12px;
+  border:2px solid #ffffff;
+  background-color:#ffffff;
+  color:#996189;
+  font-size:20px;
   font-weight:bold;
 }
 #intro-demo-btn {
-  padding:12px; 
-  border:2px solid #ffffff; 
-  background-color:transparent; 
-  color:#ffffff; 
-  font-size:20px; 
-  font-weight:bold; 
+  padding:12px;
+  border:2px solid #ffffff;
+  background-color:transparent;
+  color:#ffffff;
+  font-size:20px;
+  font-weight:bold;
   margin-left:8px;
 }
 .intro-heading {
@@ -443,19 +443,19 @@ span.hidden-xs.hidden-sm {
   margin-bottom:50px;
 }
 .kolibri-studio{
-  margin-top:40px; 
+  margin-top:40px;
   padding-bottom:30px;
 }
 
 .kolibri-intro{
-  text-align:center; 
+  text-align:center;
   margin-bottom:30px;
 }
 
 .kolibri-copy a, .translate-row a, .download-btn{
-  border:2px solid #996189; 
-  padding:14px; 
-  color:#ffffff; 
+  border:2px solid #996189;
+  padding:14px;
+  color:#ffffff;
   font-size:18px;
   background-color:#996189;
   text-decoration:none;
@@ -471,9 +471,9 @@ span.hidden-xs.hidden-sm {
 }
 
 .studio-tablet{
-  width:70%; 
-  max-width:700px; 
-  margin:0 auto; 
+  width:70%;
+  max-width:700px;
+  margin:0 auto;
 }
 
 .kolibri-feature-row{
@@ -485,8 +485,8 @@ span.hidden-xs.hidden-sm {
 }
 
 .kolibri-feature-row a{
-  color:#996189; 
-  font-size:16px; 
+  color:#996189;
+  font-size:16px;
   text-align:left;
   text-transform:uppercase;
   display:inherit;
@@ -494,8 +494,8 @@ span.hidden-xs.hidden-sm {
 }
 
 .kolibri-feature-row img{
-  margin-top:24px; 
-  padding:14px; 
+  margin-top:24px;
+  padding:14px;
   width:200px;
 }
 
@@ -520,17 +520,17 @@ span.hidden-xs.hidden-sm {
 
 /*Translate page*/
 .translate-container{
-  background-color:#f7f7f7; 
-  height:300px; 
+  background-color:#f7f7f7;
+  height:300px;
   margin-bottom:40px;
   margin-top:50px;
 }
 
 .translate-copy{
-  background-color:#ffffff; 
-  padding-top:30px; 
-  padding-bottom:60px; 
-  padding-left:60px; 
+  background-color:#ffffff;
+  padding-top:30px;
+  padding-bottom:60px;
+  padding-left:60px;
   padding-right:60px;
 }
 
@@ -566,7 +566,7 @@ span.hidden-xs.hidden-sm {
 }
 
 .resource-container{
-  background-color:#f7f7f7; 
+  background-color:#f7f7f7;
   padding:50px;
   margin-bottom:-40px;
 }
@@ -589,7 +589,7 @@ span.hidden-xs.hidden-sm {
 }
 
 .resource-container{
-  padding-left:50px; 
+  padding-left:50px;
   padding-right:50px;
 }
 
@@ -604,7 +604,7 @@ span.hidden-xs.hidden-sm {
 
 /*Documentation page*/
 .documentation-container{
-  padding:50px; 
+  padding:50px;
   margin-top:50px;
 }
 
@@ -617,9 +617,9 @@ span.hidden-xs.hidden-sm {
 
 /*===================== HARDWARE GRANT ========================*/
 .grant-recipient{
-  width:240px; 
-  margin-top:20px; 
-  margin-right:20px; 
+  width:240px;
+  margin-top:20px;
+  margin-right:20px;
   margin-bottom:20px;
 }
 
@@ -632,7 +632,7 @@ span.hidden-xs.hidden-sm {
 }
 
 .hardware-container{
-  padding:50px; 
+  padding:50px;
   margin-top:80px;
 }
 
@@ -953,11 +953,11 @@ top:10px;
 
 /*Styles for Updated Mailchimp Form*/
 .error {
-  color:#FF0000; 
-  font-weight:bold; 
-  font-size:12px; 
-  font-family:verdana;  
-  margin-top: 10px; 
+  color:#FF0000;
+  font-weight:bold;
+  font-size:12px;
+  font-family:verdana;
+  margin-top: 10px;
   margin-bottom:15px;
 }
 
@@ -965,22 +965,22 @@ top:10px;
   font-size:11px;
 }
 
-.subbutton { 
-  background-color:#996189; 
-  color:#ffffff; border:none; 
-  width:300px; 
-  height:50px; 
-  font-size:16px; 
+.subbutton {
+  background-color:#996189;
+  color:#ffffff; border:none;
+  width:300px;
+  height:50px;
+  font-size:16px;
   text-transform:uppercase;
 }
 
-.emailinput{ 
+.emailinput{
   width:300px;
-  height:50px; 
-  font-size:16px; 
-  border: 1px solid #E4E4E4; 
-  background-color:#ffffff; 
-  padding-left:5px; 
+  height:50px;
+  font-size:16px;
+  border: 1px solid #E4E4E4;
+  background-color:#ffffff;
+  padding-left:5px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
 }
 
@@ -1089,7 +1089,7 @@ top:10px;
   transform:translateZ(2px);
 }
 
-.back-to-top:hover {    
+.back-to-top:hover {
   background-color: #8670A1;
   color: black;
   border: 4px solid black;
@@ -1098,14 +1098,14 @@ top:10px;
 }
 
 #kickstarter-header{
-  
+
   background: url('../img/kickstarter/header-cover.jpg') no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   width: 100%;
   position: relative;
   z-index: 1;
-} 
+}
 #kickstarter-header .header-shadow {
   height: 100%;
 }
@@ -1113,7 +1113,7 @@ top:10px;
 .intro-social {
   position: relative;
   margin-top: 10%;
-  text-align: right; 
+  text-align: right;
   right: 30px;
 }
 .intro-social .social_btns div {
@@ -1146,7 +1146,7 @@ top:10px;
 }
 #donate_button:hover {
   background-color: #4BCAFA;
-  color:#FFFFFF; 
+  color:#FFFFFF;
 }
 
 #contact_button {
@@ -1349,7 +1349,7 @@ top:10px;
   top: 11px;
 }
 
-.shift-down2{ 
+.shift-down2{
   position: relative;
   top: 5px;
   left: 24px;
