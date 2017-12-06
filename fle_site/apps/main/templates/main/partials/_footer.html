@@ -1,7 +1,7 @@
 {% load staticfiles %}
 
 <div class="container-fluid main-footer" id="footer">
-  
+
     <div class="container">
 
             <div class="social-area">
@@ -58,7 +58,7 @@
                 <div id="mce-responses" class="clear">
                     <div class="response" id="mce-error-response" style="display:none"></div>
                     <div class="response" id="mce-success-response" style="display:none"></div>
-                </div> 
+                </div>
 
 
                 </td>
@@ -81,20 +81,6 @@
 
             <div class="row sitemap"> <!--Start sitemap-->
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <h5 class="footer-column-headers">About Us</h5>
-                    <br>
-                    <ul>
-                        <li><a href="{% url 'mission' %}" target="_blank">Learning Equality</a></li>
-                        <li><a href="{% url 'values' %}" target="_blank">Core Values</a></li>
-                        <li><a href="{% url 'team' %}" target="_blank">Meet the team</a></li>
-                        <li><a href="{% url 'board' %}" target="_blank">Board of Directors</a></li>
-                        <li><a href="{% url 'supporters' %}" target="_blank">Supporters and friends</a></li>
-                        <li><a href="{% url 'press' %}" target="_blank">Press and media</a></li>
-                        <li><a href="{% url 'internships' %}" target="_blank">Internships</a></li>
-                        <li><a href="{% url 'jobs' %}" target="_blank">Careers</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                     <h5 class="footer-column-headers">Kolibri</h5>
                     <br>
                     <ul>
@@ -103,6 +89,20 @@
                         <li><a href="{% url 'docs' %}" target="_blank">Documentation</a></li>
                         <li><a href="{% url 'translate' %}" target="_blank">Help Translate</a></li>
                         <li><a href="{% url 'hardware_grant' %}" target="_blank">Hardware Grant</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <h5 class="footer-column-headers">About</h5>
+                    <br>
+                    <ul>
+                        <li><a href="{% url 'mission' %}" target="_blank">Learning Equality</a></li>
+                        <li><a href="{% url 'values' %}" target="_blank">Core Values</a></li>
+                        <li><a href="{% url 'team' %}" target="_blank">Team</a></li>
+                        <li><a href="{% url 'board' %}" target="_blank">Board of Directors</a></li>
+                        <li><a href="{% url 'supporters' %}" target="_blank">Supporters and friends</a></li>
+                        <li><a href="{% url 'press' %}" target="_blank">Press</a></li>
+                        <li><a href="{% url 'jobs' %}" target="_blank">Jobs</a></li>
+                        <li><a href="{% url 'internships' %}" target="_blank">Internships</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
@@ -159,7 +159,7 @@
         $(modalId).on('hidden.bs.modal', function (e) {
             window.location.hash = '';
         });
-    } 
+    }
 
     $(function() {
         // handle hash in URL on page load
