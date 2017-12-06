@@ -22,7 +22,7 @@
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:100,400,700' rel='stylesheet' type='text/css'>
-    
+
 {% endblock headcss %}
 
 
@@ -46,9 +46,9 @@
                                     <a id="intro-demo-btn" href="http://kolibridemo.learningequality.org/" target="_blank">Demo</a>
                                     <br><br><br><br><br>
                             </div>
-                            
+
                         </div>
-                        
+
                     </div>
 
                 </div>
@@ -65,15 +65,15 @@
 
         <!-- FLE how it works -->
         <section id="fle_how" class="row">
-<!--        
+<!--
  -->            {% include "main/partials/_kickstarter_how.html" %}
         </section>
 
                 <!-- Features Section: Tile Design -->
-        
-           
+
+
             {% include "main/partials/_kickstarter_features_tiledesign.html" %}
-        
+
 
         <div class="container-fluid studio-container">
             <div class="row kolibri-studio">
@@ -117,7 +117,7 @@
                     <div class="col-sm-4 col-md-4 col-lg-4">
                         <img src="{% static 'img/kickstarter/byte.png' %}" class="center-block">
                     </div>
-                    
+
                     <div class="col-sm-7 col-md-7 col-lg-7">
                         <h4>Packaged for Offline Use</h4>
                         <p>We developed special processes to package online learning materials to be taken offline. One of our innovations is a video compression technique that convert the pen strokes and objects in a blackboard-style video into scalable vector objects. <br><br>In our tests, a 250MB video can now be compressed into just a single megabyte, while retaining most of the original quality. This reduces the time and cost needed to download a large set of videos, and allows a large amount of content to be stored on a small, low-cost device.</p>
@@ -128,7 +128,7 @@
                     <div class="col-sm-4 col-md-4 col-lg-4">
                         <img src="{% static 'img/kickstarter/self-paced.png' %}" class="center-block">
                     </div>
-                    
+
                     <div class="col-sm-7 col-md-7 col-lg-7">
                         <h4>Self-Paced Learning</h4>
                         <p>Track educational growth for individuals and groups of learners accurately and easily, even in informal educational contexts.<br><br> Kolibri comes with tools such as a coach dashboard, exam creation, exercises, assignment of content for differentiated instruction, and a recommendation tool that displays useful and relevant next steps based on a learner's history, progress, and goals.</p>
@@ -140,26 +140,26 @@
                     <div class="col-sm-4 col-md-4 col-lg-4">
                         <img src="{% static 'img/kickstarter/syncing.png' %}" class="center-block">
                     </div>
-                    
+
                     <div class="col-sm-7 col-md-7 col-lg-7">
                         <h4>Syncing and Sharing</h4>
                         <p>Devices running Kolibri will be able to find and directly connect with each other over a local Wi-Fi network, allowing for easy content sharing and data updates.</p>
                     </div>
             </div>
-                
-            
-        
+
+
+
         </div>
 
        <div class="container-fluid">
             <div class="row translate-row">
                 <div class="col-sm-6 col-md-6 translate-blurb">
                     <h4>Help translate Kolibri!</h4>
-                    <a href="{% url 'translate' %}">Learn more about contributing</a> 
+                    <a href="{% url 'translate' %}">Learn more about contributing</a>
                 </div>
                 <div class="col-sm-6 col-md-6">
                     <h4>Kolibri Hardware Grants program</h4>
-                    <a href="{% url 'hardware_grant' %}">More information</a> 
+                    <a href="{% url 'hardware_grant' %}">More information</a>
                 </div>
             </div>
         </div>
