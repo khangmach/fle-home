@@ -477,7 +477,8 @@ span.hidden-xs.hidden-sm {
 }
 
 .kolibri-feature-row{
-  margin-top:40px;
+  padding-top:20px;
+  padding-bottom:20px;
 }
 
 .kolibri-feature-row h5{
@@ -501,7 +502,6 @@ span.hidden-xs.hidden-sm {
 
 /*Translate section*/
 .translate-row{
-  border-top:2px solid #e0e0e0;
   padding-top:24px;
   padding-bottom:24px;
   text-align:center;
