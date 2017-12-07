@@ -689,6 +689,28 @@ a:hover {
 	max-width: 300px;
 	margin: auto;
 }
+.involved-tile {
+	height: 260px;
+	position: relative;
+}
+.involved-tile .icon {
+	display: block;
+}
+.involved-tile .text {
+	position: absolute;
+	width: 275px;
+  left: 50%;
+  transform: translateX(-50%);
+	top: 131px;
+}
+.involved-tile .btns {
+	position: absolute;
+	text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+	width: 275px;
+	bottom: 10px;
+}
 .form-box {
 	display: inline-block;
 	width: 200px;

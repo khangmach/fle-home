@@ -252,22 +252,27 @@
 			<div class="involved container">
 				<div class="container involve-links">
 					<div class="container">
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-							<i class="fa fa-paper-plane fa-5x"></i>
-							<p>Join the team!</p>
-							<a href="{% url 'jobs' %}"><button class="btn form-button btn-success">JOBS</button></a>
-							<a href="{% url 'internships' %}"><button class="btn form-button btn-success">INTERNSHIPS</button> </a>
-
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 involved-tile">
+							<i class="fa fa-paper-plane fa-5x" style="display: block;"></i>
+							<p class="text">Join the team!</p>
+							<div class="btns">
+								<a href="{% url 'jobs' %}"><button class="btn form-button btn-success">JOBS</button></a>
+								<a href="{% url 'internships' %}"><button class="btn form-button btn-success">INTERNSHIPS</button> </a>
+							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-							<img src="{% static 'img/github.png' %}" alt="GitHub">
-							<p>Build world-changing tools! Check out our open-source repositories.</p>
-							<a target="_blank" href="https://github.com/learningequality"><button class="btn form-button btn-success">GITHUB</button></a>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 involved-tile">
+							<img class="icon" src="{% static 'img/github.png' %}" alt="GitHub">
+							<p class="text">Build world-changing tools! Check out our open-source repositories.</p>
+							<div class="btns">
+								<a target="_blank" href="https://github.com/learningequality"><button class="btn form-button btn-success">GITHUB</button></a>
+							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-							<img src="{% static 'img/translate.png' %}" alt="Translate">
-							<p>Help make our tools available in more languages!</p>
-							<a target="_blank" href="{% url 'translate' %}"><button class="btn form-button btn-success">TRANSLATE</button></a>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 involved-tile">
+							<img class="icon" src="{% static 'img/translate.png' %}" alt="Translate">
+							<p class="text">Help make our tools available in more languages!</p>
+							<div class="btns">
+								<a target="_blank" href="{% url 'translate' %}"><button class="btn form-button btn-success">TRANSLATE</button></a>
+							</div>
 						</div>
 					</div>
 				</div>
