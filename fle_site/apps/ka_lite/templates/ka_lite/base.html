@@ -4,7 +4,16 @@
 {% block title %}KA Lite{% endblock title %}
 
 {% block bodycontents %}
-  <!-- Blue header --> 
+  <div class="bannernav" style="font-size: 12px; linear-gradient(0deg, #996189, white 20%, white 20%, #996189);">
+    <div class="navbar-inner">
+        <img src='{% static "img/kolibri-logo.png" %}' alt="Kolibri" style="height: 50px;">
+        <h3>Kolibri is taking flight!</h3>
+        <p>New users: experience Khan Academy and much more with <a href="{% url 'kolibri' %}"><strong>Kolibri</strong></a></p>
+        <p style="font-size: 12px">(currently available in English, Arabic, Farsi, French, Spanish, Swahili, Urdu)</p>
+    </div>
+  </div>
+
+  <!-- Blue header -->
   <div class="container-fluid" id="ka-lite-header">
     <div class="container">
       <div class="row">
