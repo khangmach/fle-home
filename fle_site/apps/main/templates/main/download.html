@@ -41,21 +41,20 @@
                 <div class="col-sm-6 col-md-6 spec-column">
                     <h3>Download Kolibri</h3>
                     <h5>Version 0.7.0</h5>
-                    <p>
-                        <b>Released:</b> December 6, 2017<br>
-                        <a href="http://kolibri.readthedocs.io/en/release-v0.7.x/install.html#release-notes" target="_blank">Release Notes</a>
-                    </p>
+                    <p><b>Released:</b> December 6, 2017<br></p>
+                    <ul>
+                        <li><a href="{% url 'docs' %}" target="_blank">Documentation</a></li>
+                        <li><a href="http://kolibri.readthedocs.io/en/release-v0.7.x/install.html#release-notes" target="_blank">Release Notes</a></li>
+                    </ul>
                     <p>
                         <b>Supported languages:</b><br> English, Arabic, Farsi, French, Spanish, Swahili, Urdu<br>
                     </p>
-                    <p>
-                        <b>Coming soon:</b><br>
-                        <ul>
-                            <li>Bigger content library</li>
-                            <li>Additional coach features</li>
-                            <li>More languages - <a href="{% url 'translate' %}">help us translate!</a></li>
-                        </ul>
-                    </p>
+                    <p><b>Coming soon:</b></p>
+                    <ul>
+                        <li>Bigger content library</li>
+                        <li>Additional coach features</li>
+                        <li>More languages - <a href="{% url 'translate' %}">help us translate!</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -88,13 +87,6 @@
         </div>
 
         <div class="container-fluid resource-container">
-            <h4>Resources</h4>
-            <br>
-            <a href="{% url 'docs' %}" target="_blank">Latest documentation</a>
-            <br>
-            <a href="https://github.com/learningequality/kolibri" target="_blank">Check out GitHub for older versions</a>
-            <p class="version-disclaimer">Please note that we do not have long term support for older versions of Kolibri</p>
-            <br><br>
             <h4>Terms of Service</h4>
             <div class="kolibri-tos">
                 {% include "main/partials/_terms_of_service.html" %}
