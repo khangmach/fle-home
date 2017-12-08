@@ -4,7 +4,16 @@
 {% block title %}KA Lite{% endblock title %}
 
 {% block bodycontents %}
-  <!-- Blue header --> 
+  <div class="bannernav" style="font-size: 12px;">
+    <div class="navbar-inner">
+        <img src='{% static "img/kolibri-logo.png" %}' alt="Kolibri" style="height: 50px;">
+        <h3>Kolibri is taking flight!</h3>
+        <p>New users: experience Khan Academy and much more with <a href="{% url 'kolibri' %}"><strong>Kolibri</strong></a></p>
+        <p style="font-size: 12px">(Note: KA content currently only available in English, French, Spanish, and Swahili)</p>
+    </div>
+  </div>
+
+  <!-- Blue header -->
   <div class="container-fluid" id="ka-lite-header">
     <div class="container">
       <div class="row">
@@ -15,12 +24,12 @@
       {% block pageheader %}{% endblock pageheader %}
     </div>
   </div>
-  <!-- KA Lite fixed in-page nav --> 
+  <!-- KA Lite fixed in-page nav -->
   {% include "ka_lite/partials/_inner_nav.html" %}
   {% block pagecontents %}{% endblock pagecontents %}
 
   {% block extra_footer %}
-    <!-- Script for smooth scrolling --> 
+    <!-- Script for smooth scrolling -->
     <script type="text/javascript">
       // Class to scroll to top
       $('.scroll-to-top').click(function(){

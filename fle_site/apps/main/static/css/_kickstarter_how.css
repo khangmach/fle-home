@@ -32,8 +32,10 @@
   line-height: 1.33em;
   font-weight:lighter;
 }
-.how-explanation {
+.greybg {
   background-color:#f9f9f9;
+}
+.how-explanation {
   padding:30px;
   margin-top:20px;
 }
@@ -68,7 +70,7 @@
 #steps div img {
   display: block;
   margin: auto;
-  max-width:300px;
+  max-width:260px;
 }
 
 #how-1 {

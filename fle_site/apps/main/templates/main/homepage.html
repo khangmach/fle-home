@@ -22,7 +22,7 @@
 <!-- ============= LANDING SCREEN ================ -->
 		<div class="row landing-screen">
 			<div class="container">
-				<div class="container col-xs-12 col-sm-12 col-md-9 col-lg-8 landing-box">
+				<div class="container col-xs-12 landing-box">
 					<span id="landing-header">HELPING MAKE UNIVERSAL EDUCATION A REALITY</span>
 					<span id="landing-description">We are bridging the global digital divide by bringing the online learning revolution offline.</span>
 				</div>
@@ -53,7 +53,7 @@
 				<span class="child-number2 bold left believe darkblue text-center">1 in 3</span>
 				<p class="text-center">Children around the world lack access to a quality basic education</p>
 				<img src="{% static 'img/children.png'%}" class="children-ratio center-block" alt="children">
-				
+
 			</div>
 		</div>
 
@@ -78,7 +78,7 @@
 			<div class="col-xs-12 col-sm-4 col-md-6">
 				<img src="{% static 'img/no-wifi.png' %}" alt="No Wifi" class="center-block wifi-globe">
 			</div>
-			
+
 		</div>
 	</div>
 
@@ -120,7 +120,7 @@
 				</div>
 
 				<div class="bridge-intro bold">
-					<h4 class="mission-state bold">Leveraging these trends, we build and support educational tools that bridge the digital divide:</h4>
+					<h4 class="mission-state bold">Leveraging these trends, we build and support educational tools that are:</h4>
 				</div>
 				<div class="bridge-box row">
 					<div class="cost-effective col-lg-4 col-md-4 col-sm-4">
@@ -202,13 +202,13 @@
 				<div class="row impact-row">
 
 				<h3 class="report-header">Reports and Outcomes</h3>
-				<p>With KA Lite, learning outcomes have improved in the various communities where our collaborators have worked. Read about the studies conducted in places such as Guatemala, India, and Cameroon.</p>
+				<p>Our collaborators have observed improved learning outcomes in the communities in which they work. Read about the studies conducted in places such as Guatemala, India, and Cameroon below.</p>
 				<br>
 				<hr>
 
 				<div class="col-xs-12 case-studies">
 					<div class="impact-report">
-							<h3>An Evaluation Report</h3>
+							<h3>Improved Math Skills in Guatemala</h3>
 							<h4>Assessing the use of technology and Khan Academy to improve educational outcomes in Sacatepéquez, Guatemala</h4>
 							<a target="_blank" href="https://learningequality.org/media/FUNSEPA_Final_Evaluation_Report_27May2016.pdf">READ MORE</a><br><br>
 					</div>
@@ -219,21 +219,21 @@
 							<a target="_blank" href="media/Rapport-Etude-Cameroun_KL_ENG.pdf">READ MORE</a><br><br>
 					</div>
 					<hr>
-					<div class="impact-report">	
+					<div class="impact-report">
 							<h3>Incentives for Effort or Outputs?</h3>
-							<h4>A Field Experiment to Improve Student Performance</h4>
+							<h4>A field experiment to improve student performance in India</h4>
 							<a target="_blank" href="https://www.povertyactionlab.org/sites/default/files/publications/Hirshleifer_Incentives%20for%20Output_Jan2016.pdf">READ MORE</a><br><br>
 					</div>
 					<hr>
 					<div class="impact-report">
 							<h3>Connected Education</h3>
-							<h4>Sustainable Development Goal: Quality Education</h4>
+							<h4>Vodafone Foundation's work towards <em>Quality Education</em>, a UN Sustainable Development Goal</h4>
 							<a target="_blank" href="http://www.vodafone.com/content/dam/vodafone/connected-education/vodafone_connected_education.pdf">READ MORE</a><br><br>
 					</div>
 				</div>
 				</div>
 			</div>
-		
+
 
 		</div>
 	</div>
@@ -251,23 +251,28 @@
 			</div>
 			<div class="involved container">
 				<div class="container involve-links">
-					<div class="container">	
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-							<i class="fa fa-paper-plane fa-5x"></i>
-							<p>Join the team!</p>
-							<a href="{% url 'jobs' %}"><button class="btn form-button btn-success">JOBS</button></a>
-							<a href="{% url 'internships' %}"><button class="btn form-button btn-success">INTERNSHIPS</button> </a>
-
+					<div class="container">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 involved-tile">
+							<i class="fa fa-paper-plane fa-5x" style="display: block;"></i>
+							<p class="text">Join the team!</p>
+							<div class="btns">
+								<a href="{% url 'jobs' %}"><button class="btn form-button btn-success">JOBS</button></a>
+								<a href="{% url 'internships' %}"><button class="btn form-button btn-success">INTERNSHIPS</button> </a>
+							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-							<img src="{% static 'img/github.png' %}" alt="GitHub">
-							<p>Build world-changing tools! Check out our open-source repositories.</p>
-							<a target="_blank" href="https://github.com/learningequality"><button class="btn form-button btn-success">GITHUB</button></a>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 involved-tile">
+							<img class="icon" src="{% static 'img/github.png' %}" alt="GitHub">
+							<p class="text">Build world-changing tools! Check out our open-source repositories.</p>
+							<div class="btns">
+								<a target="_blank" href="https://github.com/learningequality"><button class="btn form-button btn-success">GITHUB</button></a>
+							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-							<img src="{% static 'img/translate.png' %}" alt="Translate">
-							<p>Help make our tools available in more languages!</p>
-							<a target="_blank" href="https://github.com/learningequality/ka-lite/wiki/Internationalization:-Contributing-Translations"><button class="btn form-button btn-success">TRANSLATE</button></a>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 involved-tile">
+							<img class="icon" src="{% static 'img/translate.png' %}" alt="Translate">
+							<p class="text">Help make our tools available in more languages!</p>
+							<div class="btns">
+								<a target="_blank" href="{% url 'translate' %}"><button class="btn form-button btn-success">TRANSLATE</button></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -283,7 +288,7 @@
 
 <script type="text/javascript">
  //Scrollspy
-	$('body').scrollspy({ 
+	$('body').scrollspy({
     target: '#fle-inner-nav',
     offset: 1000
   });
