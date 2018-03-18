@@ -36,53 +36,82 @@
         <div class="container-fluid download-container">
             <div class="row">
                 <div class="col-sm-6 col-md-6">
-                    <img src="{% static 'img/kickstarter/download-kolibri.png' %}" alt="" class="center-block">
+                    <img src="{% static 'img/kickstarter/download-kolibri.png' %}" alt="" class="center-block right-shift">
                 </div>
-                <div class="col-sm-6 col-md-6 spec-column">
+                <div class="col-sm-6 col-md-6 release-column">
                     <h3>Download Kolibri</h3>
-                    <h5>Version 0.7.1</h5>
-                    <p><b>Released:</b> February 2, 2017<br></p>
+                    <h5>Version {{ vars.LATEST_KOLIBRI_VERSION|default:"0.x.x" }}</h5>
+                    <!-- Edit at https://learningequality.org/admin/redirects/redirectvariable/LATEST_5FKOLIBRI_5FVERSION/ -->
+                    <p><b>Released:</b> {{ vars.LATEST_KOLIBRI_RELEASE_DATE|default:"Recent!" }}<br></p>
+                    <!-- Edit at https://learningequality.org/admin/redirects/redirectvariable/LATEST_5FKOLIBRI_5FRELEASE_5FDATE/ -->
                     <ul>
                         <li><a href="{% url 'docs' %}">Documentation</a></li>
-                        <li><a href="http://kolibri.readthedocs.io/en/release-v0.7.x/install.html#release-notes">Release Notes</a></li>
+                        <li><a href="http://kolibri.readthedocs.io/en/latest/install.html#release-notes">Release Notes</a></li>
                     </ul>
                     <p>
-                        <b>Supported languages:</b><br> English, Arabic, Farsi, French, Spanish, Swahili, Urdu<br>
+                        <b>Supported languages</b>
+                        <ul>
+                            <li>{{ vars.LATEST_KOLIBRI_SUPPORTED_LANGUAGES|default:"Pirate English" }}</li>
+                        <!-- Edit at https://learningequality.org/admin/redirects/redirectvariable/LATEST_5FKOLIBRI_5FSUPPORTED_5FLANGUAGES/ -->
+                            <li><a href="{% url 'translate' %}">Help us translate!</a></li>
+                        </ul>
+
                     </p>
-                    <p><b>Coming soon:</b></p>
+                    <!--<p><b>Coming soon:</b></p>
                     <ul>
                         <li>Bigger content library</li>
                         <li>Additional coach features</li>
                         <li>More languages - <a href="{% url 'translate' %}">help us translate!</a></li>
                     </ul>
+                    -->
                 </div>
             </div>
         </div>
 
 
         <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
+<!--         <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item active">
                 <a class="nav-link" data-toggle="tab" href="#windows" role="tab">Windows</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#linux" role="tab">Linux</a>
             </li>
-        </ul>
+        </ul> -->
 
         <!-- Tab panes -->
-        <div class="tab-content">
-            <div class="tab-pane active" id="windows" role="tabpanel">
-                <img src="{% static 'img/kickstarter/os/windows.png' %}" alt="windows" class="center-block download-options">
-                <a class="download-btn" href="https://learningequality.org/r/kolibri-windows-setup-latest">DOWNLOAD</a><br><br><br>
-                <p>Compatible with Windows Vista, 7, 8.1, 10</p>
-                <a href="http://kolibri.readthedocs.io/en/release-v0.7.x/install.html#windows" target="blank">Installation instructions for Windows</a>
+        <div class="download-section clearfix">
+            <div class="download-tile">
+                <h4>Windows</h4>
+                <p>
+                    <img src="{% static 'img/kickstarter/os/windows.png' %}" alt="windows" class="center-block download-image">
+                </p>
+                <a class="download-btn" href="https://learningequality.org/r/kolibri-windows-setup-latest">DOWNLOAD EXE</a><br><br><br>
+                <p>Install Kolibri plus a launcher icon and tray icon.<br/>Compatible with Windows Vista, 7, 8.1, and 10.</p>
+                <a href="http://kolibri.readthedocs.io/en/latest/install.html#windows" target="blank">Installation instructions for Windows</a>
             </div>
-            <div class="tab-pane" id="linux" role="tabpanel">
-                <img src="{% static 'img/kickstarter/os/linux.png' %}" alt="Linux" class="center-block download-options">
-                <a class="download-btn" href="https://learningequality.org/r/kolibri-pex-latest">DOWNLOAD</a><br><br><br>
-                <p>Compatible with Python 2.7+ or 3.4+</p>
-                <a href="http://kolibri.readthedocs.io/en/release-v0.7.x/install.html#macos" target="blank">Installation instructions for Linux &amp; Mac</a>
+
+            <div class="download-tile">
+                <h4>Ubuntu / Debian</h4>
+                <p>
+                    <img src="{% static 'img/kickstarter/os/ubuntu.png' %}" alt="Ubuntu" class="center-block download-image">
+                    <img src="{% static 'img/kickstarter/os/debian.png' %}" alt="Debian" class="center-block download-image">
+                </p>
+                <a class="download-btn" href="https://learningequality.org/r/kolibri-deb-latest">DOWNLOAD DEB</a><br><br><br>
+                <p>Recommended: install via PPA at link below to get <br/>
+                    automatic updates, for devices sometimes online.</p>
+                <a href="http://kolibri.readthedocs.io/en/latest/install.html#debian-ubuntu-linux" target="blank">Instructions for Debian-based systems</a>
+            </div>
+
+            <div class="download-tile">
+                <h4>Other Linux / OSX</h4>
+                <p>
+                    <img src="{% static 'img/kickstarter/os/linux.png' %}" alt="Linux" class="center-block download-image">
+                </p>
+                <a class="download-btn" href="https://learningequality.org/r/kolibri-pex-latest">DOWNLOAD PEX</a><br><br><br>
+                <p>Portable offline executable. Also see <br/>
+                   as long as you have Python 2.7+ or 3.4+ installed.</p>
+                <a href="http://kolibri.readthedocs.io/en/latest/install.html#macos" target="blank">Installation instructions for Linux &amp; Mac</a>
             </div>
         </div>
 

@@ -146,6 +146,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
     'fle_site.apps.main.custom_context_processors.debug',
     'django.contrib.messages.context_processors.messages',
+    'fle_site.apps.redirects.context_processors.redirect_vars',
 )
 
 INSTALLED_APPS = (
