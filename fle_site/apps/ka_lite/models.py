@@ -12,7 +12,7 @@ class UserResource(models.Model):
         ('general',' General'),
     )
     title = models.CharField(max_length=100)
-    category = models.CharField(max_length=100, choices=category_options) 
+    category = models.CharField(max_length=100, choices=category_options)
     version = models.CharField(max_length=50, blank=True, help_text="Leave version blank for items categorized as 'General'. Otherwise, put the major.minor version (e.g. '0.11')")
     doc_id = models.CharField(max_length=80, help_text="44-digit ID of the Google Doc", blank=True)
     doc_type = models.CharField(max_length=80, default="document")
@@ -22,7 +22,7 @@ class UserResource(models.Model):
     external_url = models.URLField(help_text="An external url for the resource if it's not a google doc.", blank=True)
 
     def __str__(self):
-        return self.title
+        return self.title.encode("utf8")
 
     def get_download_url(self):
         return settings.MEDIA_URL + "user_resources/" + self.filename
@@ -57,7 +57,7 @@ class Gallery(models.Model):
     description = models.CharField(max_length=200, help_text="200 characters or less. Like a super tweet.", blank=True)
 
     def __str__(self):
-        return self.title
+        return self.title.encode("utf8")
 
 class Picture(models.Model):
     title = models.CharField(max_length=100, help_text="Doubles as the image title tag and the alt tag, so make it appropriate!")
@@ -70,7 +70,7 @@ class Picture(models.Model):
         ordering = ['sort_order',]
 
     def __str__(self):
-        return self.title
+        return self.title.encode("utf8")
 
 
 class DeploymentStoryManager(models.Manager):
@@ -80,12 +80,12 @@ class DeploymentStoryManager(models.Manager):
 
     def published_display(self):
         """
-        Return all published DeploymentStories excluding object attributes 
+        Return all published DeploymentStories excluding object attributes
         that are not used in the template as a ValuesQuerySet
         """
         published_entries = self.published()
 
-        # get rid of internal notes, contact name and contact email 
+        # get rid of internal notes, contact name and contact email
         for entry in published_entries:
             entry.contact_name = ""
             entry.contact_email = ""
@@ -129,7 +129,7 @@ class DeploymentStory(models.Model):
     objects = DeploymentStoryManager()
 
     def __str__(self):
-        return self.title
+        return self.title.encode("utf8")
 
     def clean(self):
         """Ensure that organization city and country are supplied together or not at all"""
@@ -155,7 +155,7 @@ class DeploymentStory(models.Model):
     def age_of_deployment(self):
         """Return total age of deployment by subtracting current date from start date"""
         return "%d days" % (date.today() - self.start_date).days
-        
+
     def lat_long(self):
         return "(%(latitude)f, %(longitude)f)" % {'latitude': self.latitude, 'longitude': self.longitude}
 
@@ -164,7 +164,7 @@ class DeploymentStory(models.Model):
 
     def organization_location(self):
         if self.organization_city:
-            return "%(city)s, %(country)s" % {'city': self.organization_city, 'country': self.organization_country} 
+            return "%(city)s, %(country)s" % {'city': self.organization_city, 'country': self.organization_country}
         else:
             return False
 

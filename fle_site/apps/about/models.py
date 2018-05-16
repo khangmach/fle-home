@@ -57,7 +57,7 @@ class PressLogo(models.Model):
     picture = models.ImageField(upload_to="press_logos", help_text="Please only upload images 70x70!")
 
     def __str__(self):
-        return self.title
+        return self.title.encode("utf8")
 
 
 class PressArticle(models.Model):
@@ -102,7 +102,7 @@ class OrganizationType(models.Model):
     title = models.CharField(max_length=150)
 
     def __str__(self):
-        return self.title
+        return self.title.encode("utf8")
 
 
 class SupportingOrganization(models.Model):
