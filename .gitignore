@@ -21,3 +21,8 @@ venv/*
 all_contributors.json
 summary.json
 /env
+.venv
+
+# temporarily ignore these files while we're still using pip
+Pipfile
+Pipfile.lock
