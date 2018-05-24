@@ -1,0 +1,32 @@
+
+.download-page li, .download-page p {
+  font-size: 14px;
+}
+
+.download-image {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: 100px;
+    display: inline-block;
+}
+
+.download-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.download-tile {
+    display: inline-block;
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+}
+
+.release-column {
+    padding: 55px 20px;
+}
+
+.right-shift {
+    margin-right: 70px;
+}
