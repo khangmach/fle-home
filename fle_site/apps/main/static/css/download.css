@@ -30,3 +30,11 @@
 .right-shift {
     margin-right: 70px;
 }
+
+.ppa-code{
+    height:auto; 
+    overflow:auto; 
+    word-break: normal !important; 
+    word-wrap: normal !important; 
+    white-space: pre !important;
+}

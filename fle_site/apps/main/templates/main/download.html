@@ -86,7 +86,7 @@
                 <p>
                     <img src="{% static 'img/kickstarter/os/windows.png' %}" alt="windows" class="center-block download-image">
                 </p>
-                <a class="download-btn" href="https://learningequality.org/r/kolibri-windows-setup-latest">DOWNLOAD EXE</a><br><br><br>
+                <a class="download-btn" href="https://learningequality.org/r/kolibri-windows-setup-latest">DOWNLOAD EXE</a><br><br><br><br><br><br>
                 <p>Install Kolibri, plus a launcher icon and tray icon.<br/>Compatible with Windows Vista, 7, 8.1, and 10</p>
                 <a href="http://kolibri.readthedocs.io/en/latest/install.html#windows" target="blank">Installation instructions for Windows</a>
             </div>
@@ -97,8 +97,9 @@
                     <img src="{% static 'img/kickstarter/os/ubuntu.png' %}" alt="Ubuntu" class="center-block download-image">
                     <img src="{% static 'img/kickstarter/os/debian.png' %}" alt="Debian" class="center-block download-image">
                 </p>
-                <a class="download-btn" href="https://learningequality.org/r/kolibri-deb-latest">DOWNLOAD DEB</a><br><br><br>
-                <p>Or, <a href="http://kolibri.readthedocs.io/en/latest/install.html#debian-ubuntu-linux" target="blank">install with apt-get</a> to get automatic updates, <br/>for devices sometimes online <strong>(recommended)</strong></p>
+                <a class="download-btn" href="https://learningequality.org/r/kolibri-deb-latest">DOWNLOAD .DEB</a><br><br><br>
+                <a class="download-btn" href="#exampleModal2" data-toggle="modal">PPA INSTALL*</a><br><br><br>
+                <p>*<a href="https://kolibri.readthedocs.io/en/latest/install.html#debian-ubuntu" target="blank">Install with apt-get</a> to get automatic updates, <br/>for devices sometimes online <strong>(recommended)</strong></p>
                 <a href="http://kolibri.readthedocs.io/en/latest/install.html#debian-ubuntu-linux" target="blank">Instructions for Debian-based systems</a>
             </div>
 
@@ -108,6 +109,7 @@
                     <img src="{% static 'img/kickstarter/os/linux.png' %}" alt="Linux" class="center-block download-image">
                 </p>
                 <a class="download-btn" href="https://learningequality.org/r/kolibri-pex-latest">DOWNLOAD PEX</a><br><br><br>
+                <a class="download-btn" href="#exampleModal1" data-toggle="modal">PIP INSTALL</a><br><br><br>
                 <p>You can run the portable offline executable if<br> you have Python 2.7+ or 3.4+ installed.</p>
                 <a href="http://kolibri.readthedocs.io/en/latest/install.html#macos" target="blank">Installation instructions for Linux &amp; Mac</a>
             </div>
@@ -123,6 +125,50 @@
 
     </div>
 
+    <!-- Pip install modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">How to Pip Install</h5>
+            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>-->
+          </div>
+          <div class="modal-body">
+            <p>Paste this code in your terminal:</p>
+            <pre>pip install Kolibri</pre>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PPA install modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">How to PPA Install</h5>
+            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>-->
+          </div>
+          <div class="modal-body">
+            <p>Paste the following commands in your terminal:</p>
+            <pre class="ppa-code"><span></span>sudo apt-get install software-properties-common python-software-properties
+sudo add-apt-repository ppa:learningequality/kolibri
+sudo apt-get update
+sudo apt-get install kolibri</pre>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
